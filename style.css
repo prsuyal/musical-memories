@@ -21,11 +21,13 @@ nav {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo {
-    color: #e5f2ff;
-    font-size: 24px;
-    font-weight: 700;
+nav a img.logo {
+    height: 50px; /* Adjust to the size you want */
+    width: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area */
 }
+
 
 nav ul {
     list-style-type: none;
@@ -120,3 +122,47 @@ input[type="submit"] {
     width: auto;
     cursor: pointer;
 }
+
+
+.staff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .staff-member {
+    background-color: #f9f9f9; /* A different color from the background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    margin: 10px; /* Space between the boxes */
+    flex: 0 0 calc(50% - 20px); /* Sets the box to take half of the container width minus margin */
+    text-align: center; /* Center the text inside the box */
+    padding: 20px; /* Spacing inside the box */
+    box-sizing: border-box; /* Makes sure padding doesn't affect the final width */
+  }
+  
+  .staff-member:nth-of-type(n+3) {
+    flex: 0 0 calc(33.333% - 20px); /* Sets the box to take a third of the container width */
+  }
+  
+  /* Ensure images scale correctly */
+  .staff-photo {
+    width: 400px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Covers the area, may crop the image */
+    border-radius: 50%; /* Makes the image round */
+    margin: 0 auto 20px; /* Centers the image and adds space below */
+    display: block; /* Ensures the image is a block-level element to accept margin auto */
+  }
+  
+  
+  /* Adjust this media query as needed */
+  @media (max-width: 768px) {
+    .staff-member {
+      flex: 0 0 calc(100% - 20px); /* Full width on smaller screens */
+    }
+  }
+  
+  /* Rest of your styles ... */
+
