@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update these numbers with real data or retrieve them from an API/database
     updateTextContent('membersCount', '27 members');
-    updateTextContent('seniorsPerformed', '50 seniors performed for');
+    updateTextContent('seniorsPerformed', '50 seniors impacted');
     updateTextContent('kidsTutored', '3 kids tutored');
     updateTextContent('statesCount', '2 states');
     updateTextContent('countriesCount', '2 countries');
