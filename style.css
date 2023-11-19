@@ -22,7 +22,7 @@ nav {
 }
 
 nav a img.logo {
-    height: 50px; /* Adjust to the size you want */
+    height: 50px; 
     width: auto; /* Maintain the aspect ratio */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the area */
@@ -399,95 +399,87 @@ h1, h2, h3, h4, h5, h6, .title, .button {
     flex-basis: calc(33.333% - 1rem); /* Adjust the width for three boxes per row, accounting for margin */
     text-align: left; /* Align text to the left */
     border-radius: 10px; /* Rounded corners for the boxes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .mission-container {
         flex-direction: column;
     }
 
     .mission-statement {
-        flex-basis: 100%; /* Full width statements on smaller screens */
-        margin: 10px 0; /* Stack the statements with vertical space */
+        flex-basis: 100%; 
+        margin: 10px 0; 
     }
 }
 
-/* ... existing styles ... */
-/* ... other existing styles ... */
 
-/* Update the nav and footer to the dark blue color */
 nav, nav a, footer {
-    background-color: #0A192F !important; /* Dark blue background */
+    background-color: #0A192F !important;
 }
 
-/* Mission Section Styles */
+
 .mission {
-    background-color: #0A192F; /* Dark blue background */
+    background-color: #0A192F;
     color: white;
     text-align: center;
-    padding: 4rem 0 2rem 0; /* Adjusted padding to accommodate the button */
+    padding: 4rem 0 2rem 0;
 }
 
 .mission-title {
-    color: #fff; /* White color for the title */
-    font-size: 3rem; /* Large font size for the title */
+    color: #fff;
+    font-size: 3rem; 
     font-weight: bold;
-    margin-bottom: 2rem; /* Space below the title */
+    margin-bottom: 2rem; 
 }
 
 .mission-statement {
-    background-color: #add8e6; /* Light blue background for statements */
-    color: #333; /* Dark text for readability */
-    margin: 0.5rem; /* Margin around statements */
-    padding: 1.5rem; /* Padding inside statements */
-    flex-basis: calc(33.333% - 1rem); /* Adjust the width for three boxes per row, accounting for margin */
-    text-align: left; /* Align text to the left */
-    border-radius: 10px; /* Rounded corners for the boxes */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #add8e6; 
+    color: #333; 
+    margin: 0.5rem;
+    padding: 1.5rem; 
+    flex-basis: calc(33.333% - 1rem);
+    text-align: left; 
+    border-radius: 10px;
+    transition: background-color 0.3s; 
 }
 
 .mission-statement:hover {
-    background-color: #00bfff; /* Darker blue on hover */
+    background-color: #00bfff; 
 }
 
-/* Button inside the mission section */
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .mission-statement {
-        flex-basis: 100%; /* Full width statements on smaller screens */
-        margin: 10px 0; /* Stack the statements with vertical space */
+        flex-basis: 100%; 
+        margin: 10px 0; 
     }
 }
 .tutoring-intro {
-    background-color: #e5f2ff; /* Light blue */
+    background-color: #e5f2ff; 
     padding: 4rem;
     text-align: center;
 }
 
 .tutoring-intro h1 {
     font-family: 'Albert Sans', sans-serif;
-    font-size: 3rem; /* Larger font size for the title */
-    color: #0A192F; /* Dark blue text color */
+    font-size: 3rem;
+    color: #0A192F; 
     margin-bottom: 2rem;
 }
 
 .tutoring-intro p {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.25rem; /* Readable font size for paragraph text */
+    font-size: 1.25rem; 
     color: #333;
     margin-bottom: 1rem;
 }
 
 .tutoring-intro p strong {
-    color: #4c87af; /* Highlight color for strong text */
+    color: #4c87af; 
 }
 
-/* ... Other existing styles ... */
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .tutoring-intro {
         padding: 2rem;
@@ -500,48 +492,46 @@ nav, nav a, footer {
     }
 }
 nav, footer {
-    background-color: #0A192F; /* Dark blue background */
+    background-color: #0A192F;
 }
 
 nav a, footer a {
-    color: #e5f2ff; /* Light blue text for links */
+    color: #e5f2ff;
 }
-/* Google Classroom Join Box Styles */
+
 .classroom-join-box {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     margin: 30px auto;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; 
     border-radius: 8px;
-    max-width: 500px; /* Adjust as necessary */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for depth */
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .classroom-logo {
-    height: 50px; /* Adjust the size as needed */
+    height: 50px;
     margin-right: 20px;
 }
 
 .classroom-code {
-    font-size: 3.0rem; /* Large, readable text */
-    color: #333; /* Dark text for better readability */
+    font-size: 3.0rem; 
+    color: #333;
 }
 
-/* ... Your other existing styles ... */
-/* Lessons Offered Section Styles */
+
 .lessons-offered {
     text-align: center;
     padding: 3rem 0;
     margin-top: 3rem;
-    background-color: #e5f2ff; /* Light blue background for contrast */
-}
+    background-color: #e5f2ff; 
 
 .lessons-offered h2 {
     font-family: 'Albert Sans', sans-serif;
     font-size: 2.5rem;
-    color: #0A192F; /* Dark blue */
+    color: #0A192F;
     margin-bottom: 2rem;
 }
 
@@ -549,7 +539,7 @@ nav a, footer a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Space between boxes */
+    gap: 20px; 
 }
 
 .instrument-box {
@@ -565,11 +555,11 @@ nav a, footer a {
 }
 
 .instrument-box:hover {
-    background-color: #add8e6; /* Light blue on hover */
-    transform: translateY(-5px); /* Slight raise effect */
+    background-color: #add8e6; 
+    transform: translateY(-5px); 
 }
 
-/* Responsive adjustments for the lessons-offered section */
+
 @media (max-width: 768px) {
     .lessons-offered h2 {
         font-size: 2rem;
@@ -580,42 +570,42 @@ nav a, footer a {
     }
 }
 
-/* Donation Drive Section Styles */
+
 .donation-drive {
     text-align: center;
-    padding: 4rem; /* Increased padding for a larger box */
-    margin: 3rem auto; /* More vertical margin */
-    background-color: #ffffff; /* White background */
-    border-radius: 10px; /* Rounded corners */
-    max-width: 800px; /* Increase maximum width */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow for depth */
+    padding: 4rem; 
+    margin: 3rem auto; 
+    background-color: #ffffff; 
+    border-radius: 10px;
+    max-width: 800px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .donation-drive h2 {
     font-family: 'Albert Sans', sans-serif;
-    font-size: 2.5rem; /* Larger font size for the title */
-    color: #0A192F; /* Dark blue text color */
+    font-size: 2.5rem; 
+    color: #0A192F; 
     margin-bottom: 2rem;
 }
 
 .donation-drive-image {
-    max-width: 100%; /* Ensure image is responsive */
-    height: auto; /* Maintain aspect ratio */
-    padding: 1rem; /* Padding around the image */
+    max-width: 100%; 
+    height: auto; 
+    padding: 1rem; 
 }
 
-/* ... Other existing styles ... */
 
-/* Responsive adjustments */
+
+
 @media (max-width: 768px) {
     .donation-drive {
-        padding: 2rem; /* Smaller padding on smaller screens */
-        max-width: 90%; /* Full width on smaller screens */
+        padding: 2rem; 
+        max-width: 90%; 
     }
 }
 
 .incomplete {
     font-family: 'Albert Sans', sans-serif;
-    font-size: 4.0rem; /* Larger font size for the title */
-    color: #0A192F; /* Dark blue text color */
+    font-size: 4.0rem; 
+    color: #0A192F; 
 }
