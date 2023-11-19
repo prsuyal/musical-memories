@@ -225,6 +225,7 @@ input[type="submit"] {
 
 
   .impact {
+    padding: 150px 0;
     background-image: url('images/pianooo.jpeg');
     background-size: cover;
     background-position: center;
@@ -241,7 +242,7 @@ input[type="submit"] {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+    background: rgba(0, 0, 0, 0.3); /* Adjust transparency as needed */
     z-index: -1;
 }
 
@@ -252,14 +253,369 @@ input[type="submit"] {
 }
 
 .impact-item {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1rem 0;
     font-weight: 300; /* Or use 400 for a bit more weight */
 }
-
+#daysSinceLaunch, #membersCount, #seniorsPerformed, #kidsTutored, #statesCount, #countriesCount {
+    font-size: 4.0rem; /* Larger font size for emphasis */
+    font-weight: 700; /* Bolder font for better visibility */
+}
 /* For mobile responsiveness */
 @media (max-width: 768px) {
-    .impact {
-        background-attachment: scroll;
+    .impact-item, #daysSinceLaunch, #membersCount, #seniorsPerformed, #kidsTutored, #statesCount, #countriesCount {
+        font-size: 2rem; /* Smaller font size for mobile devices */
     }
+    .impact {
+        padding: 100px 0; /* Smaller padding for mobile devices */
+    }
+}
+
+header {
+    padding: 100px 0; /* Increase padding for more space */
+    text-align: center;
+}
+
+.title {
+    font-size: 60px; /* Increase the font size for the title */
+    font-weight: 700;
+    margin-bottom: 30px; /* Increase margin for more space */
+}
+
+/* Assuming you have a paragraph tag inside the header for the subtitle or description */
+header p {
+    font-size: 24px; /* Increase the font size for the subtitle/description */
+    margin-bottom: 30px; /* Increase margin if needed */
+}
+
+/* If you have buttons or links in your header, you can make them bigger too */
+.button {
+    padding: 15px 30px; /* Increase padding for a larger button */
+    font-size: 20px; /* Increase font size for the text in the button */
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px; /* Smaller font size for the title on mobile devices */
+    }
+    header p {
+        font-size: 18px; /* Smaller font size for the subtitle/description on mobile devices */
+    }
+    .button {
+        padding: 12px 25px; /* Slightly smaller padding for the buttons on mobile devices */
+        font-size: 18px; /* Smaller font size for the text in the button on mobile devices */
+    }
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .title, .button {
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.intro {
+    width: 90%; /* Increase the width of the box */
+    margin: 2em auto; /* Add more vertical margin to give the section more space */
+    padding: 4em; /* Increase padding to make the box taller and give content more room */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px; /* Slightly more rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
+    box-sizing: border-box;
+}
+
+.intro h1, .intro h2, .intro h3, .intro h4, .intro h5, .intro h6, .intro p {
+    font-size: 1.25em; /* Increase the font size of all text within .intro */
+}
+
+/* Style for the list items */
+.intro ul {
+    margin-left: 1em; /* Add left margin to the unordered list for indentation */
+    padding-left: 1em; /* Add padding to move bullet points inward */
+}
+
+.intro li {
+    font-size: 1em; /* Increase the font size of list items */
+    margin-bottom: 0.5em; /* Add some space below each list item */
+    list-style-type: disc; /* Standard disc bullet points */
+    list-style-position: inside; /* Ensures bullets are aligned with the text */
+}
+
+/* Optional: Custom bullet points with increased size */
+.intro li::before {
+    content: '•'; /* Unicode for a bullet point */
+    color: #333; /* Bullet point color */
+    font-size: 1.5em; /* Larger bullet points */
+    line-height: 0; /* Align bullets with the text vertically */
+    margin-right: 0.5em; /* Space between the bullet and text */
+    vertical-align: middle; /* Align the bullet vertically */
+    display: inline-block; /* Needed to apply margins */
+}
+/* ... existing styles ... */
+
+/* ... existing styles ... */
+
+/* ... existing styles ... */
+
+/* Remove the white box by changing the .intro class */
+.intro {
+    background: none; /* Removes the white background */
+    padding: 0; /* Adjust padding as needed */
+    /* Remove any other styles related to the white box background if there are any */
+}
+
+/* Mission Section Styles */
+.mission {
+    background-color: #0A192F; /* Dark blue background */
+    color: white;
+    padding: 4rem 0; /* Ample padding for visual space */
+    text-align: center;
+}
+
+.mission-title {
+    color: #fff; /* White color for the title */
+    font-size: 3rem; /* Large font size for the title */
+    font-weight: bold;
+    margin-bottom: 2rem; /* Space below the title */
+}
+
+.mission-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    margin: 0 auto;
+    max-width: 1200px; /* Set a max-width or 100% for full width */
+}
+
+.mission-statement {
+    background-color: #fff; /* White background for statements */
+    color: #333; /* Dark text for readability */
+    margin: 0.5rem; /* Margin around statements */
+    padding: 1.5rem; /* Padding inside statements */
+    flex-basis: calc(33.333% - 1rem); /* Adjust the width for three boxes per row, accounting for margin */
+    text-align: left; /* Align text to the left */
+    border-radius: 10px; /* Rounded corners for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mission-container {
+        flex-direction: column;
+    }
+
+    .mission-statement {
+        flex-basis: 100%; /* Full width statements on smaller screens */
+        margin: 10px 0; /* Stack the statements with vertical space */
+    }
+}
+
+/* ... existing styles ... */
+/* ... other existing styles ... */
+
+/* Update the nav and footer to the dark blue color */
+nav, nav a, footer {
+    background-color: #0A192F !important; /* Dark blue background */
+}
+
+/* Mission Section Styles */
+.mission {
+    background-color: #0A192F; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 4rem 0 2rem 0; /* Adjusted padding to accommodate the button */
+}
+
+.mission-title {
+    color: #fff; /* White color for the title */
+    font-size: 3rem; /* Large font size for the title */
+    font-weight: bold;
+    margin-bottom: 2rem; /* Space below the title */
+}
+
+.mission-statement {
+    background-color: #add8e6; /* Light blue background for statements */
+    color: #333; /* Dark text for readability */
+    margin: 0.5rem; /* Margin around statements */
+    padding: 1.5rem; /* Padding inside statements */
+    flex-basis: calc(33.333% - 1rem); /* Adjust the width for three boxes per row, accounting for margin */
+    text-align: left; /* Align text to the left */
+    border-radius: 10px; /* Rounded corners for the boxes */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.mission-statement:hover {
+    background-color: #00bfff; /* Darker blue on hover */
+}
+
+/* Button inside the mission section */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mission-statement {
+        flex-basis: 100%; /* Full width statements on smaller screens */
+        margin: 10px 0; /* Stack the statements with vertical space */
+    }
+}
+.tutoring-intro {
+    background-color: #e5f2ff; /* Light blue */
+    padding: 4rem;
+    text-align: center;
+}
+
+.tutoring-intro h1 {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 3rem; /* Larger font size for the title */
+    color: #0A192F; /* Dark blue text color */
+    margin-bottom: 2rem;
+}
+
+.tutoring-intro p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.25rem; /* Readable font size for paragraph text */
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tutoring-intro p strong {
+    color: #4c87af; /* Highlight color for strong text */
+}
+
+/* ... Other existing styles ... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tutoring-intro {
+        padding: 2rem;
+    }
+    .tutoring-intro h1 {
+        font-size: 2.5rem;
+    }
+    .tutoring-intro p {
+        font-size: 1rem;
+    }
+}
+nav, footer {
+    background-color: #0A192F; /* Dark blue background */
+}
+
+nav a, footer a {
+    color: #e5f2ff; /* Light blue text for links */
+}
+/* Google Classroom Join Box Styles */
+.classroom-join-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    max-width: 500px; /* Adjust as necessary */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for depth */
+}
+
+.classroom-logo {
+    height: 50px; /* Adjust the size as needed */
+    margin-right: 20px;
+}
+
+.classroom-code {
+    font-size: 3.0rem; /* Large, readable text */
+    color: #333; /* Dark text for better readability */
+}
+
+/* ... Your other existing styles ... */
+/* Lessons Offered Section Styles */
+.lessons-offered {
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 3rem;
+    background-color: #e5f2ff; /* Light blue background for contrast */
+}
+
+.lessons-offered h2 {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #0A192F; /* Dark blue */
+    margin-bottom: 2rem;
+}
+
+.instruments-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between boxes */
+}
+
+.instrument-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.instrument-box:hover {
+    background-color: #add8e6; /* Light blue on hover */
+    transform: translateY(-5px); /* Slight raise effect */
+}
+
+/* Responsive adjustments for the lessons-offered section */
+@media (max-width: 768px) {
+    .lessons-offered h2 {
+        font-size: 2rem;
+    }
+    .instrument-box {
+        font-size: 1.25rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Donation Drive Section Styles */
+.donation-drive {
+    text-align: center;
+    padding: 4rem; /* Increased padding for a larger box */
+    margin: 3rem auto; /* More vertical margin */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Increase maximum width */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow for depth */
+}
+
+.donation-drive h2 {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 2.5rem; /* Larger font size for the title */
+    color: #0A192F; /* Dark blue text color */
+    margin-bottom: 2rem;
+}
+
+.donation-drive-image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding: 1rem; /* Padding around the image */
+}
+
+/* ... Other existing styles ... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .donation-drive {
+        padding: 2rem; /* Smaller padding on smaller screens */
+        max-width: 90%; /* Full width on smaller screens */
+    }
+}
+
+.incomplete {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 4.0rem; /* Larger font size for the title */
+    color: #0A192F; /* Dark blue text color */
 }
