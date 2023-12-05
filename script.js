@@ -48,6 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTextContent('membersCount', '27 members');
     updateTextContent('seniorsPerformed', '50 seniors impacted');
     updateTextContent('kidsTutored', '3 kids tutored');
-    updateTextContent('statesCount', '2 states');
+    updateTextContent('statesCount', '3 states');
     updateTextContent('countriesCount', '2 countries');
 });

@@ -386,7 +386,7 @@ h1, h2, h3, h4, h5, h6, .title, .button {
     margin: 0.5rem; 
     padding: 1.5rem;
     flex-basis: calc(33.333% - 1rem); 
-    text-align: left;
+    text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -429,9 +429,11 @@ nav, nav a, footer {
     margin: 0.5rem;
     padding: 1.5rem; 
     flex-basis: calc(33.333% - 1rem);
-    text-align: left; 
+    text-align: center; 
+    align-items: center;
     border-radius: 10px;
     transition: background-color 0.3s; 
+    font-size: 18px;
 }
 
 .mission-statement:hover {
