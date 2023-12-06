@@ -609,26 +609,26 @@ nav a, footer a {
   }
   
   .social-icons a img {
-    filter: grayscale(100%); /* This will make the image monochrome */
+    filter: grayscale(100%);
     transition: filter 0.3s ease;
   }
   
   .social-icons a:hover img {
-    filter: grayscale(0); /* This will return the image to full color on hover */
+    filter: grayscale(0); 
   }
   
   .social-icons a.icon-gmail:hover img {
-    content: url('/images/icons8-gmail-48-color.png'); /* Replace with the colored icon path */
+    content: url('/images/icons8-gmail-48-color.png');
   }
   
   .social-icons a.icon-instagram:hover img {
-    content: url('/images/icons8-instagram-48-color.png'); /* Replace with the colored icon path */
+    content: url('/images/icons8-instagram-48-color.png');
   }
   
   .social-icons a.icon-tiktok:hover img {
-    content: url('/images/icons8-tiktok-48-color.png'); /* Replace with the colored icon path */
+    content: url('/images/icons8-tiktok-48-color.png'); 
   }
   
   .social-icons a.icon-discord:hover img {
-    content: url('/images/icons8-discord-48-color.png'); /* Replace with the colored icon path */
+    content: url('/images/icons8-discord-48-color.png'); 
   }
