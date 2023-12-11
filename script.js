@@ -70,8 +70,6 @@ window.addEventListener("scroll", () =>  {
         console.log("test");
         // Select all counters
         counters.forEach(counter => {
-            // Set counter values to 0
-            counter.innerText = 0;
             // Set count variable to track the count
             let count = 0;
 
