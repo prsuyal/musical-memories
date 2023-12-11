@@ -96,7 +96,7 @@ window.addEventListener("scroll", () =>  {
                     count++;
                     counter.innerText = count; // Set the counter text to count
                     // Repeat every 10 ms
-                    setTimeout(updateCount, 3000/target);
+                    setTimeout(updateCount, 3000/target); // each one should take 3 seconds
                 } else {
                     counter.innerText = target;
                 }
