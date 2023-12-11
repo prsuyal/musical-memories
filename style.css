@@ -256,6 +256,10 @@ input[type="submit"] {
     margin-bottom: 30px; 
 }
 
+.counters {
+    text-align: center;
+}
+
 .counter {
     text-align: center;
     color: #fff;
@@ -271,7 +275,8 @@ input[type="submit"] {
     font-size: 4.0rem; 
     font-weight: 700;
 }
-/* This does some stuff with different screen sizes
+/* This does some stuff with different screen sizes (different UI for mobile) that i 
+don't understand rn and will figure out later
 @media screen and 
 (max-width: 900px) and (min-width: 501px) {
     .counters > div {

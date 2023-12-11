@@ -46,28 +46,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update these numbers with real data or retrieve them from an API/database
     var membersCounter = 27;
-    var seniorsPerformedCounter = 56;
+    var seniorsPerformedCounter = 80;
     var kidsTutoredCounter = 3;
     var statesCounter = 3;
     var countriesCounter = 2;
     updateTextContent('membersCount', membersCounter + ' members');
     updateTextContent('seniorsPerformed', seniorsPerformedCounter + ' seniors impacted');
-    updateTextContent('kidsTutored', kidsTutoredCounter + ' kids tutored');
+    updateTextContent('kidsTutored', kidsTutoredCounter + ' students tutored');
     updateTextContent('statesCount', statesCounter + ' states');
     updateTextContent('countriesCount', countriesCounter + ' countries');
 });
 
-const counters = document.querySelectorAll(".counter span");
-const container = document.querySelector(".counter");
-// Variable that tracks if the counters have been activated
-let activated = false;
+const counters = document.querySelectorAll(".counters span");
+const container = document.querySelector(".counters");
+let activated = false; // Variable that tracks if the counters have been activated
 
 // Scroll event
 window.addEventListener("scroll", () =>  { 
     // If the page is scrolled to the containers element and the counters are not activated
     if(
-        pageYOffset > container.offsetTop - container.offsetHeight - 100 && activated === false
+        pageYOffset > container.offsetTop && activated === false
     ) {
+        console.log("test");
         // Select all counters
         counters.forEach(counter => {
             // Set counter values to 0
@@ -78,14 +78,14 @@ window.addEventListener("scroll", () =>  {
             // Update count function
             function updateCount() {
                 // Gets counter target number to count to
-                const target = daysSinceLaunch; // this somehow has to be a different variable for each stat
-                // i'm using daysSinceLaunch as a placeholder
+                const target = 100; // this somehow has to be a different variable for
+                // each stat i'm using membersCounter as a placeholder
                 // As long as the count is below the target number
                 if (count < target) {
                     count++;
                     counter.innerText = count; // Set the counter text to count
                     // Repeat every 10 ms
-                    setTimeout(updateCount, 10);
+                    setTimeout(updateCount, 20);
                 } else {
                     counter.innerText = target;
                 }
@@ -94,4 +94,4 @@ window.addEventListener("scroll", () =>  {
             activated = true;
         });
     }
-})
+}) 
