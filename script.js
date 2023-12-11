@@ -90,14 +90,13 @@ window.addEventListener("scroll", () =>  {
             function updateCount() {
                 // Gets counter target number to count to
                 const countId = counter.getAttribute("data-count");
-                const target = counterValues[countId]; // this somehow has to be a different variable for
-                // each stat i'm using membersCounter as a placeholder
+                const target = counterValues[countId];
                 // As long as the count is below the target number
                 if (count < target) {
                     count++;
                     counter.innerText = count; // Set the counter text to count
                     // Repeat every 10 ms
-                    setTimeout(updateCount, 20);
+                    setTimeout(updateCount, 3000/target);
                 } else {
                     counter.innerText = target;
                 }
