@@ -101,23 +101,42 @@
     <section class="content">
         
         <h2>Contact Us</h2>
-        <form action="/submit_contact" method="post" id="contactForm">
-            <label for="name">Name:</label>
+        <form name="contact" method="POST" data-netlify="true" netlify>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
+
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
+
+            <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            
+
+            <input type="hidden" name="form-name" value="contact">
             <input type="submit" value="Submit" class="button">
         </form>
     </section>
     <footer>
         <p>&copy; 2023 Musical Memories. All rights reserved.</p>
         <p>Made by Pranshu Suyal for Musical Memories</p>
-    </footer>
+        <div class="social-icons">
+          <a href="mailto:musicalmemories2023@gmail.com" target="_blank" class="icon-gmail">
+            <img src="images/icons8-gmail-48.png" class="icon grayscale" alt="Gmail Icon" />
+            <img src="images/icons8-gmail-48-color.png" class="icon color" alt="Gmail Icon"  />
+          </a>
+          <a href="https://www.instagram.com/musicalmemories23" target="_blank" class="icon-instagram">
+            <img src="images/icons8-instagram-48.png" class="icon grayscale" alt="Instagram Icon" />
+            <img src="images/icons8-instagram-48-color.png" class="icon color" alt="Instagram Icon"  />
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" class="icon-tiktok">
+            <img src="images/icons8-tiktok-48.png" class="icon grayscale" alt="Tiktok Icon" />
+            <img src="images/icons8-tiktok-48-color.png" class="icon color" alt="Tiktok Icon" />
+          </a>
+          <a href="https://discord.gg/rBQVEEfNjK" target="_blank" class="icon-discord">
+            <img src="images/icons8-discord-48.png" class="icon grayscale" alt="Discord Icon" />
+            <img src="images/icons8-discord-48-color.png" class="icon color" alt="Discord Icon" />
+          </a>
+        </div>
+      </footer>
     <script src="script.js"></script>
 </body>
 
