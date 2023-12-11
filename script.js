@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Replace with your actual launch date
     var launchDate = new Date('2023/10/20'); // Use the format Year/Month/Day
     var currentDate = new Date();
-
+    
     // Function to update text content if element exists
     function updateTextContent(id, text) {
         var element = document.getElementById(id);
@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTextContent('daysSinceLaunch', days + ' days since launch');
 
     // Update these numbers with real data or retrieve them from an API/database
-    var membersCounter = 27;
+    var membersCounter = 51;
     var seniorsPerformedCounter = 80;
-    var kidsTutoredCounter = 3;
+    var kidsTutoredCounter = 7;
     var statesCounter = 3;
     var countriesCounter = 2;
     updateTextContent('membersCount', membersCounter + ' members');
@@ -55,6 +55,19 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTextContent('kidsTutored', kidsTutoredCounter + ' students tutored');
     updateTextContent('statesCount', statesCounter + ' states');
     updateTextContent('countriesCount', countriesCounter + ' countries');
+
+    counterValues = {
+        daysSinceLaunch: days,
+        membersCount: membersCounter,
+        seniorsPerformed: seniorsPerformedCounter,
+        kidsTutored: kidsTutoredCounter,
+        statesCount: statesCounter,
+        countriesCount: countriesCounter
+    };
+
+    for (var id in counterValues) {
+        updateTextContent(id, counterValues[id] + (id === 'daysSinceLaunch' ? ' days since launch' : ''));
+    }
 });
 
 const counters = document.querySelectorAll(".counters span");
@@ -76,7 +89,8 @@ window.addEventListener("scroll", () =>  {
             // Update count function
             function updateCount() {
                 // Gets counter target number to count to
-                const target = 100; // this somehow has to be a different variable for
+                const countId = counter.getAttribute("data-count");
+                const target = counterValues[countId]; // this somehow has to be a different variable for
                 // each stat i'm using membersCounter as a placeholder
                 // As long as the count is below the target number
                 if (count < target) {
