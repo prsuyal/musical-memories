@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Replace with your actual launch date
     var launchDate = new Date('2023/10/20'); // Use the format Year/Month/Day
     var currentDate = new Date();
-
+    
     // Function to update text content if element exists
     function updateTextContent(id, text) {
         var element = document.getElementById(id);
@@ -45,9 +45,65 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTextContent('daysSinceLaunch', days + ' days since launch');
 
     // Update these numbers with real data or retrieve them from an API/database
-    updateTextContent('membersCount', '27 members');
-    updateTextContent('seniorsPerformed', '50 seniors impacted');
-    updateTextContent('kidsTutored', '3 kids tutored');
-    updateTextContent('statesCount', '3 states');
-    updateTextContent('countriesCount', '2 countries');
+    var membersCounter = 51;
+    var seniorsPerformedCounter = 80;
+    var kidsTutoredCounter = 9;
+    var statesCounter = 3;
+    var countriesCounter = 2;
+    updateTextContent('membersCount', membersCounter + ' members');
+    updateTextContent('seniorsPerformed', seniorsPerformedCounter + ' seniors impacted');
+    updateTextContent('kidsTutored', kidsTutoredCounter + ' students tutored');
+    updateTextContent('statesCount', statesCounter + ' states');
+    updateTextContent('countriesCount', countriesCounter + ' countries');
+
+    counterValues = {
+        daysSinceLaunch: days,
+        membersCount: membersCounter,
+        seniorsPerformed: seniorsPerformedCounter,
+        kidsTutored: kidsTutoredCounter,
+        statesCount: statesCounter,
+        countriesCount: countriesCounter
+    };
+
+    for (var id in counterValues) {
+        updateTextContent(id, counterValues[id] + (id === 'daysSinceLaunch' ? ' days since launch' : ''));
+    }
 });
+
+const counters = document.querySelectorAll(".counters span");
+const container = document.querySelector(".counters");
+let activated = false; // Variable that tracks if the counters have been activated
+
+// Scroll event
+window.addEventListener("scroll", () =>  { 
+    // If the page is scrolled to the containers element and the counters are not activated
+    if(
+        pageYOffset > container.offsetTop && activated === false
+    ) {
+        console.log("test");
+        // Select all counters
+        counters.forEach(counter => {
+            // Set count variable to track the count
+            let count = 0;
+
+            // Update count function
+            function updateCount() {
+                // Gets counter target number to count to
+                const countId = counter.getAttribute("data-count");
+                const target = counterValues[countId]; // this somehow has to be a different variable for
+                // each stat i'm using membersCounter as a placeholder
+                // As long as the count is below the target number
+                if (count < target) {
+                    count++;
+                    counter.innerText = count; // Set the counter text to count
+                    // Repeat every 10 ms
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            }
+            updateCount();
+            activated = true;
+        });
+    }
+}) 
