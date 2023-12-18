@@ -708,3 +708,22 @@ footer {
     width: 100%;
 }
 
+.video-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 90%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+/* Upcoming Concert Section */
+.upcoming-concert {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
