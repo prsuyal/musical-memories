@@ -30,17 +30,43 @@
     
     <section class="tutoring-intro">
         <h1>Tutoring</h1>
-        <p>Our tutoring program is designed to support students who are passionate about music. Whether you're just starting or already advanced, our tutors are here to guide you.</p>
-        <p>This program is <strong>completely free</strong> and conducted by volunteers. All lessons are currently held online through Zoom and aim to prepare students for performances in various hospitals.</p>
+        <div class="tutoring-container">
+          <div class="tutoring-point">
+            Our tutoring program is designed to support students who are <strong>passionate about music</strong>. 
+          </div>
+          <div class="tutoring-point">
+            Whether you're just starting or already advanced, our tutors are here to <strong>guide you</strong>.
+          </div>
+          <!--i want to vertically center this (what's below), but not sure how-->
+          <div class="tutoring-point">
+            This program is <strong>completely free</strong> and conducted by volunteers.
+          </div>
+          <div class="tutoring-point">
+            All lessons are currently held <strong>online through Zoom</strong> and aim to prepare students for 
+            performances in <strong>various senior centers</strong>.
+          </div>
+          <!--same with this (below), it looks weird when not vertically centered-->
+          <div class="tutoring-point">
+            If you're an <strong>advanced musician</strong> looking for volunteering hours, sign up 
+            below to become a tutor!
+          </div>
+        </div>
     </section>
-    <a href="https://classroom.google.com" target="_blank" class="classroom-link">
-      <div class="classroom-join-box">
-          <img src="images/Google_Classroom_Logo.png" alt="Google Classroom Logo" class="classroom-logo">
-          <p class="classroom-code"><strong>azatmuv</strong></p>
-      </div>
-    </a>
 
-    
+    <section class="join-buttons">
+      <a href="https://classroom.google.com" target="_blank" class="classroom-link">
+        <div class="classroom-join-box">
+            <img src="images/Google_Classroom_Logo.png" alt="Google Classroom Logo" class="classroom-logo">
+            <p class="classroom-code"><strong>azatmuv</strong></p>
+        </div>
+      </a>
+      <a href="https://discord.gg/rBQVEEfNjK" target="_blank" class="discord-link">
+        <div class="discord-join-box">
+            <img src="images/discord-logo-with-name.png" alt="Discord Logo" class="discord-logo" width="250">
+        </div>
+      </a>
+    </section>
+
     <section class="lessons-offered">
         <h2>We currently offer lessons in:</h2>
         <div class="instruments-container">
@@ -53,9 +79,13 @@
             <div class="instrument-box">Violin</div>
         </div>
     </section>
-    
-    
 
+    <!--i want to center the two forms on the page, but for some reason the css is being annoying-->
+    <section class="signup-forms">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyybRoLym_V_jEoY3_zPrkLy5zhpuVSsoI9odwvF6H-t0mkw/viewform?embedded=true" width="49.5%vw" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeww6hheG1m-zJPzgAjF2AgmyYsyBXO4tPOBpdvt8tqYKCMfw/viewform?embedded=true" width="49.5%vw" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+    
     <footer>
         <p>&copy; 2023 Musical Memories. All rights reserved.</p>
         <p>Made by Pranshu Suyal for Musical Memories</p>
