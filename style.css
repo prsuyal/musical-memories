@@ -468,7 +468,7 @@ nav, nav a, footer {
 }
 
 .mission-statement {
-    background-color: #add8e6; 
+    background-color: #fff; 
     color: #333; 
     margin: 0.5rem;
     padding: 1.5rem; 
@@ -481,7 +481,7 @@ nav, nav a, footer {
 }
 
 .mission-statement:hover {
-    background-color: #00bfff; 
+    background-color: #ADD8E6; 
 }
 
 
