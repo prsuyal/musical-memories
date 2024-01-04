@@ -106,3 +106,34 @@ window.addEventListener("scroll", () =>  {
         });
     }
 }) 
+
+// Function to type out text like a typewriter
+function typeWriter(text, i, callback) {
+    
+    const typingElement = document.getElementById('typing');
+    
+    
+    if (i < text.length) {
+        // Append next character to the typing element
+        typingElement.innerHTML = text.substring(0, i+1) + '<span class="typing-cursor"></span>';
+
+        
+        setTimeout(function() {
+            typeWriter(text, i + 1, callback);
+        }, 40); // The speed of typing, in milliseconds
+    } else {
+        
+        if (callback) {
+            callback();
+        }
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const textToType = 'Providing students with an exciting and engaging way to develop their skills in the world of music';
+
+    
+    typeWriter(textToType, 0);
+});
