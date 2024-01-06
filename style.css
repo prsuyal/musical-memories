@@ -1058,4 +1058,46 @@ footer {
     animation: blink 0.75s step-end infinite;
   }
 
+/* Add this at the end of your existing CSS */
 
+@media (max-width: 768px) {
+    /* Ensure the staff container stacks its children vertically */
+    .staff {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust staff member cards to take full width and auto height for varying content */
+    .staff-member {
+        width: 100%; /* Full width of the container */
+        height: auto; /* Height is determined by content */
+        margin: 10px 0; /* Consistent vertical margin */
+        display: block; /* Stack the elements */
+    }
+
+    /* Ensure images within staff member cards are responsive and do not stretch */
+    .staff-photo {
+        max-width: 100%; /* Limit image width to its parent container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Keep rounded shape */
+    }
+
+    /* Adjust flip-card container to maintain aspect ratio and fit content */
+    .flip-card {
+        width: 100%; /* Full width */
+        height: auto; /* Height based on content */
+        margin-bottom: 20px; /* Space between flip-cards */
+    }
+
+    /* Adjust inner elements of flip-card for mobile view */
+    .flip-card-inner {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height based on content */
+    }
+
+    /* Adjust front and back of flip-card for mobile view */
+    .flip-card-front, .flip-card-back {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height based on content */
+    }
+}
