@@ -1061,37 +1061,62 @@ footer {
   /*
   IDFK HOW TO DO MOBILE STYLES FOR STAFF PAGE
   */
-  #hamburger-icon {
-    display: none; /* Hide by default */
-    cursor: pointer;
-    font-size: 24px; /* Icon size */
-    padding: 10px;
-  }
 
-  .nav-links {
+  /* Hide hamburger menu on desktop */
+#hamburger-icon {
+    display: none;
+  }
+  
+  /* Hide menu list on desktop */
+  nav ul {
     display: flex;
-    list-style: none;
   }
-
-  @media screen and (max-width: 768px) {
+  
+  /* Mobile styles */
+/* Styles for mobile */
+@media screen and (max-width: 768px) {
+    /* Show hamburger icon and adjust its styling */
     #hamburger-icon {
-      display: block; /* Show hamburger icon on small screens */
+      display: block;
+      cursor: pointer;
+      color: #fff; /* Set the color to white */
+      font-size: 24px; /* Set an appropriate font size */
+      position: absolute;
+      right: 20px; /* Adjust as needed */
+      top: 20px; /* Adjust as needed */
+    }
+    
+    /* Initially hide the menu items */
+    nav ul {
+      display: none !important;
+      position: absolute;
+      background-color: #333; /* Or any color you want for the dropdown */
+      top: 100%; /* Adjust based on the height of your nav */
+      left: 0;
+      right: 0;
+      z-index: 10;
     }
   
-    #nav-links {
-      display: none; /* Hide the full menu on small screens */
-      flex-direction: column; /* Stack the links vertically */
-      width: 100%; /* Full width */
-      text-align: left;
+    /* Show menu items when hamburger is clicked */
+    nav ul.active {
+      display: block !important;
     }
   
-    /* Show menu when hamburger is clicked */
-    #menu.active {
-      display: flex; /* Use 'flex' to display the menu */
+    /* Style for each nav item */
+    nav ul li {
+      text-align: center;
+      padding: 10px 0; /* Add padding as needed */
     }
   
-    /* Adjust logo positioning */
+    /* Ensure the navbar background extends across the full width */
+    nav {
+      background-color: #0A192F; /* Dark blue background */
+      padding: 10px 0; /* Adjust to your navbar's padding */
+    }
+    
+    /* Additional style to maintain the layout */
     .logo {
-      margin-right: auto; /* Pushes the logo to the left */
+      margin-left: 20px; /* Adjust as needed */
     }
   }
+  

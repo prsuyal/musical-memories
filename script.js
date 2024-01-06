@@ -138,9 +138,11 @@ document.addEventListener('DOMContentLoaded', function() {
     typeWriter(textToType, 0);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger-icon');
+    var navLinks = document.querySelector('.nav-links');
 
-function toggleNav() {
-    var menu = document.getElementById('nav-links');
-    menu.classList.toggle('active');
-  }
-  
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+});
