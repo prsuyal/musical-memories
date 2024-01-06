@@ -1057,62 +1057,66 @@ footer {
     border-right: 2px solid black;
     animation: blink 0.75s step-end infinite;
   }
-
   @media (max-width: 768px) {
+    /* Flexbox setup for staff container */
     .staff {
-        /* Resets for the staff container */
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
-
-    .staff-member {
-        /* Staff member cards should take the full width minus any desired padding or margin */
-        width: calc(100% - 20px);
-        /* Height should be determined by the content */
-        height: auto;
-        /* Stack the elements */
-        display: block;
-        /* Adjust margins to ensure cards do not touch each other vertically */
-        margin: 10px auto;
-        /* Align text to the center */
-        text-align: center;
-        /* Reset any flex properties */
-        flex: none;
-    }
-
-    .staff-photo {
-        /* Maintain aspect ratio of the images */
-        width: 200px; /* Adjust this value to fit your design */
-        height: 200px; /* This should be the same as width to maintain aspect ratio */
-        /* Center the image */
-        margin-left: auto;
-        margin-right: auto;
-        /* Ensure the images are round */
-        border-radius: 50%;
-    }
-
-    .flip-card {
-        /* No height restriction; let the content dictate the height */
-        height: auto;
-        /* If there's any specific width set, reset it to auto */
         width: 100%;
-        /* Remove perspective if it's causing issues with layout */
-        perspective: none;
+    }
+
+    /* Full-width staff member cards with automatic height */
+    .staff-member {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    /* Fixed-size images */
+    .staff-photo {
+        width: 150px; /* Fixed width for images */
+        height: 150px; /* Fixed height for images */
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto; /* Center the image */
+    }
+
+    /* Adjust flip card dimensions */
+    .flip-card {
+        width: 100%;
+        height: auto;
+        margin: 0 auto; /* Center the flip card */
     }
 
     .flip-card-inner {
-        /* Reset transform and transition properties if they're causing layout issues */
-        transform: none;
-        transition: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .flip-card-front, .flip-card-back {
-        /* Remove absolute positioning if it's causing overlap or layout issues */
-        position: relative;
-        /* Ensure the content dictates the height */
+    /* Adjust the front and back of the flip card */
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%;
         height: auto;
-        /* Remove any backface visibility properties if they're causing issues */
-        backface-visibility: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /* Ensure text does not overlap the images */
+    .flip-card-front .staff-title,
+    .flip-card-back .staff-description {
+        font-size: 14px; /* Adjust the font size as needed */
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 10px; /* Space between image and text */
     }
 }
-
