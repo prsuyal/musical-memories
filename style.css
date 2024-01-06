@@ -1084,11 +1084,13 @@ footer {
       position: absolute;
       right: 20px; /* Adjust as needed */
       top: 20px; /* Adjust as needed */
+
+      z-index: 20;
     }
     
     /* Initially hide the menu items */
     nav ul {
-      display: none !important;
+      display: none;
       position: absolute;
       background-color: #333; /* Or any color you want for the dropdown */
       top: 100%; /* Adjust based on the height of your nav */
@@ -1099,7 +1101,7 @@ footer {
   
     /* Show menu items when hamburger is clicked */
     nav ul.active {
-      display: block !important;
+      display: block;
     }
   
     /* Style for each nav item */
@@ -1116,7 +1118,169 @@ footer {
     
     /* Additional style to maintain the layout */
     .logo {
-      margin-left: 20px; /* Adjust as needed */
+      margin-left: 10px; /* Adjust as needed */
     }
   }
   
+  /* Default styles for the navbar */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Display hamburger menu */
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+
+    /* Hide the menu items */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        background-color: #333;
+    }
+
+    /* Style nav items for mobile */
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    /* Show the menu when 'active' class is added */
+    nav ul.active {
+        display: flex;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Display hamburger menu */
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 20;
+    }
+
+    /* Hide the menu items */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        background-color: #0A192F; /* Maintain dark blue background for consistency */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        border-top: 3px solid #e5f2ff; /* Highlight at the top of the menu */
+    }
+
+    /* Style nav items for mobile */
+    nav ul li {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #e5f2ff; /* Separators for the menu items */
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        color: #e5f2ff; /* Light blue text for better contrast */
+        text-transform: uppercase; /* Modern look with uppercase */
+        letter-spacing: 1px; /* Spacing for a clean look */
+        transition: background-color 0.3s ease; /* Smooth transition for hover */
+    }
+
+    nav ul li a:hover {
+        background-color: #1a2e40; /* Slightly darker on hover for interaction */
+    }
+
+    /* Show the menu when 'active' class is added */
+    nav ul.active {
+        display: flex;
+    }
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Display hamburger menu */
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 20;
+        transition: transform 0.3s ease; /* Animated transition for transform */
+    }
+
+    /* Change hamburger to 'X' when active */
+    
+
+    /* Hide the menu items */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        right: 0;
+        background-color: #0A192F; /* Maintain dark blue background for consistency */
+        margin-top: 20px; /* Give space above the dropdown */
+        border-top: 4px solid #e5f2ff; /* Add top border for separation */
+        padding: 0;
+    }
+
+    /* Style nav items for mobile */
+    nav ul li {
+        width: 100%;
+        padding: 12px 0px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e5f2ff; /* Separators for the menu items */
+    }
+
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        color: #e5f2ff; /* Light blue text for better contrast */
+        text-transform: uppercase; /* Modern look with uppercase */
+        letter-spacing: 1px; /* Spacing for a clean look */
+        transition: background-color 0.3s ease; /* Smooth transition for hover */
+    }
+
+    nav ul li a:hover {
+        background-color: #1a2e40; /* Slightly darker on hover for interaction */
+    }
+
+    /* Show the menu when 'active' class is added */
+    nav ul.active {
+        display: flex;
+    }
+
+    /* Adjust the navbar height when the dropdown is active */
+    nav.active {
+        padding-bottom: 255px; 
+    }
+}
+
