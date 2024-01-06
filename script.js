@@ -138,7 +138,9 @@ document.addEventListener('DOMContentLoaded', function() {
     typeWriter(textToType, 0);
 });
 
+
 function toggleMenu() {
-    var navWrapper = document.querySelector('.nav-wrapper');
-    navWrapper.classList.toggle('open');
-}
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+  

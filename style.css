@@ -1100,3 +1100,56 @@ footer {
         display: flex;
     }
 }
+/* Base styles for the nav */
+nav {
+    display: flex;
+    justify-content: space-between; /* Positions the logo and the hamburger on opposite sides */
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as necessary */
+  }
+  
+  /* Styling for the logo to be more to the left */
+  .logo-link {
+    flex-grow: 1; /* This will push the hamburger to the edge of the nav */
+  }
+  
+  /* Styling for the hamburger button */
+  .hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Adjust size as necessary */
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  /* Ensure the nav links are not displayed by default on mobile */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    /* Other styles for your nav links */
+  }
+  
+  /* Hide the nav links on mobile and display the hamburger button */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show the hamburger */
+    }
+  
+    .nav-links {
+      display: none; /* Hide the links on mobile */
+      flex-direction: column; /* Stack the links vertically */
+      position: absolute;
+      top: 100%; /* Position the dropdown below the nav bar */
+      right: 0;
+      background: #333; /* Match the nav background */
+      width: 100%; /* Full width of the screen */
+      /* Additional styles for the dropdown */
+    }
+  
+    /* When active class is added, the menu is visible */
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
