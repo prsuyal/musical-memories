@@ -1059,18 +1059,24 @@ footer {
   }
 
   @media (max-width: 768px) {
+    .staff {
+        display: block; 
+    }
+
     .staff-member {
-        flex: 0 0 100%; 
-        margin: 10px 0; 
+        flex: none; 
+        width: 100%; 
+        margin: 10px 0;
         height: auto; 
     }
 
     .flip-card {
+        width: 100%;
         height: auto;
     }
 
     .flip-card-inner {
-        height: auto; 
+        height: auto;
     }
 
     .staff-photo {
