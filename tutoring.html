@@ -94,10 +94,30 @@
         </div>
     </section>
 
-    <!--i want to center the two forms on the page, but for some reason the css is being annoying-->
+    <style>
+      .signup-forms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .signup-forms iframe {
+        width: 49.5%;
+        height: 1000px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .signup-forms iframe {
+          width: 99%;
+          margin-bottom: 25px;
+        }
+      }
+    </style>
+
     <section class="signup-forms">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyybRoLym_V_jEoY3_zPrkLy5zhpuVSsoI9odwvF6H-t0mkw/viewform?embedded=true" width="49.5%vw" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeww6hheG1m-zJPzgAjF2AgmyYsyBXO4tPOBpdvt8tqYKCMfw/viewform?embedded=true" width="49.5%vw" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyybRoLym_V_jEoY3_zPrkLy5zhpuVSsoI9odwvF6H-t0mkw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeww6hheG1m-zJPzgAjF2AgmyYsyBXO4tPOBpdvt8tqYKCMfw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
     
     <footer>
