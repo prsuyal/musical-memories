@@ -1057,3 +1057,24 @@ footer {
     border-right: 2px solid black;
     animation: blink 0.75s step-end infinite;
   }
+
+  @media (max-width: 768px) {
+    .staff-member {
+        flex: 0 0 100%; 
+        margin: 10px 0; 
+        height: auto; 
+    }
+
+    .flip-card {
+        height: auto;
+    }
+
+    .flip-card-inner {
+        height: auto; 
+    }
+
+    .staff-photo {
+        width: 300px; 
+        height: 300px; 
+    }
+}
