@@ -1059,47 +1059,60 @@ footer {
   }
 
   @media (max-width: 768px) {
-    /* Stack staff members vertically and center them */
     .staff {
-        display: flex;
-        flex-direction: column;
+        /* Resets for the staff container */
+        justify-content: center;
         align-items: center;
-        width: 100%; /* Ensure the container is full width */
     }
 
-    /* Make staff member cards full width, with no fixed height */
     .staff-member {
-        width: 100%; /* Full width of the screen */
-        margin: 10px 0; /* Consistent vertical spacing */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        display: block; /* Stack elements vertically */
+        /* Staff member cards should take the full width minus any desired padding or margin */
+        width: calc(100% - 20px);
+        /* Height should be determined by the content */
+        height: auto;
+        /* Stack the elements */
+        display: block;
+        /* Adjust margins to ensure cards do not touch each other vertically */
+        margin: 10px auto;
+        /* Align text to the center */
+        text-align: center;
+        /* Reset any flex properties */
+        flex: none;
     }
 
-    /* Control the size of the photos within the cards */
     .staff-photo {
-        width: 50%; /* Adjust the width to an appropriate size */
-        height: auto; /* Let the height scale automatically */
-        object-fit: cover; /* Ensures the image covers the area without stretching */
-        margin: 0 auto; /* Center the image within the card */
+        /* Maintain aspect ratio of the images */
+        width: 200px; /* Adjust this value to fit your design */
+        height: 200px; /* This should be the same as width to maintain aspect ratio */
+        /* Center the image */
+        margin-left: auto;
+        margin-right: auto;
+        /* Ensure the images are round */
+        border-radius: 50%;
     }
 
-    /* Adjust the flip card containers */
-    .flip-card,
+    .flip-card {
+        /* No height restriction; let the content dictate the height */
+        height: auto;
+        /* If there's any specific width set, reset it to auto */
+        width: 100%;
+        /* Remove perspective if it's causing issues with layout */
+        perspective: none;
+    }
+
     .flip-card-inner {
-        width: 100%; /* Full width of the staff member card */
-        height: auto; /* Let the height be determined by content */
+        /* Reset transform and transition properties if they're causing layout issues */
+        transform: none;
+        transition: none;
     }
 
-    /* Ensure the front and back of the flip card are full width and height scales automatically */
-    .flip-card-front,
-    .flip-card-back {
-        width: 100%; /* Full width */
-        height: auto; /* Height based on content */
-        display: flex; /* Use flexbox for alignment */
-        justify-content: center; /* Center content horizontally */
-        align-items: center; /* Center content vertically */
-        text-align: center; /* Center text */
-        padding: 20px; /* Add padding for spacing */
+    .flip-card-front, .flip-card-back {
+        /* Remove absolute positioning if it's causing overlap or layout issues */
+        position: relative;
+        /* Ensure the content dictates the height */
+        height: auto;
+        /* Remove any backface visibility properties if they're causing issues */
+        backface-visibility: visible;
     }
 }
 
