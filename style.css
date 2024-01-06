@@ -1153,3 +1153,8 @@ nav {
     }
   }
   
+  /* This will be applied when the hamburger menu is clicked */
+.nav-links.active {
+    display: block; 
+  }
+  
