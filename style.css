@@ -1061,3 +1061,42 @@ footer {
   /*
   IDFK HOW TO DO MOBILE STYLES FOR STAFF PAGE
   */
+
+  /* Style for the hamburger menu button */
+.hamburger {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Display the hamburger menu button on mobile screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show the button */
+        z-index: 15;
+    }
+
+    /* Hide the list of navigation links by default */
+    .nav-wrapper {
+        display: none;
+        flex-direction: column; /* Stack the links vertically */
+        background-color: #333; /* Match the nav background */
+        position: absolute; /* Position it below the nav bar */
+        width: 100%; /* Full width */
+        top: 100%;
+    }
+
+    /* Optional: Add styles for the links when the menu is opened */
+    .nav-wrapper a {
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid #fff; /* Add a border to separate items */
+    }
+
+    /* Show the navigation links when `.open` class is added to `.nav-wrapper` */
+    .nav-wrapper.open {
+        display: flex;
+    }
+}
