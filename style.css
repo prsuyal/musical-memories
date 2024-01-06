@@ -1062,71 +1062,65 @@ footer {
   IDFK HOW TO DO MOBILE STYLES FOR STAFF PAGE
   */
 
-  /* Hide hamburger menu on desktop */
 #hamburger-icon {
     display: none;
   }
   
-  /* Hide menu list on desktop */
+ 
   nav ul {
     display: flex;
   }
   
-  /* Mobile styles */
-/* Styles for mobile */
+  
 @media screen and (max-width: 768px) {
-    /* Show hamburger icon and adjust its styling */
+    
     #hamburger-icon {
       display: block;
       cursor: pointer;
-      color: #fff; /* Set the color to white */
-      font-size: 24px; /* Set an appropriate font size */
+      color: #fff; 
+      font-size: 24px;
       position: absolute;
-      right: 20px; /* Adjust as needed */
-      top: 20px; /* Adjust as needed */
+      right: 20px; 
+      top: 20px; 
 
       z-index: 20;
     }
     
-    /* Initially hide the menu items */
+   
     nav ul {
       display: none;
       position: absolute;
-      background-color: #333; /* Or any color you want for the dropdown */
-      top: 100%; /* Adjust based on the height of your nav */
+      background-color: #333; 
+      top: 100%; 
       left: 0;
       right: 0;
       z-index: 10;
     }
   
-    /* Show menu items when hamburger is clicked */
+   
     nav ul.active {
       display: block;
     }
   
-    /* Style for each nav item */
+   
     nav ul li {
       text-align: center;
-      padding: 10px 0; /* Add padding as needed */
+      padding: 10px 0; 
     }
   
-    /* Ensure the navbar background extends across the full width */
     nav {
-      background-color: #0A192F; /* Dark blue background */
-      padding: 10px 0; /* Adjust to your navbar's padding */
+      background-color: #0A192F; 
+      padding: 10px 0; 
     }
-    
-    /* Additional style to maintain the layout */
+   
     .logo {
-      margin-left: 10px; /* Adjust as needed */
+      margin-left: 10px; 
     }
   }
   
-  /* Default styles for the navbar */
-
-/* Mobile styles */
+ 
 @media (max-width: 768px) {
-    /* Display hamburger menu */
+    
     #hamburger-icon {
         display: block;
         cursor: pointer;
@@ -1134,18 +1128,18 @@ footer {
         font-size: 24px;
     }
 
-    /* Hide the menu items */
+
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
+        top: 60px;
         left: 0;
         background-color: #333;
     }
 
-    /* Style nav items for mobile */
+    
     nav ul li {
         width: 100%;
         text-align: center;
@@ -1156,15 +1150,15 @@ footer {
         width: 100%;
     }
 
-    /* Show the menu when 'active' class is added */
+    
     nav ul.active {
         display: flex;
     }
 }
 
-/* Mobile styles */
+
 @media (max-width: 768px) {
-    /* Display hamburger menu */
+    
     #hamburger-icon {
         display: block;
         cursor: pointer;
@@ -1176,47 +1170,47 @@ footer {
         z-index: 20;
     }
 
-    /* Hide the menu items */
+   
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
+        top: 60px; 
         left: 0;
-        background-color: #0A192F; /* Maintain dark blue background for consistency */
-        box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-        border-top: 3px solid #e5f2ff; /* Highlight at the top of the menu */
+        background-color: #0A192F; 
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+        border-top: 3px solid #e5f2ff; 
     }
 
-    /* Style nav items for mobile */
+    
     nav ul li {
         width: 100%;
         padding: 0;
-        border-bottom: 1px solid #e5f2ff; /* Separators for the menu items */
+        border-bottom: 1px solid #e5f2ff; 
     }
 
     nav ul li a {
         display: block;
         width: 100%;
-        color: #e5f2ff; /* Light blue text for better contrast */
-        text-transform: uppercase; /* Modern look with uppercase */
-        letter-spacing: 1px; /* Spacing for a clean look */
-        transition: background-color 0.3s ease; /* Smooth transition for hover */
+        color: #e5f2ff;
+        text-transform: uppercase;
+        letter-spacing: 1px; 
+        transition: background-color 0.3s ease; 
     }
 
     nav ul li a:hover {
-        background-color: #1a2e40; /* Slightly darker on hover for interaction */
+        background-color: #1a2e40; 
     }
 
-    /* Show the menu when 'active' class is added */
+
     nav ul.active {
         display: flex;
     }
 }
-/* Mobile styles */
+
 @media (max-width: 768px) {
-    /* Display hamburger menu */
+    
     #hamburger-icon {
         display: block;
         cursor: pointer;
@@ -1226,33 +1220,30 @@ footer {
         right: 20px;
         top: 20px;
         z-index: 20;
-        transition: transform 0.3s ease; /* Animated transition for transform */
+        transition: transform 0.3s ease; 
     }
 
-    /* Change hamburger to 'X' when active */
     
-
-    /* Hide the menu items */
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
+        top: 60px;
         left: 0;
         right: 0;
-        background-color: #0A192F; /* Maintain dark blue background for consistency */
-        margin-top: 20px; /* Give space above the dropdown */
-        border-top: 4px solid #e5f2ff; /* Add top border for separation */
+        background-color: #0A192F; 
+        margin-top: 20px;
+        border-top: 4px solid #e5f2ff; 
         padding: 0;
     }
 
-    /* Style nav items for mobile */
+    
     nav ul li {
         width: 100%;
         padding: 12px 0px;
         box-sizing: border-box;
-        border-bottom: 1px solid #e5f2ff; /* Separators for the menu items */
+        border-bottom: 1px solid #e5f2ff; 
     }
 
 
@@ -1263,30 +1254,30 @@ footer {
     nav ul li a {
         display: block;
         width: 100%;
-        color: #e5f2ff; /* Light blue text for better contrast */
-        text-transform: uppercase; /* Modern look with uppercase */
-        letter-spacing: 1px; /* Spacing for a clean look */
-        transition: background-color 0.3s ease; /* Smooth transition for hover */
+        color: #e5f2ff; 
+        text-transform: uppercase;
+        letter-spacing: 1px; 
+        transition: background-color 0.3s ease; 
     }
 
     nav ul li a:hover {
-        background-color: #1a2e40; /* Slightly darker on hover for interaction */
+        background-color: #1a2e40; 
     }
 
-    /* Show the menu when 'active' class is added */
+    
     nav ul.active {
         display: flex;
     }
 
-    /* Adjust the navbar height when the dropdown is active */
+  
     nav.active {
         padding-bottom: 255px; 
     }
 }
 
-/* Mobile styles */
+
 @media (max-width: 768px) {
-    /* Display hamburger menu */
+    
     #hamburger-icon {
         display: block;
         cursor: pointer;
@@ -1296,46 +1287,46 @@ footer {
         right: 20px;
         top: 20px;
         z-index: 20;
-        transition: transform 0.3s ease; /* Animated transition for transform */
+        transition: transform 0.3s ease;
     }
 
-    /* Hide the menu items */
+    
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
+        top: 60px; 
         left: 0;
         right: 0;
-        background-color: #0A192F; /* Maintain dark blue background for consistency */
-        margin-top: 20px; /* Give space above the dropdown */
-        border-top: 4px solid #e5f2ff; /* Add top border for separation */
+        background-color: #0A192F; 
+        margin-top: 20px;
+        border-top: 4px solid #e5f2ff; 
         padding: 0;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
-    /* Style nav items for mobile */
+    
     nav ul li {
-        width: calc(100% - 24px); /* Subtracting padding values */
-        text-align: left; /* Align text to the left */
-        padding: 12px; /* Consistent padding for all sides */
+        width: calc(100% - 24px); 
+        text-align: left; 
+        padding: 12px; 
         box-sizing: border-box;
-        border-bottom: 1px solid #e5f2ff; /* Separators for the menu items */
+        border-bottom: 1px solid #e5f2ff; 
     }
 
     nav ul li a {
         display: block;
         width: 100%;
-        color: #e5f2ff; /* Light blue text for better contrast */
-        text-transform: uppercase; /* Modern look with uppercase */
-        letter-spacing: 1px; /* Spacing for a clean look */
-        transition: background-color 0.3s ease; /* Smooth transition for hover */
-        padding-left: 24px; /* Add padding to align text */
+        color: #e5f2ff; 
+        text-transform: uppercase; 
+        letter-spacing: 1px; 
+        transition: background-color 0.3s ease; 
+        padding-left: 24px; 
     }
 
-    /* Adjust the navbar height when the dropdown is active */
+    
     nav.active {
-        padding-bottom: 255px; /* Adjust as needed */
+        padding-bottom: 255px; 
     }
 }

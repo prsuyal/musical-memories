@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     typeWriter(textToType, 0);
 });
 
-// Toggle navigation menu in mobile view
+
 document.addEventListener('DOMContentLoaded', function() {
     var hamburger = document.getElementById('hamburger-icon');
     var navLinks = document.querySelector('nav ul');
@@ -146,12 +146,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     hamburger.addEventListener('click', function() {
         navLinks.classList.toggle('active');
-        navBar.classList.toggle('active'); // Adjust the navbar height
-        // Toggle icon shape between hamburger and 'X'
+        navBar.classList.toggle('active'); 
         if (hamburger.innerHTML === '☰') {
-            hamburger.innerHTML = '✕'; // Change to 'X'
+            hamburger.innerHTML = '✕'; 
         } else {
-            hamburger.innerHTML = '☰'; // Change back to hamburger
+            hamburger.innerHTML = '☰'; 
         }
     });
 });
