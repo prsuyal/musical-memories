@@ -139,13 +139,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-  }
-
-  function toggleNav() {
-    var navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+function toggleNav() {
+    var menu = document.getElementById('nav-links');
+    menu.classList.toggle('active');
   }
   

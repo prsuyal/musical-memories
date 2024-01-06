@@ -1061,133 +1061,37 @@ footer {
   /*
   IDFK HOW TO DO MOBILE STYLES FOR STAFF PAGE
   */
-
-  /* Style for the hamburger menu button */
-.hamburger {
-    display: none; /* Hidden by default */
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #fff;
-}
-
-/* Display the hamburger menu button on mobile screens */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block; /* Show the button */
-        z-index: 15;
-    }
-
-    /* Hide the list of navigation links by default */
-    .nav-wrapper {
-        display: none;
-        flex-direction: column; /* Stack the links vertically */
-        background-color: #333; /* Match the nav background */
-        position: absolute; /* Position it below the nav bar */
-        width: 100%; /* Full width */
-        top: 100%;
-    }
-
-    /* Optional: Add styles for the links when the menu is opened */
-    .nav-wrapper a {
-        color: #fff;
-        padding: 10px;
-        border-bottom: 1px solid #fff; /* Add a border to separate items */
-    }
-
-    /* Show the navigation links when `.open` class is added to `.nav-wrapper` */
-    .nav-wrapper.open {
-        display: flex;
-    }
-}
-/* Base styles for the nav */
-nav {
-    display: flex;
-    justify-content: space-between; /* Positions the logo and the hamburger on opposite sides */
-    align-items: center;
-    padding: 10px 20px; /* Adjust padding as necessary */
-  }
-  
-  /* Styling for the logo to be more to the left */
-  .logo-link {
-    flex-grow: 1; /* This will push the hamburger to the edge of the nav */
-  }
-  
-  /* Styling for the hamburger button */
-  .hamburger {
-    display: none; /* Hidden by default */
-    font-size: 24px; /* Adjust size as necessary */
+  #hamburger-icon {
+    display: none; /* Hide by default */
     cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
+    font-size: 24px; /* Icon size */
+    padding: 10px;
   }
-  
-  /* Ensure the nav links are not displayed by default on mobile */
+
   .nav-links {
     display: flex;
     list-style: none;
-    /* Other styles for your nav links */
   }
-  
-  /* Hide the nav links on mobile and display the hamburger button */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block; /* Show the hamburger */
+
+  @media screen and (max-width: 768px) {
+    #hamburger-icon {
+      display: block; /* Show hamburger icon on small screens */
     }
   
-    .nav-links {
-      display: none; /* Hide the links on mobile */
+    #nav-links {
+      display: none; /* Hide the full menu on small screens */
       flex-direction: column; /* Stack the links vertically */
-      position: absolute;
-      top: 100%; /* Position the dropdown below the nav bar */
-      right: 0;
-      background: #333; /* Match the nav background */
-      width: 100%; /* Full width of the screen */
-      /* Additional styles for the dropdown */
+      width: 100%; /* Full width */
+      text-align: left;
     }
   
-    /* When active class is added, the menu is visible */
-    .nav-links.active {
-      display: flex;
+    /* Show menu when hamburger is clicked */
+    #menu.active {
+      display: flex; /* Use 'flex' to display the menu */
+    }
+  
+    /* Adjust logo positioning */
+    .logo {
+      margin-right: auto; /* Pushes the logo to the left */
     }
   }
-  
-  /* This will be applied when the hamburger menu is clicked */
-.nav-links.active {
-    display: block; 
-  }
-  
-/* This is to ensure the logo and the hamburger don't overlap */
-nav {
-    display: flex;
-    justify-content: space-between; /* This spreads out the logo and the hamburger */
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .logo-link {
-    flex: 1; /* This gives the logo some flexible space */
-    padding-right: 20px; /* Adjust the padding as needed */
-  }
-  
-  .hamburger {
-    cursor: pointer; /* This makes it clear the hamburger is clickable */
-    padding: 10px 20px; /* This gives some space around the hamburger */
-    border: none; /* Removes border if any */
-    background: none; /* Removes background styling if any */
-  }
-  
-  .nav-links {
-    display: none; /* This will hide the links initially */
-    /* Add more styling here for when they are displayed */
-  }
-  
-  /* This will make the nav links display when the .active class is added */
-  .nav-links.active {
-    display: flex;
-    flex-direction: column; /* Stack the links vertically */
-    align-items: flex-start; /* Align links to the start of the flex container */
-    padding: 10px; /* Add padding as needed */
-  }
-  
