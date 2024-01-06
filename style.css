@@ -1205,3 +1205,52 @@ footer {
         height: auto; /* Height should fit the content */
     }
 }
+@media (max-width: 768px) {
+    /* Adjust the staff member cards to stack vertically */
+    .staff {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make sure each staff member card is full width and automatically adjusts its height */
+    .staff-member {
+        width: 100%; /* Full width */
+        margin: 10px 0; /* Spacing between cards */
+        display: flex; /* Use flex to maintain internal layout */
+        flex-direction: column; /* Stack children elements vertically */
+        align-items: center; /* Center-align the child elements */
+        box-sizing: border-box; /* Include padding and border in width and height */
+    }
+
+    /* Reset any specific dimensions on the flip-card containers */
+    .flip-card,
+    .flip-card-inner,
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%; /* Full width */
+        height: auto; /* Auto height to fit content */
+    }
+
+    /* Adjust images within the staff member cards to maintain their aspect ratio */
+    .staff-photo {
+        width: 200px; /* Example fixed width, adjust as needed */
+        height: 200px; /* Match width to maintain aspect ratio */
+        object-fit: cover; /* Cover the area of the box */
+        border-radius: 50%; /* Keep them circular */
+    }
+
+    /* Since we've changed .staff-member to flex, the flip-card should also be adjusted */
+    .flip-card-front,
+    .flip-card-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    /* Adjust the content of the flip-card-back to not overflow */
+    .flip-card-back .staff-description {
+        overflow: auto; /* Adds scroll if content overflows */
+        max-height: 200px; /* Adjust as needed */
+    }
+}
