@@ -137,3 +137,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     typeWriter(textToType, 0);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger-icon');
+    var navLinks = document.querySelector('nav ul');
+    var navBar = document.querySelector('nav');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        navBar.classList.toggle('active'); 
+        if (hamburger.innerHTML === '☰') {
+            hamburger.innerHTML = '✕'; 
+        } else {
+            hamburger.innerHTML = '☰'; 
+        }
+    });
+});

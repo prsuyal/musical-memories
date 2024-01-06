@@ -1057,3 +1057,276 @@ footer {
     border-right: 2px solid black;
     animation: blink 0.75s step-end infinite;
   }
+
+  /*
+  IDFK HOW TO DO MOBILE STYLES FOR STAFF PAGE
+  */
+
+#hamburger-icon {
+    display: none;
+  }
+  
+ 
+  nav ul {
+    display: flex;
+  }
+  
+  
+@media screen and (max-width: 768px) {
+    
+    #hamburger-icon {
+      display: block;
+      cursor: pointer;
+      color: #fff; 
+      font-size: 24px;
+      position: absolute;
+      right: 20px; 
+      top: 20px; 
+
+      z-index: 20;
+    }
+    
+   
+    nav ul {
+      display: none;
+      position: absolute;
+      background-color: #333; 
+      top: 100%; 
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+  
+   
+    nav ul.active {
+      display: block;
+    }
+  
+   
+    nav ul li {
+      text-align: center;
+      padding: 10px 0; 
+    }
+  
+    nav {
+      background-color: #0A192F; 
+      padding: 10px 0; 
+    }
+   
+    .logo {
+      margin-left: 10px; 
+    }
+  }
+  
+ 
+@media (max-width: 768px) {
+    
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    
+    nav ul.active {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 20;
+    }
+
+   
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: #0A192F; 
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+        border-top: 3px solid #e5f2ff; 
+    }
+
+    
+    nav ul li {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #e5f2ff; 
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        color: #e5f2ff;
+        text-transform: uppercase;
+        letter-spacing: 1px; 
+        transition: background-color 0.3s ease; 
+    }
+
+    nav ul li a:hover {
+        background-color: #1a2e40; 
+    }
+
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 20;
+        transition: transform 0.3s ease; 
+    }
+
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #0A192F; 
+        margin-top: 20px;
+        border-top: 4px solid #e5f2ff; 
+        padding: 0;
+    }
+
+    
+    nav ul li {
+        width: 100%;
+        padding: 12px 0px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e5f2ff; 
+    }
+
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        color: #e5f2ff; 
+        text-transform: uppercase;
+        letter-spacing: 1px; 
+        transition: background-color 0.3s ease; 
+    }
+
+    nav ul li a:hover {
+        background-color: #1a2e40; 
+    }
+
+    
+    nav ul.active {
+        display: flex;
+    }
+
+  
+    nav.active {
+        padding-bottom: 255px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 20;
+        transition: transform 0.3s ease;
+    }
+
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        right: 0;
+        background-color: #0A192F; 
+        margin-top: 20px;
+        border-top: 4px solid #e5f2ff; 
+        padding: 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    
+    nav ul li {
+        width: calc(100% - 24px); 
+        text-align: left; 
+        padding: 12px; 
+        box-sizing: border-box;
+        border-bottom: 1px solid #e5f2ff; 
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        color: #e5f2ff; 
+        text-transform: uppercase; 
+        letter-spacing: 1px; 
+        transition: background-color 0.3s ease; 
+        padding-left: 24px; 
+    }
+
+    
+    nav.active {
+        padding-bottom: 255px; 
+    }
+}
