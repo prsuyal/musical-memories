@@ -1101,3 +1101,30 @@ footer {
         height: auto; /* Adjust height based on content */
     }
 }
+
+/* Base mobile styles */
+@media (max-width: 768px) {
+    /* Stack staff member cards vertically with full width */
+    .staff-member {
+        flex: 0 0 100%; /* Take full width */
+        max-width: 100%; /* Ensure the card does not exceed the width of the screen */
+        margin: 10px 0; /* Add vertical margin, remove horizontal margin */
+        height: auto; /* Height should fit content */
+        display: block; /* Override any flexbox settings */
+    }
+
+    /* Ensure the flip-cards are also taking the full width */
+    .flip-card,
+    .flip-card-inner,
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%; /* Full width for the flip card components */
+        height: auto; /* Height should fit content */
+    }
+
+    /* Adjust image sizes within the staff cards */
+    .staff-photo {
+        max-width: 100%; /* Responsive image width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
