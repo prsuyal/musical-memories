@@ -1058,199 +1058,48 @@ footer {
     animation: blink 0.75s step-end infinite;
   }
 
-/* Add this at the end of your existing CSS */
-
-@media (max-width: 768px) {
-    /* Ensure the staff container stacks its children vertically */
+  @media (max-width: 768px) {
+    /* Stack staff members vertically and center them */
     .staff {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Ensure the container is full width */
     }
 
-    /* Adjust staff member cards to take full width and auto height for varying content */
+    /* Make staff member cards full width, with no fixed height */
     .staff-member {
-        width: 100%; /* Full width of the container */
-        height: auto; /* Height is determined by content */
-        margin: 10px 0; /* Consistent vertical margin */
-        display: block; /* Stack the elements */
+        width: 100%; /* Full width of the screen */
+        margin: 10px 0; /* Consistent vertical spacing */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        display: block; /* Stack elements vertically */
     }
 
-    /* Ensure images within staff member cards are responsive and do not stretch */
+    /* Control the size of the photos within the cards */
     .staff-photo {
-        max-width: 100%; /* Limit image width to its parent container */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 50%; /* Keep rounded shape */
+        width: 50%; /* Adjust the width to an appropriate size */
+        height: auto; /* Let the height scale automatically */
+        object-fit: cover; /* Ensures the image covers the area without stretching */
+        margin: 0 auto; /* Center the image within the card */
     }
 
-    /* Adjust flip-card container to maintain aspect ratio and fit content */
-    .flip-card {
+    /* Adjust the flip card containers */
+    .flip-card,
+    .flip-card-inner {
+        width: 100%; /* Full width of the staff member card */
+        height: auto; /* Let the height be determined by content */
+    }
+
+    /* Ensure the front and back of the flip card are full width and height scales automatically */
+    .flip-card-front,
+    .flip-card-back {
         width: 100%; /* Full width */
         height: auto; /* Height based on content */
-        margin-bottom: 20px; /* Space between flip-cards */
-    }
-
-    /* Adjust inner elements of flip-card for mobile view */
-    .flip-card-inner {
-        width: 100%; /* Full width */
-        height: auto; /* Adjust height based on content */
-    }
-
-    /* Adjust front and back of flip-card for mobile view */
-    .flip-card-front, .flip-card-back {
-        width: 100%; /* Full width */
-        height: auto; /* Adjust height based on content */
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        text-align: center; /* Center text */
+        padding: 20px; /* Add padding for spacing */
     }
 }
 
-/* Base mobile styles */
-@media (max-width: 768px) {
-    /* Stack staff member cards vertically with full width */
-    .staff-member {
-        flex: 0 0 100%; /* Take full width */
-        max-width: 100%; /* Ensure the card does not exceed the width of the screen */
-        margin: 10px 0; /* Add vertical margin, remove horizontal margin */
-        height: auto; /* Height should fit content */
-        display: block; /* Override any flexbox settings */
-    }
-
-    /* Ensure the flip-cards are also taking the full width */
-    .flip-card,
-    .flip-card-inner,
-    .flip-card-front,
-    .flip-card-back {
-        width: 100%; /* Full width for the flip card components */
-        height: auto; /* Height should fit content */
-    }
-
-    /* Adjust image sizes within the staff cards */
-    .staff-photo {
-        max-width: 100%; /* Responsive image width */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
-@media (max-width: 768px) {
-    /* Adjust the staff container for mobile */
-    .staff {
-        display: block; /* Stack the staff-member elements vertically */
-    }
-
-    /* Adjust staff member cards for mobile */
-    .staff-member {
-        width: 100%; /* Full width */
-        margin: 10px 0; /* Add some vertical space between cards */
-        display: block; /* Stack the elements */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    }
-
-    /* Reset any specific height on the flip card to allow content to dictate height */
-    .flip-card,
-    .flip-card-inner {
-        height: auto; /* Allow the card to grow with content */
-    }
-
-    /* Adjust the image to maintain aspect ratio and fill the card area */
-    .staff-photo {
-        width: 50%; /* Reduce the size of the image to fit well within the card */
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover; /* Cover the area without stretching */
-        border-radius: 50%; /* Maintain round shape */
-        margin: auto; /* Center the image within the card */
-    }
-
-    /* Optional: Set a minimum height for flip-card-front and flip-card-back if needed */
-    .flip-card-front, .flip-card-back {
-        min-height: 250px; /* Adjust minimum height as needed */
-    }
-}
-
-@media (max-width: 768px) {
-    /* Container for staff members */
-    .staff {
-        display: block; /* Stack the staff members vertically */
-    }
-
-    /* Individual staff member card */
-    .staff-member {
-        width: 100%; /* Each staff member card takes full width */
-        margin: 10px 0; /* Add vertical margin for spacing */
-        box-sizing: border-box; /* Padding and border are included in the width and height */
-    }
-
-    /* Adjust the flip cards */
-    .flip-card {
-        height: auto; /* Height should fit the content */
-        /* Reset any specific width if set */
-    }
-
-    /* Adjust the images within the flip cards */
-    .staff-photo {
-        width: auto; /* Adjust the width to maintain aspect ratio */
-        height: auto; /* Adjust the height to maintain aspect ratio */
-        max-width: 100%; /* Ensure the image is not larger than its container */
-        border-radius: 50%; /* Maintain round shape */
-        object-fit: cover; /* Cover the area of the container without stretching */
-    }
-
-    /* Adjust the flip card inner container */
-    .flip-card-inner {
-        position: relative; /* Adjust if needed based on your layout */
-        width: 100%; /* Full width */
-        height: auto; /* Height should fit the content */
-    }
-
-    /* Front and back of the flip card */
-    .flip-card-front, .flip-card-back {
-        width: 100%; /* Full width */
-        height: auto; /* Height should fit the content */
-    }
-}
-@media (max-width: 768px) {
-    /* Adjust the staff member cards to stack vertically */
-    .staff {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Make sure each staff member card is full width and automatically adjusts its height */
-    .staff-member {
-        width: 100%; /* Full width */
-        margin: 10px 0; /* Spacing between cards */
-        display: flex; /* Use flex to maintain internal layout */
-        flex-direction: column; /* Stack children elements vertically */
-        align-items: center; /* Center-align the child elements */
-        box-sizing: border-box; /* Include padding and border in width and height */
-    }
-
-    /* Reset any specific dimensions on the flip-card containers */
-    .flip-card,
-    .flip-card-inner,
-    .flip-card-front,
-    .flip-card-back {
-        width: 100%; /* Full width */
-        height: auto; /* Auto height to fit content */
-    }
-
-    /* Adjust images within the staff member cards to maintain their aspect ratio */
-    .staff-photo {
-        width: 200px; /* Example fixed width, adjust as needed */
-        height: 200px; /* Match width to maintain aspect ratio */
-        object-fit: cover; /* Cover the area of the box */
-        border-radius: 50%; /* Keep them circular */
-    }
-
-    /* Since we've changed .staff-member to flex, the flip-card should also be adjusted */
-    .flip-card-front,
-    .flip-card-back {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px; /* Adjust padding as needed */
-    }
-
-    /* Adjust the content of the flip-card-back to not overflow */
-    .flip-card-back .staff-description {
-        overflow: auto; /* Adds scroll if content overflows */
-        max-height: 200px; /* Adjust as needed */
-    }
-}
