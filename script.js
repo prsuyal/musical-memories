@@ -144,8 +144,8 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
   }
 
-function toggleNav() {
+  function toggleNav() {
     var navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active'); // Toggles a class that shows or hides the menu
+    navLinks.classList.toggle('active');
   }
   

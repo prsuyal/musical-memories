@@ -1158,3 +1158,36 @@ nav {
     display: block; 
   }
   
+/* This is to ensure the logo and the hamburger don't overlap */
+nav {
+    display: flex;
+    justify-content: space-between; /* This spreads out the logo and the hamburger */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo-link {
+    flex: 1; /* This gives the logo some flexible space */
+    padding-right: 20px; /* Adjust the padding as needed */
+  }
+  
+  .hamburger {
+    cursor: pointer; /* This makes it clear the hamburger is clickable */
+    padding: 10px 20px; /* This gives some space around the hamburger */
+    border: none; /* Removes border if any */
+    background: none; /* Removes background styling if any */
+  }
+  
+  .nav-links {
+    display: none; /* This will hide the links initially */
+    /* Add more styling here for when they are displayed */
+  }
+  
+  /* This will make the nav links display when the .active class is added */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    align-items: flex-start; /* Align links to the start of the flex container */
+    padding: 10px; /* Add padding as needed */
+  }
+  
