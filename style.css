@@ -1128,3 +1128,38 @@ footer {
         height: auto; /* Maintain aspect ratio */
     }
 }
+
+@media (max-width: 768px) {
+    /* Adjust the staff container for mobile */
+    .staff {
+        display: block; /* Stack the staff-member elements vertically */
+    }
+
+    /* Adjust staff member cards for mobile */
+    .staff-member {
+        width: 100%; /* Full width */
+        margin: 10px 0; /* Add some vertical space between cards */
+        display: block; /* Stack the elements */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    /* Reset any specific height on the flip card to allow content to dictate height */
+    .flip-card,
+    .flip-card-inner {
+        height: auto; /* Allow the card to grow with content */
+    }
+
+    /* Adjust the image to maintain aspect ratio and fill the card area */
+    .staff-photo {
+        width: 50%; /* Reduce the size of the image to fit well within the card */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the area without stretching */
+        border-radius: 50%; /* Maintain round shape */
+        margin: auto; /* Center the image within the card */
+    }
+
+    /* Optional: Set a minimum height for flip-card-front and flip-card-back if needed */
+    .flip-card-front, .flip-card-back {
+        min-height: 250px; /* Adjust minimum height as needed */
+    }
+}
