@@ -1335,38 +1335,70 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Space between the join boxes */
+    gap: 30px; 
   }
   
   .join-box {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center content horizontally */
-    width: 250px; /* Explicit width */
-    height: 100px; /* Explicit height */
-    padding: 20px; /* Padding inside the boxes */
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    box-sizing: border-box; /* Include padding and border in the box's size */
+    box-sizing: border-box;
   }
   
   .join-box img {
-    height: 50px; /* Fixed height for images */
-    margin-right: 20px; /* Space between the logo and text */
+    height: 50px; 
+    margin-right: 20px;
   }
   
-  /* Additional styles for the anchor tags */
+
   .classroom-link, .discord-link {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
   }
   
-  /* Making sure the text is vertically centered and has consistent styling */
+ 
   .join-box span {
     display: block;
-    line-height: 50px; /* Align text with the logo image */
-    font-size: 1rem; /* Adjust the font size as necessary */
-    font-weight: bold; /* Optional: if you want the text to be bold */
+    line-height: 50px;
+    font-size: 1rem; 
+    font-weight: bold;
+  }
+ 
+  .previous-performances h2 {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 2rem;
+    color: #0A192F;
+    margin-bottom: 2rem;
+    text-align: center;
   }
   
+  .video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .video-container iframe {
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: none;
+    margin-bottom: 2rem; 
+  }
+  
+  @media (max-width: 768px) {
+    .video-container {
+      flex-direction: column;
+    }
+    
+    .video-container iframe {
+      width: 90vw; 
+      height: auto; 
+    }
+  }
