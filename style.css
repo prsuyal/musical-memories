@@ -1330,3 +1330,59 @@ footer {
         padding-bottom: 255px; 
     }
 }
+
+
+/* Set a fixed height for all cards and ensure the text is visible */
+.tutoring-point {
+    /* Existing styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: transparent; /* Assuming this is the card's background color */
+    color: #ffffff; /* This will make the text inside the cards white */
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+
+    /* New styles for fixed height and width */
+    height: 150px !important; /* Adjust the height as necessary */
+    width: 400px !important; /* Adjust the width as necessary */
+
+    
+}
+
+/* Ensure that the text is visible if it was not showing */
+.tutoring-desc strong {
+    color: #00bfff; /* Adjust if needed to make sure it stands out against the card background */
+}
+
+/* Apply styles to the container to ensure text visibility */
+.tutoring-desc {
+    color: #ffffff; /* This will make all text inside the cards white */
+    z-index: 2; /* Ensure text is above other elements */
+    position: relative; /* Position relative to the container */
+    /* Add any other styles you need for the text */
+}
+
+/* Specific styles for strong text, if needed */
+.tutoring-desc strong {
+    /* Your existing styles, if you have specific ones for strong text */
+    /* Example: */
+    color: #00bfff; /* This color will apply to <strong> elements */
+}
+
+/* Normal state of the arrows with a lighter color */
+.slick-prev:before, .slick-next:before {
+    color: #8699ab !important; /* Replace with your preferred normal color */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Hover state of the arrows with a darker color */
+.slick-prev:hover:before, .slick-next:hover:before {
+    color: #333 !important; /* Replace with your preferred hover color */
+}
+

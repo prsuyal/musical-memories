@@ -154,3 +154,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+$(document).ready(function(){
+    // Slick Carousel initialization
+    $('.carousel').slick({
+      infinite: true,
+      slidesToShow: 3, // Number of slides to show at once
+      slidesToScroll: 1, // Number of slides to scroll at once
+      autoplay: true, // Enable autoplay
+      autoplaySpeed: 4000, // Speed of autoplay in milliseconds
+    });
+    
+});
+
