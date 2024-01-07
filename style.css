@@ -545,8 +545,8 @@ nav, nav a, footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: repeating-conic-gradient(from var(--a), #00bfff 0%, #00bfff 5%, transparent 5%, transparent 40%, #00bfff 50%);
-    animation: animate 4s linear infinite;
+    background: repeating-conic-gradient(from var(--a), #1a2e40 0%, #1a2e40 5%, transparent 5%, transparent 40%, #1a2e40 50%);
+    animation: animate 8s linear infinite;
     border-radius: 20px; 
     z-index: 1;
 }
@@ -555,9 +555,9 @@ nav, nav a, footer {
     content: '';
     position: absolute;
     inset: 8px;
-    background: #325685;
+    background: #0a192f;
     border-radius: 15px;
-    border: 9px solid #4c87af; 
+    border: 9px solid #0a192f; 
     z-index: 1;
 }
 
@@ -567,7 +567,7 @@ nav, nav a, footer {
 }
 
 .tutoring-point strong {
-    color: #00bfff; 
+    color: #add8e6; 
     z-index: 2;
 }
 .tutoring-desc {
@@ -1330,3 +1330,43 @@ footer {
         padding-bottom: 255px; 
     }
 }
+
+.join-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between the join boxes */
+  }
+  
+  .join-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    width: 250px; /* Explicit width */
+    height: 100px; /* Explicit height */
+    padding: 20px; /* Padding inside the boxes */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    box-sizing: border-box; /* Include padding and border in the box's size */
+  }
+  
+  .join-box img {
+    height: 50px; /* Fixed height for images */
+    margin-right: 20px; /* Space between the logo and text */
+  }
+  
+  /* Additional styles for the anchor tags */
+  .classroom-link, .discord-link {
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  /* Making sure the text is vertically centered and has consistent styling */
+  .join-box span {
+    display: block;
+    line-height: 50px; /* Align text with the logo image */
+    font-size: 1rem; /* Adjust the font size as necessary */
+    font-weight: bold; /* Optional: if you want the text to be bold */
+  }
+  
