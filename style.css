@@ -1402,3 +1402,25 @@ footer {
       height: auto; 
     }
   }
+
+  .logo {
+    text-decoration: none; 
+    display: inline-block; 
+  }
+  
+  .logo:hover, .logo:focus {
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  
+  .logo::after {
+    display: none;
+  }
+  
+
+  nav a.logo:hover::after,
+  nav a.logo:focus::after {
+    display: none !important;
+  }
+  
