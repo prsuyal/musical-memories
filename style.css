@@ -862,7 +862,7 @@ footer {
 .staff-photo {
     position: relative;
     width: 80%;
-    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover; 
     border-radius: 50%; 
     margin: 0 auto 20px; 
