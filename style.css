@@ -861,7 +861,7 @@ footer {
 
 .staff-photo {
     position: relative;
-    width: 80%;
+    height: 60%;
     aspect-ratio: 1 / 1;
     object-fit: cover; 
     border-radius: 50%; 
@@ -869,12 +869,17 @@ footer {
     display: block; 
 }
 
+@media (max-width: 768) {
+    .staff-photo {
+        width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
     .staff-member {
       flex: 0 0 calc(100% - 20px) !important;
     }
 }
-/*test*/
 
 .flip-card {
     background-color: #f9f9f9;
