@@ -1319,4 +1319,49 @@ footer {
 }
 
 
+.donate-section {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #e5f2ff; 
+}
+
+.donate-heading {
+    font-size: 3.5rem; /* larger size for the main heading */
+    color: #0A192F;
+    margin-bottom: 10px;
+}
+
+.donate-subheading {
+    color: #6B7280; /* grey/dull color for the subheading */
+    font-weight: 400; /* normal font weight, not bold */
+}
+
+/* i think this makes button look better, but not sure */
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-family: 'Albert Sans', sans-serif;
+    border-radius: 25px;
+    background-color: #4c87af;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:hover {
+    background-color: #325685; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .button:active {
+    background-color: #214365; 
+    transform: translateY(1px); 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+  }
   
