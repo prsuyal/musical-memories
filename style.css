@@ -1319,4 +1319,20 @@ footer {
 }
 
 
-  
+.donate-section {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #e5f2ff; 
+}
+
+.donate-heading {
+    font-size: 3.5rem; /* larger size for the main heading */
+    color: #0A192F;
+    margin-bottom: 10px;
+}
+
+.donate-subheading {
+    color: #6B7280; /* grey/dull color for the subheading */
+    font-weight: 400; /* normal font weight, not bold */
+}
+
