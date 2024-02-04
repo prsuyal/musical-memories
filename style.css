@@ -545,8 +545,8 @@ nav, nav a, footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: repeating-conic-gradient(from var(--a), #1a2e40 0%, #1a2e40 5%, transparent 5%, transparent 40%, #1a2e40 50%);
-    animation: animate 8s linear infinite;
+    /*background: repeating-conic-gradient(from var(--a), #1a2e40 0%, #1a2e40 5%, transparent 5%, transparent 40%, #1a2e40 50%);
+    animation: animate 8s linear infinite; rest in peace goofy ahh animation*/
     border-radius: 20px; 
     z-index: 1;
 }
