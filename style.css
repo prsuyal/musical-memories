@@ -957,10 +957,6 @@ footer {
     position: relative; 
 }
 
-.staff-member:nth-of-type(n+3) {
-    flex: 0 0 calc(33.333% - 20px); 
-}
-
 .staff-photo {
     position: relative;
     height: 60%;
