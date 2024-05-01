@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update these numbers with real data or retrieve them from an API/database
     var membersCounter = 51;
-    var seniorsPerformedCounter = 80;
-    var kidsTutoredCounter = 9;
-    var statesCounter = 3;
-    var countriesCounter = 2;
+    var seniorsPerformedCounter = 435;
+    var kidsTutoredCounter = 21;
+    var statesCounter = 4;
+    var countriesCounter = 3;
     updateTextContent('membersCount', membersCounter + ' members');
     updateTextContent('seniorsPerformed', seniorsPerformedCounter + ' seniors impacted');
     updateTextContent('kidsTutored', kidsTutoredCounter + ' students tutored');
