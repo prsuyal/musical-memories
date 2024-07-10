@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var membersCounter = 51;
     var seniorsPerformedCounter = 550;
     var kidsTutoredCounter = 21;
-    var statesCounter = 4;
-    var countriesCounter = 3;
+    var statesCounter = 5;
+    var countriesCounter = 4;
     updateTextContent('membersCount', membersCounter + ' members');
     updateTextContent('seniorsPerformed', seniorsPerformedCounter + ' seniors impacted');
     updateTextContent('kidsTutored', kidsTutoredCounter + ' students tutored');
