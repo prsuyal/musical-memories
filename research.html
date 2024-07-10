@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Memories Research Competition</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Albert Sans', sans-serif;
+      background-color: #e5f2ff;
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 50px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav a img.logo {
+      height: 50px;
+      width: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #e5f2ff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      position: relative;
+      color: #fff;
+      padding: 8px 0;
+    }
+    nav a:hover {
+      background-color: #8699ab;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: visibility 0s, transform 0.3s ease-in-out;
+    }
+    nav a:hover::after {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .nav-wrapper {
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav ul {
+        flex-wrap: nowrap;
+      }
+      nav li {
+        margin-left: 15px;
+      }
+    }
+    header {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .signup-link {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .signup-link a {
+      color: #4c87af;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .signup-link a:hover {
+      text-decoration: underline;
+    }
+    .submission-portal {
+      padding: 20px;
+      text-align: center;
+    }
+    .submission-portal h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .form-group input[type="submit"] {
+      background-color: #4c87af;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #325685;
+    }
+    footer {
+      background-color: #333;
+      padding: 20px 0;
+      text-align: center;
+      color: black;
+      font-size: 14px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .social-icons {
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      margin: 0 5px;
+    }
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo"><img src="images/musical memories logo.png" alt="Musical Memories Logo" class="logo"></a>
+    <div id="hamburger-icon">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="tutoring.html">Tutoring</a></li>
+      <li><a href="hospice.html">Musical Hospice</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Music for Scientific Good</h1>
+    <p>Research a novel way that music can be used to help patients battling dementia or other similar disorders. You will be submitting a short paper or presentation highlighting your study.</p>
+    <p>We're accepting submissions from teams of 1-4 from July 7 to August 16!</p>
+    <p>Prizes could include cash, merch, and other special prizes!</p>
+    <p>If you're interested, <a href="https://forms.gle/FVHbmqKAXDc4KEsM8" target="_blank">sign up with this link</a>.</p>
+
+  </header>
+
+  <section class="submission-portal">
+    <h2>Ready to submit?</h2>
+    <div class="form-container">
+      <form action="https://formspree.io/f/mldrdeek" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="team-members">Names of Team Members (separated with commas):</label>
+          <textarea id="team-members" name="team-members" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="team-members-email">Emails of Team Members (separated with commas):</label>
+          <textarea id="team-members-email" name="team-members-email" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="upload">Upload Your Paper/Presentation:</label>
+          <input type="file" id="upload" name="upload" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" class="button">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:musicalmemories2023@gmail.com" target="_blank" class="icon-gmail">
+        <img src="images/icons8-gmail-48.png" class="icon grayscale" alt="Gmail Icon">
+        <img src="images/icons8-gmail-48-color.png" class="icon color" alt="Gmail Icon">
+      </a>
+      <a href="https://www.instagram.com/musicalmemories23" target="_blank" class="icon-instagram">
+        <img src="images/icons8-instagram-48.png" class="icon grayscale" alt="Instagram Icon">
+        <img src="images/icons8-instagram-48-color.png" class="icon color" alt="Instagram Icon">
+      </a>
+      <a href="https://www.tiktok.com/@musical.memories2?_t=8nuUom4GLVL&_r=1" target="_blank" class="icon-tiktok">
+        <img src="images/icons8-tiktok-48.png" class="icon grayscale" alt="Tiktok Icon">
+        <img src="images/icons8-tiktok-48-color.png" class="icon color" alt="Tiktok Icon">
+      </a>
+      <a href="https://discord.gg/rBQVEEfNjK" target="_blank" class="icon-discord">
+        <img src="images/icons8-discord-48.png" class="icon grayscale" alt="Discord Icon">
+        <img src="images/icons8-discord-48-color.png" class="icon color" alt="Discord Icon">
+      </a>
+    </div>
+    <p>&copy; 2024 Musical Memories. All rights reserved.</p>
+    <p>Made by Pranshu Suyal for Musical Memories</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

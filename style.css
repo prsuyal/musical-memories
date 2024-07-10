@@ -1360,4 +1360,29 @@ footer {
     transform: translateY(1px); 
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
   }
+
+.second-button {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-family: 'Albert Sans', sans-serif;
+    border-radius: 25px;
+    background-color: #d7d7d7;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: black;
+    border-style: dashed;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}  
+.second-button:hover {
+    background-color: #325685; 
+    transform: translateY(-2px); 
+  }
   
+  .second-button:active {
+    background-color: #214365; 
+    transform: translateY(1px); 
+  }

@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update these numbers with real data or retrieve them from an API/database
     var membersCounter = 51;
-    var seniorsPerformedCounter = 435;
+    var seniorsPerformedCounter = 550;
     var kidsTutoredCounter = 21;
     var statesCounter = 4;
     var countriesCounter = 3;
@@ -96,7 +96,7 @@ window.addEventListener("scroll", () =>  {
                     count++;
                     counter.innerText = count; // Set the counter text to count
                     // Repeat every 10 ms
-                    setTimeout(updateCount, 3000/target); // each one should take 3 seconds
+                    setTimeout(updateCount, 1000/target); 
                 } else {
                     counter.innerText = target;
                 }
