@@ -1372,7 +1372,7 @@ footer {
     text-align: center;
     text-decoration: none;
     border: black;
-    border-style: dashed;
+    border-style: dotted;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
