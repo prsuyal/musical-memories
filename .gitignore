@@ -19,9 +19,6 @@
 # typescript
 *.tsbuildinfo
 
-# Tailwind CSS
-tailwind.config.js
-postcss.config.js
 
 # IDE specific
 .vscode/
