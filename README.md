@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Musical Memories
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Musical Memories is an official, fiscally-sponsored nonprofit organization.
+
+The official Musical Memories website is written in Javascript and utilizes React and Tailwind. It can be found at https://musicalmemoriesusa.org.
+
+Made by Pranshu Suyal for Musical Memories.
 
 ## Available Scripts
 
