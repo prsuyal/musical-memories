@@ -96,7 +96,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/donate"
+                href="https://hcb.hackclub.com/donations/start/musical-memories"
                 className="text-mm-dark hover:text-mm-blue transition-colors"
               >
                 Donate

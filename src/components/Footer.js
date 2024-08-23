@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#donate" className="hover:underline">
+              <a href="https://hcb.hackclub.com/donations/start/musical-memories" className="hover:underline">
                 Donate
               </a>
             </li>
