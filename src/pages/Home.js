@@ -12,6 +12,8 @@ import MusicIcons from '../assets/images/music-icons.svg';
 import Performances from '../assets/images/performances.svg';
 import Tutoring from '../assets/images/tutoring.svg';
 import Workshops from '../assets/images/workshops.svg';
+import FAQ from '../components/FAQ';
+import ContactSection from '../components/ContactSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -206,6 +208,10 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <FAQ />
+        <ContactSection />
+
+
       </div>
     );
 }
