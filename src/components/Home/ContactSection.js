@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactMusicIcon from "../assets/images/contact-music-icon.svg";
+import ContactMusicIcon from "../../assets/images/contact-music-icon.svg";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
@@ -43,11 +43,15 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto py-8 sm:py-16 px-4">
-      <h2 className="text-4xl font-bold text-[#191A23] mb-2">Contact Us</h2>
-      <p className="text-xl text-[#191A23] mb-8">
-        Connect with Us: Let's Discuss Any Questions or Concerns
-      </p>
+    <section className="max-w-7xl mx-auto py-16 px-4">
+      <div className="flex items-center justify-between mb-8">
+        <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
+          Contact Us
+        </h2>
+        <p className="text-xl text-mm-dark">
+          Connect with Us: Let's Discuss Any Questions or Concerns
+        </p>
+      </div>
 
       <div className="bg-[#f3f4f6] rounded-3xl p-8 flex flex-col md:flex-row items-start">
         <div className="w-full md:w-2/3 pr-8">

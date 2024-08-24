@@ -107,14 +107,16 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="max-w-5xl mx-auto py-8 sm:py-16 px-4">
-      <h2 className="text-3xl sm:text-5xl font-bold mb-3 sm:mb-6 text-mm-dark">
-        Frequently Answered Questions
-      </h2>
-      <p className="text-xl sm:text-2xl text-mm-dark mb-6 sm:mb-12">
-        Answers to all of your questions about Musical Memories!
-      </p>
-      <div className="space-y-4 sm:space-y-6">
+    <section className="max-w-7xl mx-auto py-16 px-4">
+      <div className="flex items-center justify-between mb-8">
+        <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
+          Frequently Answered Questions
+        </h2>
+        <p className="text-xl text-mm-dark">
+          Answers to all of your questions about Musical Memories!
+        </p>
+      </div>
+      <div className="space-y-6">
         {faqData.map((item, index) => (
           <FAQItem
             key={index}

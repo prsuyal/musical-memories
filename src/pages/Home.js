@@ -12,9 +12,11 @@ import MusicIcons from "../assets/images/music-icons.svg";
 import Performances from "../assets/images/performances.svg";
 import Tutoring from "../assets/images/tutoring.svg";
 import Workshops from "../assets/images/workshops.svg";
-import FAQ from "../components/FAQ";
-import ContactSection from "../components/ContactSection";
+import FAQ from "../components/Home/FAQ";
+import ContactSection from "../components/Home/ContactSection";
 import Footer from "../components/Footer";
+import UpcomingEvents from "../components/Home/UpcomingEvents";
+import Team from "../components/Home/Team";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -207,69 +209,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section className="max-w-7xl mx-auto py-16 px-4">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
-            Upcoming Events
-          </h2>
-          <p className="text-xl text-mm-dark">What are we up to these days?</p>
-        </div>
-
-        <div className="bg-mm-dark rounded-3xl p-8">
-          <div className="flex justify-between text-white">
-            <div className="flex-1 border-r border-gray-600 pr-8">
-              <h3 className="text-3xl font-bold mb-3 text-mm-blue">
-                NYC Kaufman Music Event
-              </h3>
-              <p className="text-2xl font-bold mb-2">August 30</p>
-              <p className="text-xl mb-4">6-8 PM</p>
-              <p className="mb-4">
-                Join us for an enchanting evening at the Kaufman Music Center's
-                Ann Goodman Recital Hall. Experience captivating performances
-                and inspiring talks from renowned artists.
-              </p>
-              <button className="bg-mm-blue text-white py-2 px-4 rounded-lg flex items-center hover:bg-opacity-80 transition duration-300">
-                Register Now <span className="ml-2">→</span>
-              </button>
-            </div>
-
-            <div className="flex-1 border-r border-gray-600 px-8">
-              <h3 className="text-3xl font-bold mb-3 text-mm-blue">
-                Virtual Music Competition
-              </h3>
-              <p className="text-2xl font-bold mb-4">Aug 17 - Oct 17</p>
-              <p className="mb-4">
-                Showcase your talent in our international competition! Perform
-                or compose a piece and get evaluated by world-renowned mentors.
-                Open to all skill levels and genres.
-              </p>
-              <p className="text-lg font-semibold mb-4">
-                Submit via the second link in our Linktree.
-              </p>
-              <button className="bg-mm-blue text-white py-2 px-4 rounded-lg flex items-center hover:bg-opacity-80 transition duration-300">
-                Learn More <span className="ml-2">→</span>
-              </button>
-            </div>
-
-            <div className="flex-1 pl-8">
-              <h3 className="text-3xl font-bold mb-3 text-mm-blue">
-                Coming Soon...
-              </h3>
-              <p className="text-2xl font-bold mb-4">Stay Tuned!</p>
-              <p className="mb-4">
-                We're cooking up something exciting! More events and
-                opportunities are on the horizon. Be the first to know about our
-                upcoming musical adventures.
-              </p>
-              <button className="bg-mm-blue text-white py-2 px-4 rounded-lg flex items-center hover:bg-opacity-80 transition duration-300">
-                Get Notified <span className="ml-2">→</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <UpcomingEvents />
+      <Team />
       <FAQ />
       <ContactSection />
       <Footer />
