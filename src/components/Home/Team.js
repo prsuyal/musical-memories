@@ -1,14 +1,18 @@
-import React from 'react';
-import paavni from '../../assets/images/paavni.png';
-import pranshu from '../../assets/images/pranshu.jpeg';
-import abhinav from '../../assets/images/abhinav.png';
-import chinmayi from '../../assets/images/chinmayi.png';
-import gmail from '../../assets/images/icons8-gmail-black.svg';
+import React from "react";
+import paavni from "../../assets/images/paavni.png";
+import pranshu from "../../assets/images/pranshu.jpeg";
+import abhinav from "../../assets/images/abhinav.png";
+import chinmayi from "../../assets/images/chinmayi.png";
+import gmail from "../../assets/images/icons8-gmail-black.svg";
 
 const TeamMember = ({ image, name, role, email }) => (
   <div className="bg-white rounded-[45px] border border-[#191A23] shadow-[0_5px_0_0_#191A23] p-6 flex items-center space-x-4">
     <div className="w-16 h-16 rounded-full overflow-hidden">
-      <img src={image} alt={name} className="w-full h-full object-cover object-center " />
+      <img
+        src={image}
+        alt={name}
+        className="w-full h-full object-cover object-center "
+      />
     </div>
     <div className="flex-grow">
       <h3 className="font-bold text-lg">{name}</h3>
@@ -22,10 +26,30 @@ const TeamMember = ({ image, name, role, email }) => (
 
 const Team = () => {
   const teamMembers = [
-    { image: paavni, name: "Paavni Suyal", role: "Co-founder, President", email: "suyalpaavni10@gmail.com" },
-    { image: pranshu, name: "Pranshu Suyal", role: "Co-founder, Vice President", email: "suyalpranshu@gmail.com" },
-    { image: chinmayi, name: "Chinmayi Palya", role: "Director, Musical Hospice", email: "chinmayi.palya27@gmail.com" },
-    { image: abhinav, name: "Abhinav Kartik", role: "Director, Tutoring", email: "abhinavkartik05@gmail.com" },
+    {
+      image: paavni,
+      name: "Paavni Suyal",
+      role: "Co-founder, President",
+      email: "suyalpaavni10@gmail.com",
+    },
+    {
+      image: pranshu,
+      name: "Pranshu Suyal",
+      role: "Co-founder, Vice President",
+      email: "suyalpranshu@gmail.com",
+    },
+    {
+      image: chinmayi,
+      name: "Chinmayi Palya",
+      role: "Director, Musical Hospice",
+      email: "chinmayi.palya27@gmail.com",
+    },
+    {
+      image: abhinav,
+      name: "Abhinav Kartik",
+      role: "Director, Tutoring",
+      email: "abhinavkartik05@gmail.com",
+    },
   ];
 
   return (

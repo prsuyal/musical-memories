@@ -18,12 +18,12 @@ const IconWithHover = ({ defaultIcon, hoverIcon, alt, link }) => {
       rel="noopener noreferrer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="bg-white rounded-full p-1 w-8 h-8 flex items-center justify-center"
+      className="bg-white rounded-full p-1 w-7 h-7 md:w-8 md:h-8 flex items-center justify-center"
     >
       <img
         src={isHovered ? hoverIcon : defaultIcon}
         alt={alt}
-        className="w-5 h-5"
+        className="w-4 h-4 md:w-5 md:h-5"
       />
     </a>
   );
@@ -31,32 +31,44 @@ const IconWithHover = ({ defaultIcon, hoverIcon, alt, link }) => {
 
 const Footer = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4">
-      <footer className="bg-[#191A23] text-white py-8 px-8 rounded-t-[2.5rem] mt-8">
-        <nav className="flex justify-between items-center mb-12">
-          <ul className="flex space-x-8">
+    <div className="w-full md:max-w-7xl mx-auto px-0 md:px-4">
+      <footer className="bg-[#191A23] text-white py-6 md:py-8 px-4 md:px-8 md:rounded-t-[2.5rem] mt-8">
+        <nav className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-12">
+          <ul className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 mb-4 md:mb-0">
             <li>
-              <a href="#about" className="hover:underline">
+              <a href="#about" className="hover:underline text-sm md:text-base">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#impact" className="hover:underline">
+              <a
+                href="#impact"
+                className="hover:underline text-sm md:text-base"
+              >
                 Impact
               </a>
             </li>
             <li>
-              <a href="#chapters" className="hover:underline">
+              <a
+                href="#chapters"
+                className="hover:underline text-sm md:text-base"
+              >
                 Chapters
               </a>
             </li>
             <li>
-              <a href="https://hcb.hackclub.com/donations/start/musical-memories" className="hover:underline">
+              <a
+                href="https://hcb.hackclub.com/donations/start/musical-memories"
+                className="hover:underline text-sm md:text-base"
+              >
                 Donate
               </a>
             </li>
             <li>
-              <a href="#get-involved" className="hover:underline">
+              <a
+                href="#get-involved"
+                className="hover:underline text-sm md:text-base"
+              >
                 Get Involved
               </a>
             </li>
@@ -83,31 +95,33 @@ const Footer = () => {
           </div>
         </nav>
 
-        <div className="flex justify-between items-start mb-12">
-          <div>
-            <h3 className="text-[#b8dcff] text-lg mb-2 inline-block px-2 py-1 rounded-md bg-[#2D2F3E]">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-8 md:mb-12">
+          <div className="text-center md:text-left mb-4 md:mb-0">
+            <h3 className="text-[#b8dcff] text-base md:text-lg mb-2 inline-block px-2 py-1 rounded-md bg-[#2D2F3E]">
               Contact us:
             </h3>
-            <p className="mt-2 text-md">musicalmemories2023@gmail.com</p>
+            <p className="mt-2 text-sm md:text-md">
+              musicalmemories2023@gmail.com
+            </p>
           </div>
-          <div className="bg-[#2D2F3E] rounded-lg p-4 flex">
+          <div className="bg-[#2D2F3E] rounded-lg p-3 md:p-4 flex flex-col md:flex-row w-full md:w-auto">
             <input
               type="email"
               placeholder="Email"
-              className="bg-transparent border border-gray-600 rounded-l-lg px-4 py-2 focus:outline-none w-64"
+              className="bg-transparent border border-gray-600 rounded-lg md:rounded-l-lg px-3 md:px-4 py-2 focus:outline-none w-full md:w-64 mb-2 md:mb-0"
             />
             <button
               type="submit"
-              className="bg-[#b8dcff] text-[#191A23] px-6 py-2 rounded-r-lg font-semibold hover:bg-white transition duration-300"
+              className="bg-[#b8dcff] text-[#191A23] px-4 md:px-6 py-2 rounded-lg md:rounded-l-none md:rounded-r-lg font-semibold hover:bg-white transition duration-300 text-sm md:text-base"
             >
               Get more information
             </button>
           </div>
         </div>
 
-        <hr className="border-gray-600 mb-6" />
+        <hr className="border-gray-600 mb-4 md:mb-6" />
 
-        <div className="text-sm text-gray-400">
+        <div className="text-xs md:text-sm text-gray-400 text-center md:text-left">
           <p>© 2024 Musical Memories. All Rights Reserved.</p>
           <p>Made by Pranshu Suyal for Musical Memories.</p>
         </div>
