@@ -1,6 +1,6 @@
 import React from "react";
-import paavni from "../../assets/images/paavni.png";
-import pranshu from "../../assets/images/pranshu-new.png";
+import paavni from "../../assets/images/paav 1.png";
+import pranshu from "../../assets/images/pranshu-black 1.png";
 import abhinav from "../../assets/images/abhinav-new.png";
 import chinmayi from "../../assets/images/chinmayi-new.png";
 import gmail from "../../assets/images/icons8-gmail-black.svg";
