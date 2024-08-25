@@ -267,7 +267,7 @@ const GetInvolved = () => {
             </a>
           </div>
           <div className="bg-mm-gray p-8 rounded-xl shadow-md flex justify-center items-center">
-            <img src={Sunrise} alt="Sunrise Image" className="h-auto w-full object-cover rounded-lg" />
+            <img src={Sunrise} alt="Sunrise" className="h-auto w-full object-cover rounded-lg" />
           </div>
         </div>
       </section>
@@ -281,7 +281,7 @@ const GetInvolved = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-mm-gray p-8 rounded-xl shadow-md flex justify-center items-center">
-            <img src={Aslan} alt="Aslan Image" className="h-auto w-full object-cover rounded-lg" />
+            <img src={Aslan} alt="Aslan" className="h-auto w-full object-cover rounded-lg" />
           </div>
           <div className="bg-mm-gray p-8 rounded-xl shadow-md">
             <h3 className="text-2xl font-semibold mb-4">A Helping Hand</h3>
