@@ -1,14 +1,17 @@
 import React, { useRef } from 'react';
 import Tutoring from '../assets/images/tutoring.svg';
 import Helping from '../assets/images/helping.svg';
+import Aslan from '../assets/images/aslan workshop pic.png';
+import Sunrise from '../assets/images/sunrise pic.png'
+import Footer from "../components/Footer";
 
 const GetInvolved = () => {
   const sectionRef = useRef(null);
 
   return (
     <div className="bg-white">
-        <main className="flex justify-between items-start py-16 max-w-7xl mx-auto px-4">
-          <div className="max-w-xl mt-16">
+        <main className="flex justify-between items-start py-16 max-w-7xl mx-auto px-4 flex-col md:flex-row">
+          <div className="max-w-xl mt-16 text-center md:text-left">
             <h1 className="text-6xl mb-12 text-mm-dark">Get Involved</h1>
             <p className="text-xl text-mm-dark mb-12">
               Explore the different ways you can contribute to our mission and sign up to make a difference!
@@ -22,13 +25,13 @@ const GetInvolved = () => {
           </div>
         </main>
         <section id="internships" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center mb-8">
-            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Internships</h2>
-            <p className="text-xl text-mm-dark ml-6">
+          <div className="flex items-center mb-8 flex-col md:flex-row">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">Internships</h2>
+            <p className="text-xl text-mm-dark md:ml-6 text-center md:text-left">
               Like our mission and want to help out? Join one of our internship teams!
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
             <div className="bg-mm-dark p-8 rounded-xl shadow-md">
               <h3 className="text-2xl font-semibold text-mm-gray mb-4">Executive Management</h3>
               <p className="text-mm-gray text-lg">
@@ -60,10 +63,10 @@ const GetInvolved = () => {
             </button>
           </a>
         </section>
-        <section id="chapters" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Chapters</h2>
-            <p className="text-xl text-mm-dark ml-6">
+        <section id="chapters" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4 text-center md:text-left">
+          <div className="flex items-center justify-between flex-col md:flex-row">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">Chapters</h2>
+            <p className="text-xl text-mm-dark md:ml-6 mb-4 md:mb-1">
               Want to do more than just pariticipate? Form a chapter at your high school or town!
             </p>
             <a href="https://forms.gle/GK3emi6jP7DV21cm9" target="_blank">
@@ -73,10 +76,10 @@ const GetInvolved = () => {
             </a>
           </div>
         </section>
-        <section id="tutoring" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center mb-8">
-            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Tutoring</h2>
-            <p className="text-xl text-mm-dark ml-6">
+        <section id="tutoring" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4 text-center md:text-left">
+          <div className="flex items-center mb-8 flex-col md:flex-row">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">Tutoring</h2>
+            <p className="text-xl text-mm-dark md:ml-6">
               Our Tutoring Department connects experienced high school and university musicians with younger students eager to learn.
             </p>
           </div>
@@ -101,56 +104,60 @@ const GetInvolved = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <button className="bg-mm-dark rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden">
-              <div className="text-left">
-                <h3 className="text-2xl font-semibold mb-6 bg-white inline-block px-3 py-1 rounded-md">
-                  Student Sign-Up
-                </h3>
-                <div className="flex items-center text-mm-gray font-semibold mt-6">
-                  I want in
-                  <span className="ml-2 bg-black rounded-full p-2 inline-flex items-center justify-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </span>
+            <a href="https://forms.gle/E1rnjwGFkigSss1T6" target="_blank" className="w-full block">
+              <button className="bg-mm-dark rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full">
+                <div className="text-left">
+                  <h3 className="text-2xl font-semibold mb-6 bg-white inline-block px-3 py-1 rounded-md">
+                    Student Sign-Up
+                  </h3>
+                  <div className="flex items-center text-mm-gray font-semibold mt-6">
+                    I want in
+                    <span className="ml-2 bg-black rounded-full p-2 inline-flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <img src={Tutoring} alt="Student Sign-Up" className="h-40 w-40 object-contain" />
-            </button>
-            <button className="bg-mm-blue rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden">
-              <div className="text-left">
-                <h3 className="text-2xl font-semibold mb-6 bg-white inline-block px-3 py-1 rounded-md">
-                  Tutor Sign-Up
-                </h3>
-                <div className="flex items-center text-mm-dark font-semibold mt-6">
-                  I want in
-                  <span className="ml-2 bg-black rounded-full p-2 inline-flex items-center justify-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </span>
+                <img src={Tutoring} alt="Student Sign-Up" className="h-40 w-40 object-contain" />
+              </button>
+            </a>
+            <a href="https://forms.gle/E1rnjwGFkigSss1T6" target="_blank" className="w-full block">
+              <button className="bg-mm-blue rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full">
+                <div className="text-left">
+                  <h3 className="text-2xl font-semibold mb-6 bg-white inline-block px-3 py-1 rounded-md">
+                    Tutor Sign-Up
+                  </h3>
+                  <div className="flex items-center text-mm-dark font-semibold mt-6">
+                    I want in
+                    <span className="ml-2 bg-black rounded-full p-2 inline-flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <img src={Tutoring} alt="Tutor Sign-Up" className="h-40 w-40 object-contain" />
-            </button>
+                <img src={Tutoring} alt="Tutor Sign-Up" className="h-40 w-40 object-contain" />
+              </button>
+            </a>
           </div>
         </section>
-        <section id="performances" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center mb-8">
-            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Performances</h2>
-            <p className="text-xl text-mm-dark ml-6">
+        <section id="performances" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4 text-center md:text-left">
+          <div className="flex items-center mb-8 flex-col md:flex-row">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-3 md:mb-1">Performances</h2>
+            <p className="text-xl text-mm-dark md:ml-6">
               We conduct performances for a variety of causes, from professional recitals to dementia care.
             </p>
           </div>
@@ -167,20 +174,20 @@ const GetInvolved = () => {
               </a>
             </div>
             <div className="bg-mm-gray p-8 rounded-xl shadow-md flex justify-center items-center">
-              <img src="insertimagehere.jpg" alt="Applewood or Sunrise or Kaufman Image" className="h-auto w-full object-cover rounded-lg" />
+              <img src={Sunrise} alt="Sunrise Image" className="h-auto w-full object-cover rounded-lg" />
             </div>
           </div>
         </section>
-        <section id="workshops" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Workshops</h2>
-            <p className="text-xl text-mm-dark ml-6">
+        <section id="workshops" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4 text-center md:text-left">
+          <div className="flex items-center justify-between mb-8 flex-col md:flex-row">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">Workshops</h2>
+            <p className="text-xl text-mm-dark md:ml-6">
               We're dedicated to bringing music to students of all backgrounds, helping refugees, underprivileged students, and more!
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-mm-gray p-8 rounded-xl shadow-md flex justify-center items-center">
-              <img src="insertimagehere.jpg" alt="Aslan or Elija Image" className="h-auto w-full object-cover rounded-lg" />
+              <img src={Aslan} alt="Aslan Image" className="h-auto w-full object-cover rounded-lg" />
             </div>
             <div className="bg-mm-gray p-8 rounded-xl shadow-md">
               <h3 className="text-2xl font-semibold mb-4">A Helping Hand</h3>
@@ -195,10 +202,10 @@ const GetInvolved = () => {
             </div>
           </div>
         </section>
-        <section id="competitions" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center mb-8">
-            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Competitions</h2>
-            <p className="text-xl text-mm-dark ml-6">
+        <section id="competitions" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4 text-center md:text-left">
+          <div className="flex items-center mb-8 flex-col md:flex-row">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">Competitions</h2>
+            <p className="text-xl text-mm-dark md:ml-6">
               Have a competitive spirit? Check out these contests!
             </p>
           </div>
@@ -211,7 +218,7 @@ const GetInvolved = () => {
               <br></br>
               Team Size: Individual
               <br></br>
-              Deadline: [insert date here]
+              Deadline: October 17
               </p>
             </button>
             <button className="bg-mm-gray p-8 rounded-xl shadow-md">
@@ -222,7 +229,7 @@ const GetInvolved = () => {
                 <br></br>
                 Team Size: Individual
                 <br></br>
-                Deadline: [insert date here]
+                Deadline: Coming Soon!
               </p>
             </button>
             <button className="bg-mm-blue p-8 rounded-xl shadow-md">
@@ -237,11 +244,11 @@ const GetInvolved = () => {
             </button>
           </div>
         </section>
-        <section id="content" ref={sectionRef} className="max-w-7xl mx-auto py-2 px-4">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex items-center">
-              <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Content Creation</h2>
-              <p className="text-xl text-mm-dark ml-6 text-left">
+        <section id="content" ref={sectionRef} className="max-w-7xl mx-auto py-2 px-4 text-center md:text-left">
+          <div className="flex items-center justify-between mb-2 flex-col md:flex-row">
+            <div className="flex items-center flex-col md:flex-row">
+              <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">Content Creation</h2>
+              <p className="text-xl text-mm-dark md:ml-6 text-left mb-4 md:mb-1 text-center md:text-left">
                 Want to reach as many people as possible? Write about music!
               </p>
             </div>
@@ -252,10 +259,10 @@ const GetInvolved = () => {
             </a>
           </div>
         </section>
-        <section id="app-dev" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center mb-8">
-            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">App Dev</h2>
-            <p className="text-xl text-mm-dark text-left ml-6">
+        <section id="app-dev" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4 text-center md:text-left">
+          <div className="flex items-center mb-8 flex-col md:flex-row">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">App Dev</h2>
+            <p className="text-xl text-mm-dark md:text-left md:ml-6">
               Like to code? We're always developing apps to help bring music to as many people as possible!
             </p>
           </div>
@@ -267,15 +274,15 @@ const GetInvolved = () => {
               </p>
             </div>
             <div className="bg-mm-gray p-8 rounded-xl shadow-md">
-              <h3 className="text-2xl font-semibold mb-4">App 2</h3>
+              <h3 className="text-2xl font-semibold mb-4">Therapy Tunes</h3>
               <p className="text-mm-dark text-lg">
-                App description
+                Have you ever been in need of a playlist to relax your thoughts, especially when you're stressed out? Well, we're working on something to help you when you're down!
               </p>
             </div>
             <div className="bg-mm-gray p-8 rounded-xl shadow-md">
-              <h3 className="text-2xl font-semibold mb-4">App 3</h3>
+              <h3 className="text-2xl font-semibold mb-4">Coming Soon!</h3>
               <p className="text-mm-dark text-lg">
-              App description
+              We have a lot more in the works; join us to help bring new ideas to life!
               </p>
             </div>
           </div>
@@ -285,6 +292,7 @@ const GetInvolved = () => {
             </button>
           </a>
         </section>
+        <Footer />
     </div>
   );
 }
