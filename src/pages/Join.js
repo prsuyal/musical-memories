@@ -61,11 +61,14 @@ const GetInvolved = () => {
           </a>
         </section>
         <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-8 justify-between">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Chapters</h2>
             <p className="text-xl text-mm-dark ml-6">
               Want to do more than just pariticipate? Form a chapter at your high school or town!
             </p>
+            <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
+              Apply Here!
+            </button>
           </div>
         </section>
         <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
