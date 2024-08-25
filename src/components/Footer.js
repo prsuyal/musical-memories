@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import GmailIconBlack from "../assets/images/icons8-gmail-black.svg";
-import GmailIcon from "../assets/images/icons8-gmail.svg";
 import TikTokIcon from "../assets/images/icons8-tiktok.svg";
 import TikTokIconBlack from "../assets/images/icons8-tiktok-black.svg";
 import InstagramIcon from "../assets/images/icons8-instagram.svg";
@@ -36,13 +34,13 @@ const Footer = () => {
         <nav className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-12">
           <ul className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 mb-4 md:mb-0">
             <li>
-              <a href="#about" className="hover:underline text-sm md:text-base">
+              <a href="/about" className="hover:underline text-sm md:text-base">
                 About Us
               </a>
             </li>
             <li>
               <a
-                href="#impact"
+                href="/impact"
                 className="hover:underline text-sm md:text-base"
               >
                 Impact
@@ -50,7 +48,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#chapters"
+                href="/chapters"
                 className="hover:underline text-sm md:text-base"
               >
                 Chapters
@@ -66,7 +64,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#get-involved"
+                href="/get-involved"
                 className="hover:underline text-sm md:text-base"
               >
                 Get Involved
@@ -95,8 +93,8 @@ const Footer = () => {
           </div>
         </nav>
 
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-8 md:mb-12">
-          <div className="text-center md:text-left mb-4 md:mb-0">
+        <div className="flex flex-col items-center mb-8 md:mb-12">
+          <div className="text-center">
             <h3 className="text-[#b8dcff] text-base md:text-lg mb-2 inline-block px-2 py-1 rounded-md bg-[#2D2F3E]">
               Contact us:
             </h3>
@@ -104,24 +102,11 @@ const Footer = () => {
               musicalmemories2023@gmail.com
             </p>
           </div>
-          <div className="bg-[#2D2F3E] rounded-lg p-3 md:p-4 flex flex-col md:flex-row w-full md:w-auto">
-            <input
-              type="email"
-              placeholder="Email"
-              className="bg-transparent border border-gray-600 rounded-lg md:rounded-l-lg px-3 md:px-4 py-2 focus:outline-none w-full md:w-64 mb-2 md:mb-0"
-            />
-            <button
-              type="submit"
-              className="bg-[#b8dcff] text-[#191A23] px-4 md:px-6 py-2 rounded-lg md:rounded-l-none md:rounded-r-lg font-semibold hover:bg-white transition duration-300 text-sm md:text-base"
-            >
-              Get more information
-            </button>
-          </div>
         </div>
 
         <hr className="border-gray-600 mb-4 md:mb-6" />
 
-        <div className="text-xs md:text-sm text-gray-400 text-center md:text-left">
+        <div className="text-xs md:text-sm text-gray-400 text-center">
           <p>© 2024 Musical Memories. All Rights Reserved.</p>
           <p>Made by Pranshu Suyal for Musical Memories.</p>
         </div>

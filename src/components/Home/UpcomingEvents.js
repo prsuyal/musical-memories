@@ -6,6 +6,7 @@ const EventCardDesktop = ({
   time,
   description,
   ctaText,
+  ctaLink,
   isDisabled = false,
 }) => (
   <div className="flex flex-col h-full bg-mm-dark rounded-2xl p-6 text-white">
@@ -18,7 +19,12 @@ const EventCardDesktop = ({
     {isDisabled ? (
       <p className="text-gray-400 mt-auto">{ctaText}</p>
     ) : (
-      <a href="#" className="text-mm-blue hover:underline mt-auto">
+      <a
+        href={ctaLink}
+        className="text-mm-blue hover:underline mt-auto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {ctaText} →
       </a>
     )}
@@ -31,6 +37,7 @@ const EventCardMobile = ({
   time,
   description,
   ctaText,
+  ctaLink,
   isDisabled = false,
 }) => (
   <div className="flex flex-col bg-mm-dark rounded-2xl p-4 text-white">
@@ -41,7 +48,12 @@ const EventCardMobile = ({
     {isDisabled ? (
       <p className="text-gray-400 text-sm">{ctaText}</p>
     ) : (
-      <a href="#" className="text-mm-blue hover:underline text-sm">
+      <a
+        href={ctaLink}
+        className="text-mm-blue hover:underline text-sm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {ctaText} →
       </a>
     )}
@@ -70,6 +82,8 @@ const UpcomingEvents = () => {
       description:
         "Showcase your talent in our international competition! Perform or compose a piece and get evaluated by world-renowned mentors. Open to all skill levels and genres. Submit via the second link in our Linktree.",
       ctaText: "Sign up",
+      ctaLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSeATaamZsgcEnsmwqS8X3_AGrxWm46culJ4mbKskECFlgkqhQ/viewform",
     },
     {
       title: "Coming Soon...",
@@ -78,6 +92,7 @@ const UpcomingEvents = () => {
       description:
         "We're cooking up something exciting! More events and opportunities are on the horizon. Be the first to know about our upcoming musical adventures.",
       ctaText: "Sign up",
+      isDisabled: true,
     },
   ];
 
@@ -110,11 +125,11 @@ const UpcomingEvents = () => {
 
   return (
     <section className="max-w-7xl mx-auto py-8 md:py-16 px-4">
-      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between mb-6 md:mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg mb-4 md:mb-0">
+      <div className="flex items-center mb-8 flex-col md:flex-row">
+        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
           Upcoming Events
         </h2>
-        <p className="text-lg md:text-xl text-mm-dark text-center md:text-right">
+        <p className="text-lg md:text-xl text-mm-dark md:ml-6 text-center md:text-left">
           What are we up to these days?
         </p>
       </div>

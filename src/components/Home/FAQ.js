@@ -43,27 +43,27 @@ const FAQItem = ({ number, question, answer }) => {
   return (
     <div className="mb-6 rounded-[45px] border border-mm-dark bg-mm-blue shadow-[0_5px_0_0_#191A23]">
       <button
-        className="w-full text-left p-4 sm:p-8 flex justify-between items-center"
+        className="w-full text-left p-4 sm:p-8 flex flex-col sm:flex-row justify-between items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="flex items-center">
-          <span className="text-2xl sm:text-4xl font-bold mr-3 sm:mr-6 text-mm-dark">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start">
+          <span className="text-xl sm:text-4xl font-bold mr-0 sm:mr-6 text-mm-dark mb-2 sm:mb-0">
             {number.toString().padStart(2, "0")}
           </span>
-          <span className="text-lg sm:text-2xl font-medium text-mm-dark">
+          <span className="text-lg sm:text-2xl font-medium text-mm-dark text-center sm:text-left">
             {question}
           </span>
         </div>
         <span
           ref={plusMinusRef}
-          className="text-4xl sm:text-6xl text-mm-dark transition-transform duration-300"
+          className="text-3xl sm:text-6xl text-mm-dark transition-transform duration-300"
         >
           {isOpen ? "−" : "+"}
         </span>
       </button>
       <div ref={answerRef} className="overflow-hidden">
         <div className="px-4 sm:px-8 pb-4 sm:pb-8">
-          <p className="text-mm-dark ml-9 sm:ml-16 text-base sm:text-xl">
+          <p className="text-mm-dark text-base sm:text-xl text-center sm:text-left">
             {answer}
           </p>
         </div>
@@ -108,11 +108,11 @@ const FAQ = () => {
 
   return (
     <section className="max-w-7xl mx-auto py-16 px-4">
-      <div className="flex items-center justify-between mb-8">
-        <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
+      <div className="flex items-center mb-8 flex-col md:flex-row">
+        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
           Frequently Answered Questions
         </h2>
-        <p className="text-xl text-mm-dark">
+        <p className="text-lg md:text-xl text-mm-dark md:ml-6 text-center md:text-left">
           Answers to all of your questions about Musical Memories!
         </p>
       </div>
