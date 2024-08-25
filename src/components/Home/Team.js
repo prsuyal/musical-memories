@@ -1,8 +1,8 @@
 import React from "react";
 import paavni from "../../assets/images/paavni.png";
-import pranshu from "../../assets/images/pranshu.jpeg";
-import abhinav from "../../assets/images/abhinav.png";
-import chinmayi from "../../assets/images/chinmayi.png";
+import pranshu from "../../assets/images/pranshu-new.png";
+import abhinav from "../../assets/images/abhinav-new.png";
+import chinmayi from "../../assets/images/chinmayi-new.png";
 import gmail from "../../assets/images/icons8-gmail-black.svg";
 
 const TeamMember = ({ image, name, role, email }) => (
