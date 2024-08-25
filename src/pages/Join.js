@@ -308,7 +308,7 @@ const GetInvolved = () => {
           <button className="bg-mm-dark p-8 rounded-xl shadow-md">
             <h3 className="text-2xl font-semibold text-mm-gray mb-4">The Composition Challenge</h3>
             <p className="text-mm-gray text-lg">
-              Compose, or improvise, a musical piece of your own. There are no genre or instrument restrictions, so enjoy the process! Your submission will be a video of you performing the piece, to be featured in a Musical Memories livestream on [insert date]
+              Compose, or improvise, a musical piece of your own. There are no genre or instrument restrictions, so enjoy the process! Your submission will be a video of you performing the piece, to be featured in a Musical Memories livestream.
               <br />
               <br />
               Team Size: Individual
