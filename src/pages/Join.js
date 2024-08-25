@@ -1,14 +1,20 @@
 import React, { useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Tutoring from '../assets/images/tutoring.svg';
 import Helping from '../assets/images/helping.svg';
 import Aslan from '../assets/images/aslan workshop pic.png';
 import Sunrise from '../assets/images/sunrise pic.png';
 import Footer from "../components/Footer";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const GetInvolved = () => {
   const sectionRef = useRef(null);
   const location = useLocation();
+  const buttonRefs = useRef([]); 
+  const arrowRefs = useRef([]);
 
   useEffect(() => {
     const hash = location.hash;
@@ -21,6 +27,58 @@ const GetInvolved = () => {
         }
       }, 0);
     }
+
+    
+    buttonRefs.current.forEach((button, index) => {
+      const arrow = arrowRefs.current[index];
+
+      const updateArrow = (e) => {
+        const arrowRect = arrow.getBoundingClientRect();
+        const angle = Math.atan2(
+          e.clientY - (arrowRect.top + arrowRect.height / 2),
+          e.clientX - (arrowRect.left + arrowRect.width / 2)
+        );
+        gsap.to(arrow, {
+          rotation: angle * (180 / Math.PI),
+          duration: 0.2,
+          ease: "power2.out",
+        });
+      };
+
+      const resetArrow = () => {
+        gsap.to(arrow, {
+          rotation: -15,
+          duration: 0.2,
+          ease: "power2.out",
+        });
+      };
+
+      button.addEventListener("mousemove", updateArrow);
+      button.addEventListener("mouseleave", resetArrow);
+
+      button.addEventListener("mouseenter", () => {
+        gsap.to(button, { scale: 1.02, duration: 0.3, ease: "power2.out" });
+      });
+      button.addEventListener("mouseleave", () => {
+        gsap.to(button, { scale: 1, duration: 0.3, ease: "power2.out" });
+      });
+
+      button.addEventListener("mousedown", () => {
+        gsap.to(button, { boxShadow: "0 8px 0 0 #191A23", y: 1, duration: 0.1 });
+      });
+      button.addEventListener("mouseup", () => {
+        gsap.to(button, { boxShadow: "0 5px 0 0 #191A23", y: 0, duration: 0.1 });
+      });
+
+      return () => {
+        button.removeEventListener("mousemove", updateArrow);
+        button.removeEventListener("mouseleave", resetArrow);
+      };
+    });
+
+    arrowRefs.current.forEach((arrow) => {
+      gsap.set(arrow, { rotation: -15 });
+    });
   }, [location]);
 
   return (
@@ -87,7 +145,7 @@ const GetInvolved = () => {
         <div className="flex items-center justify-between flex-col md:flex-row">
           <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">Chapters</h2>
           <p className="text-lg md:text-xl text-mm-dark md:ml-6 mb-4 md:mb-1">
-            Want to do more than just participate? Form a chapter at your high school or town!
+            Want to do more than just participate? Start a chapter at your high school or town!
           </p>
           <a href="https://forms.gle/GK3emi6jP7DV21cm9" target="_blank">
             <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
@@ -126,7 +184,10 @@ const GetInvolved = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           <a href="https://forms.gle/E1rnjwGFkigSss1T6" target="_blank" className="w-full block">
-            <button className="bg-mm-dark rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full">
+            <button 
+              ref={(el) => (buttonRefs.current[0] = el)}
+              className="bg-mm-dark rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full"
+            >
               <div className="text-left">
                 <h3 className="text-2xl font-semibold mb-6 bg-white inline-block px-3 py-1 rounded-md">
                   Student Sign-Up
@@ -135,6 +196,7 @@ const GetInvolved = () => {
                   I want in
                   <span className="ml-2 bg-black rounded-full p-2 inline-flex items-center justify-center">
                     <svg
+                      ref={(el) => (arrowRefs.current[0] = el)}
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 text-white"
                       fill="none"
@@ -150,7 +212,10 @@ const GetInvolved = () => {
             </button>
           </a>
           <a href="https://forms.gle/E1rnjwGFkigSss1T6" target="_blank" className="w-full block">
-            <button className="bg-mm-blue rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full">
+            <button 
+              ref={(el) => (buttonRefs.current[1] = el)}
+              className="bg-mm-blue rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full"
+            >
               <div className="text-left">
                 <h3 className="text-2xl font-semibold mb-6 bg-white inline-block px-3 py-1 rounded-md">
                   Tutor Sign-Up
@@ -159,6 +224,7 @@ const GetInvolved = () => {
                   I want in
                   <span className="ml-2 bg-black rounded-full p-2 inline-flex items-center justify-center">
                     <svg
+                      ref={(el) => (arrowRefs.current[1] = el)}
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 text-white"
                       fill="none"

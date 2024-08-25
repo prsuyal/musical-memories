@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PaavniImage from '../assets/images/paavni.png';
 import PranshuImage from '../assets/images/pranshu-new.png';
 import AbhinavImage from '../assets/images/abhinav-new.png';
@@ -18,6 +18,14 @@ import Aleena from '../assets/images/aleena.svg';
 import Footer from '../components/Footer';
 
 const About = () => {
+  const teamRef = useRef(null);
+
+  const handleScrollToTeam = () => {
+    if (teamRef.current) {
+      teamRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const teamMembers = [
     {
       name: "Paavni Suyal",
@@ -70,8 +78,11 @@ const About = () => {
             <p className="text-lg md:text-xl text-mm-dark mb-6 md:mb-12">
               Meet the people working to make this a reality.
             </p>
-            <button className="px-6 py-3 md:px-8 md:py-4 bg-mm-dark text-white font-semibold rounded-xl">
-              Explore
+            <button
+              onClick={handleScrollToTeam}
+              className="px-6 py-3 md:px-8 md:py-4 bg-mm-dark text-white font-semibold rounded-xl"
+            >
+              Meet the Team
             </button>
           </div>
           <div className="mt-8 md:mt-0 md:pt-20 md:self-end">
@@ -83,7 +94,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-gray-100 p-8 rounded-tr-[40px] grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Wrapping the team members section with a ref */}
+        <div ref={teamRef} className="bg-gray-100 p-8 rounded-tr-[40px] grid grid-cols-1 md:grid-cols-2 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="relative w-full max-w-xs mx-auto group">
               <div className="aspect-w-3 aspect-h-4 rounded-tr-[40px] overflow-hidden relative">

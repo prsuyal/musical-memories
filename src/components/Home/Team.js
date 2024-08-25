@@ -68,9 +68,11 @@ const Team = () => {
         ))}
       </div>
       <div className="mt-8 flex justify-center md:justify-end">
+        <a href="/about">
         <button className="bg-[#191A23] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition duration-300">
           About Us
         </button>
+        </a>
       </div>
     </section>
   );

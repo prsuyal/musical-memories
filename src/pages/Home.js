@@ -115,9 +115,11 @@ const Home = () => {
             Providing students with an exciting and engaging way to develop
             their skills in the world of music
           </p>
+          <a href="/get-involved">
           <button className="px-6 py-3 md:px-8 md:py-4 bg-mm-dark text-white font-semibold rounded-xl">
             Join us
           </button>
+          </a>
         </div>
         <div className="mt-8 md:mt-0 md:pt-20 md:self-end">
           <img
@@ -214,9 +216,11 @@ const Home = () => {
               Have an idea? Want to do something different? Share your thoughts
               with our team!
             </p>
+            <a href="mailto:musicalmemories2023@gmail.com">
             <button className="px-5 py-2 md:px-6 md:py-3 bg-mm-dark text-white font-semibold rounded-xl text-base md:text-lg">
               Email us
             </button>
+            </a>
           </div>
           <div>
             <img

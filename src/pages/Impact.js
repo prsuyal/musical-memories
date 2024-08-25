@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ImpactImage from '../assets/images/impact.svg';
 import Gallery from '../assets/images/gallary.png';
 import Footer from '../components/Footer';
 
 const Impact = () => {
+  const impactRef = useRef(null);
+
+  const handleScrollToImpact = () => {
+    if (impactRef.current) {
+      impactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="bg-white min-h-screen">
       <main className="max-w-7xl mx-auto px-4 py-8 md:py-16">
@@ -15,8 +23,11 @@ const Impact = () => {
             <p className="text-lg md:text-xl text-mm-dark mb-6 md:mb-12">
               Since launch, Musical Memories has affected hundreds of people from all walks of life.
             </p>
-            <button className="px-6 py-3 md:px-8 md:py-4 bg-mm-dark text-white font-semibold rounded-xl">
-              Explore
+            <button
+              onClick={handleScrollToImpact}
+              className="px-6 py-3 md:px-8 md:py-4 bg-mm-dark text-white font-semibold rounded-xl"
+            >
+              See Our Impact
             </button>
           </div>
           <div className="mt-8 md:mt-0 md:pt-20 md:self-end">
@@ -28,7 +39,8 @@ const Impact = () => {
           </div>
         </div>
 
-        <div className="flex items-center mb-8 flex-col md:flex-row">
+        {/* Wrapping the impact details section with a ref */}
+        <div ref={impactRef} className="flex items-center mb-8 flex-col md:flex-row">
           <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
             The Journey So Far
           </h2>
