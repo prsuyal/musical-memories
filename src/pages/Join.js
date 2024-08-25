@@ -1,10 +1,5 @@
 import React, { useRef } from 'react';
 import Tutoring from '../assets/images/tutoring.svg';
-import Performances from '../assets/images/performances.svg';
-import Workshops from '../assets/images/workshops.svg';
-import Competitions from '../assets/images/competitions.svg';
-import ContentCreation from '../assets/images/content-creation.svg';
-import AppDevelopment from '../assets/images/app-development.svg';
 import Helping from '../assets/images/helping.svg';
 
 const GetInvolved = () => {
@@ -27,10 +22,57 @@ const GetInvolved = () => {
           </div>
         </main>
         <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center mb-8">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Internships</h2>
+            <p className="text-xl text-mm-dark ml-6">
+              Like our mission and want to help out? Join one of our internship teams!
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-mm-dark p-8 rounded-xl shadow-md">
+              <h3 className="text-2xl font-semibold text-mm-gray mb-4">Executive Management</h3>
+              <p className="text-mm-gray text-lg">
+              Executive Management Interns report directly to the President of Musical Memories, assisting with the management of the organization as a whole.
+              </p>
+            </div>
+            <div className="bg-mm-gray p-8 rounded-xl shadow-md">
+              <h3 className="text-2xl font-semibold mb-4">Human Resources</h3>
+              <p className="text-mm-dark text-lg">
+                HR Interns report directly to the Director of Tutoring, helping manage the Tutoring Department, conducting outreach for events, and networking with professionals to form new connections.
+              </p>
+            </div>
+            <div className="bg-mm-gray p-8 rounded-xl shadow-md">
+              <h3 className="text-2xl font-semibold mb-4">Event Coordination</h3>
+              <p className="text-mm-dark text-lg">
+              Event Coordination Interns report directly to the Director of Musical Hospice, forming relationships with organizations to host events with and brainstorming unique event ideas.
+              </p>
+            </div>
+            <div className="bg-mm-blue p-8 rounded-xl shadow-md">
+              <h3 className="text-2xl font-semibold text-mm-dark mb-4">PR + Graphic Design</h3>
+              <p className="text-mm-dark text-lg">
+              PR + Graphic Design Interns work to run the social media accounts of Musical Memories, designing creative Instagram posts with Canva and staying on-trend with TikTok.
+              </p>
+            </div>
+          </div>
+          <a href="https://forms.gle/vR8uWrcyU4zfLac7A" target="_blank">
+            <button className="w-full mt-8 bg-mm-dark text-white font-semibold py-4 rounded-lg text-center">
+              Apply to join Musical Memories!
+            </button>
+          </a>
+        </section>
+        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+          <div className="flex items-center mb-8">
+            <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Chapters</h2>
+            <p className="text-xl text-mm-dark ml-6">
+              Want to do more than just pariticipate? Form a chapter at your high school or town!
+            </p>
+          </div>
+        </section>
+        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+          <div className="flex items-center mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Tutoring</h2>
             <p className="text-xl text-mm-dark ml-6">
-              Our Tutoring Department connects experienced high school and university musicians with younger students eager to learn
+              Our Tutoring Department connects experienced high school and university musicians with younger students eager to learn.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -101,22 +143,11 @@ const GetInvolved = () => {
           </div>
         </section>
         <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Performances</h2>
             <p className="text-xl text-mm-dark ml-6">
               We conduct performances for a variety of causes, from professional recitals to dementia care.
             </p>
-          </div>
-          <div className="bg-mm-gray rounded-3xl py-16 px-12 flex justify-between items-center">
-            <div className="max-w-xl">
-              <h2 className="text-4xl font-bold text-mm-dark mb-4">We make things happen.</h2>
-              <p className="text-xl text-mm-dark mb-8">
-                Have an idea? Want to do something different? Share your thoughts with our team!
-              </p>
-              <button className="px-6 py-3 bg-mm-dark text-white font-semibold rounded-xl text-lg">
-                Email us
-              </button>
-            </div>
           </div>
         </section>
         <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
