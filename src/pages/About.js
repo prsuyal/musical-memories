@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import PaavniImage from '../assets/images/paav 1.png';
+import PaavniImage from '../assets/images/paavni.png';
 import PranshuImage from '../assets/images/pranshu-black 1.png';
 import AbhinavImage from '../assets/images/abhinav-new.png';
 import ChinmayiImage from '../assets/images/chinmayi-new.png';
