@@ -65,7 +65,6 @@ const Navbar = () => {
               </button>
             </div>
           </form>
-
           <ul className="hidden md:flex items-center space-x-2 lg:space-x-6">
             <li>
               <a

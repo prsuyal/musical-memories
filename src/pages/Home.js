@@ -21,6 +21,7 @@ import Team from "../components/Home/Team";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+
   const arrowRefs = useRef([]);
   const boxRefs = useRef([]);
   const sectionRef = useRef(null);
