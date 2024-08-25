@@ -44,17 +44,17 @@ const ContactSection = () => {
 
   return (
     <section className="max-w-7xl mx-auto py-16 px-4">
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col md:flex-row items-center justify-between mb-8 text-center md:text-left">
         <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
           Contact Us
         </h2>
-        <p className="text-xl text-mm-dark">
+        <p className="text-xl text-mm-dark mt-4 md:mt-0">
           Connect with Us: Let's Discuss Any Questions or Concerns
         </p>
       </div>
 
       <div className="bg-[#f3f4f6] rounded-3xl p-8 flex flex-col md:flex-row items-start">
-        <div className="w-full md:w-2/3 pr-8">
+        <div className="w-full md:w-2/3 pr-0 md:pr-8">
           <form
             onSubmit={handleSubmit}
             className="space-y-6"
@@ -70,8 +70,8 @@ const ContactSection = () => {
               </label>
             </p>
 
-            <div className="flex space-x-6 mb-6">
-              <label className="flex items-center cursor-pointer">
+            <div className="flex flex-col md:flex-row md:space-x-6 mb-6">
+              <label className="flex items-center cursor-pointer mb-4 md:mb-0">
                 <input
                   type="radio"
                   name="purpose"
@@ -161,7 +161,7 @@ const ContactSection = () => {
             )}
           </form>
         </div>
-        <div className="w-full md:w-1/3 mt-8 md:mt-0 flex justify-center">
+        <div className="w-full md:w-1/3 mt-8 md:mt-0 flex justify-center hidden md:block">
           <img
             src={ContactMusicIcon}
             alt="Music Icon"

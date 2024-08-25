@@ -6,12 +6,12 @@ import chinmayi from "../../assets/images/chinmayi-new.png";
 import gmail from "../../assets/images/icons8-gmail-black.svg";
 
 const TeamMember = ({ image, name, role, email }) => (
-  <div className="bg-white rounded-[45px] border border-[#191A23] shadow-[0_5px_0_0_#191A23] p-6 flex items-center space-x-4">
+  <div className="bg-white rounded-[45px] border border-[#191A23] shadow-[0_5px_0_0_#191A23] p-6 flex md:flex-row flex-col md:items-center items-center md:space-x-4 space-y-4 md:space-y-0 text-center md:text-left">
     <div className="w-16 h-16 rounded-full overflow-hidden">
       <img
         src={image}
         alt={name}
-        className="w-full h-full object-cover object-center "
+        className="w-full h-full object-cover object-center"
       />
     </div>
     <div className="flex-grow">
@@ -54,20 +54,20 @@ const Team = () => {
 
   return (
     <section className="max-w-7xl mx-auto py-16 px-4">
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col items-center mb-8 text-center md:text-left md:flex-row md:justify-between">
         <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
           Team
         </h2>
-        <p className="text-xl text-mm-dark">
+        <p className="text-xl text-mm-dark mt-4 md:mt-0">
           Meet the people behind this mission to spread joy
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
       </div>
-      <div className="mt-8 flex justify-end">
+      <div className="mt-8 flex justify-center md:justify-end">
         <button className="bg-[#191A23] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition duration-300">
           About Us
         </button>
