@@ -139,7 +139,7 @@ const GetInvolved = () => {
             </p>
           </div>
         </div>
-        <a href="https://forms.gle/vR8uWrcyU4zfLac7A" target="_blank">
+        <a href="https://forms.gle/vR8uWrcyU4zfLac7A" rel="noreferrer" target="_blank">
           <button className="w-full mt-8 bg-mm-dark text-white font-semibold py-4 rounded-lg text-center">
             Apply to join Musical Memories!
           </button>
@@ -152,7 +152,7 @@ const GetInvolved = () => {
           <p className="text-lg md:text-xl text-mm-dark md:ml-6 mb-4 md:mb-1">
             Want to do more than just participate? Start a chapter at your high school or town!
           </p>
-          <a href="https://forms.gle/GK3emi6jP7DV21cm9" target="_blank">
+          <a href="https://forms.gle/GK3emi6jP7DV21cm9" rel="noreferrer" target="_blank">
             <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
               Apply Here!
             </button>
@@ -188,7 +188,7 @@ const GetInvolved = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <a href="https://forms.gle/E1rnjwGFkigSss1T6" target="_blank" className="w-full block">
+          <a href="https://forms.gle/E1rnjwGFkigSss1T6" rel="noreferrer" target="_blank" className="w-full block">
             <button 
               ref={(el) => (buttonRefs.current[0] = el)}
               className="bg-mm-dark rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full"
@@ -216,7 +216,7 @@ const GetInvolved = () => {
               <img src={Tutoring} alt="Student Sign-Up" className="h-40 w-40 object-contain" />
             </button>
           </a>
-          <a href="https://forms.gle/E1rnjwGFkigSss1T6" target="_blank" className="w-full block">
+          <a href="https://forms.gle/E1rnjwGFkigSss1T6" rel="noreferrer" target="_blank" className="w-full block">
             <button 
               ref={(el) => (buttonRefs.current[1] = el)}
               className="bg-mm-blue rounded-[45px] p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex justify-between items-center relative overflow-hidden w-full"
@@ -260,7 +260,7 @@ const GetInvolved = () => {
             <p className="text-mm-dark text-lg">
               Our performances aim to bring joy and therapeutic benefits to diverse audiences. We collaborate with talented musicians and organizations to create events that not only entertain but also make a difference in the lives of others. From giving young musicians a platform to showcase their talents to helping ease the minds of dementia care patients, we use the healing power of music to lift those around us.
             </p>
-            <a href="https://forms.gle/v7uhB9ScBPoPYxbZ9" target="_blank">
+            <a href="https://forms.gle/v7uhB9ScBPoPYxbZ9" rel="noreferrer" target="_blank">
               <button className="bg-black text-white font-semibold py-3 px-6 rounded-lg mt-4">
                 Sign Up!
               </button>
@@ -288,7 +288,7 @@ const GetInvolved = () => {
             <p className="text-mm-dark text-lg">
               At the center of our mission is bringing music to those without it, and there really is no better way than using workshops to teach. If you are an experienced student musician with a passion for passing on your skills, join us as we attempt to make music a universal language.
             </p>
-            <a href="https://forms.gle/v7uhB9ScBPoPYxbZ9" target="_blank">
+            <a href="https://forms.gle/v7uhB9ScBPoPYxbZ9" rel="noreferrer" target="_blank">
               <button className="bg-black text-white font-semibold py-3 px-6 rounded-lg mt-4">
                 Sign Up!
               </button>
@@ -348,7 +348,7 @@ const GetInvolved = () => {
               Want to reach as many people as possible? Write about music!
             </p>
           </div>
-          <a href="https://forms.gle/ESDiL5QonzAzKWgN6" target="_blank">
+          <a href="https://forms.gle/ESDiL5QonzAzKWgN6" rel="noreferrer" target="_blank">
             <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
               Join the team!
             </button>
@@ -383,7 +383,7 @@ const GetInvolved = () => {
             </p>
           </div>
         </div>
-        <a href="https://forms.gle/ESDiL5QonzAzKWgN6" target="_blank">
+        <a href="https://forms.gle/ESDiL5QonzAzKWgN6" rel="noreferrer" target="_blank">
           <button className="w-full mt-8 bg-mm-dark text-white font-semibold py-4 rounded-lg text-center">
             Join our Dev Team and dive into our projects!
           </button>
