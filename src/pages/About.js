@@ -16,6 +16,8 @@ import Maya from '../assets/images/maya.svg';
 import Rudra from '../assets/images/rudra.svg';
 import Christine from '../assets/images/christine.svg';
 import Aleena from '../assets/images/aleena.svg';
+import Annika from '../assets/images/annika.svg';
+import Treya from '../assets/images/treya.svg';
 import Footer from '../components/Footer';
 
 const About = () => {
@@ -59,13 +61,15 @@ const About = () => {
     { name: "Christine Cho", role: "Manager, Instagram", image: Christine },
     { name: "Rudra Patel", role: "Manager, TikTok", image: Rudra },
     { name: "Maya Oommen", role: "Intern, Op. Mgt.", image: Maya },
+    { name: "Annika Raj", role: "Intern, HR", image: Annika},
     { name: "Paritosh Bhole", role: "Intern, HR", image: Paritosh },
     { name: "Rachel Su", role: "Intern, HR", image: Rachel },
+    { name: "Treya Ghosh", role: "Intern, HR", image: Treya },
+    { name: "Aryan Desai", role: "Intern, HR", image: Aryan },
     { name: "Brooklyn Chelakadan", role: "Intern, Op. Mgt.", image: Brooklyn },
     { name: "Rodaina Nasreldeen", role: "Intern, Op. Mgt.", image: Rodaina },
-    { name: "Aryan Desai", role: "Intern, HR", image: Aryan },
     { name: "Pranav Arun", role: "Intern, Event Coord.", image: Pranav },
-    { name: "Ariana Li", role: "Intern, PR", image: Ariana }
+    { name: "Ariana Li", role: "Intern, PR", image: Ariana },
   ];
 
   return (
