@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Tutoring from '../assets/images/tutoring.svg';
 import Helping from '../assets/images/helping.svg';
 import Aslan from '../assets/images/aslan workshop pic.png';
@@ -7,6 +8,20 @@ import Footer from "../components/Footer";
 
 const GetInvolved = () => {
   const sectionRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.replace('#', ''));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 0);
+    }
+  }, [location]);
 
   return (
     <div className="bg-white">

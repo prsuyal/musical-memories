@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AppDevelopment from "../assets/images/app-development.svg";
@@ -143,23 +144,28 @@ const Home = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {[
-            { title: "One-on-one tutoring", bg: "bg-mm-gray", img: Tutoring },
+            { title: "One-on-one tutoring", bg: "bg-mm-gray", img: Tutoring, id: "tutoring", path: "/get-involved" },
             {
               title: "High-quality performances",
               bg: "bg-mm-blue",
               img: Performances,
+              id: "performances",
+              path: "get-involved"
             },
-            { title: "Expert workshops", bg: "bg-mm-dark", img: Workshops },
-            { title: "Fun competitions", bg: "bg-mm-gray", img: Competitions },
+            { title: "Expert workshops", bg: "bg-mm-dark", img: Workshops, id: "workshops", path: "/get-involved" },
+            { title: "Fun competitions", bg: "bg-mm-gray", img: Competitions, id: "competitions", path: "/get-involved" },
             {
               title: "Content creation",
               bg: "bg-mm-blue",
               img: ContentCreation,
+              id: "content",
+              path: "/get-involved"
             },
-            { title: "App development", bg: "bg-mm-dark", img: AppDevelopment },
+            { title: "App development", bg: "bg-mm-dark", img: AppDevelopment, id: "app-dev", path: "/get-involved" },
           ].map((item, index) => (
-            <button
+            <Link
               key={index}
+              to={`${item.path}#${item.id}`}
               ref={(el) => (boxRefs.current[index] = el)}
               className={`${item.bg} rounded-[30px] md:rounded-[45px] p-6 md:p-10 border border-mm-dark shadow-[0_5px_0_0_#191A23] flex flex-col md:flex-row justify-between items-center relative overflow-hidden`}
             >
@@ -193,7 +199,7 @@ const Home = () => {
                 alt={item.title}
                 className="h-32 w-32 md:h-40 md:w-40 object-contain"
               />
-            </button>
+            </Link>
           ))}
         </div>
       </section>
