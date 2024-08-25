@@ -99,7 +99,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Wrapping the team members section with a ref */}
         <div ref={teamRef} className="bg-gray-100 p-8 rounded-tr-[40px] grid grid-cols-1 md:grid-cols-2 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="relative w-full max-w-xs mx-auto group">
