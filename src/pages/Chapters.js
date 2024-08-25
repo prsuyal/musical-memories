@@ -7,6 +7,7 @@ import HongKong from '../assets/images/hongkong.png';
 import Fullterton from '../assets/images/fullerton.png';
 import ChaptersImage from '../assets/images/chapters.svg';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const Chapters = () => {
   const chaptersRef = useRef(null);
@@ -19,6 +20,10 @@ const Chapters = () => {
 
   return (
     <div className="bg-white min-h-screen">
+        <Helmet>
+        <title>Chapters | Musical Memories</title>
+        <meta name="description" content="Explore Musical Memories' global presence with chapters spread over the globe." />
+      </Helmet>
       <main className="max-w-7xl mx-auto px-4 py-8 md:py-16">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start py-8 md:py-16 max-w-7xl mx-auto px-4">
           <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">
@@ -26,7 +31,7 @@ const Chapters = () => {
               Chapters
             </h1>
             <p className="text-lg md:text-xl text-mm-dark mb-6 md:mb-12">
-              Want to spread Musical Memories' mission in your own home? Join a chapter or start your own!
+              Explore our global presence, with chapters being set up all over the world.
             </p>
             <button
               onClick={handleScrollToChapters}
@@ -45,7 +50,6 @@ const Chapters = () => {
         </div>
       </main>
 
-      {/* Wrapping the chapters section with a ref */}
       <div ref={chaptersRef}>
         <div className="relative flex justify-end py-8">
           <div className="w-full md:w-3/4 lg:w-2/3 flex flex-col md:flex-row items-stretch rounded-l-3xl overflow-hidden bg-mm-dark text-white">

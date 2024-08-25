@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import PaavniImage from '../assets/images/paavni.png';
 import PranshuImage from '../assets/images/pranshu-new.png';
 import AbhinavImage from '../assets/images/abhinav-new.png';
@@ -69,6 +70,10 @@ const About = () => {
 
   return (
     <div className="bg-white min-h-screen">
+        <Helmet>
+        <title>About | Musical Memories</title>
+        <meta name="description" content="Meet the people who work to make Musical Memories a reality." />
+      </Helmet>
       <main className="max-w-7xl mx-auto px-4 py-8 md:py-16">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start py-8 md:py-16 max-w-7xl mx-auto px-4">
           <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">

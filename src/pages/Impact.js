@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import ImpactImage from '../assets/images/impact.svg';
 import Gallery from '../assets/images/gallary.png';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const Impact = () => {
   const impactRef = useRef(null);
@@ -14,6 +15,10 @@ const Impact = () => {
 
   return (
     <div className="bg-white min-h-screen">
+        <Helmet>
+        <title>Impact | Musical Memories</title>
+        <meta name="description" content="Explore the impact of Musical Memories through stats and images." />
+      </Helmet>
       <main className="max-w-7xl mx-auto px-4 py-8 md:py-16">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start py-8 md:py-16 max-w-7xl mx-auto px-4">
           <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">
@@ -39,7 +44,6 @@ const Impact = () => {
           </div>
         </div>
 
-        {/* Wrapping the impact details section with a ref */}
         <div ref={impactRef} className="flex items-center mb-8 flex-col md:flex-row">
           <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
             The Journey So Far

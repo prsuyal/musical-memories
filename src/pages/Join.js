@@ -7,6 +7,7 @@ import Helping from '../assets/images/helping.svg';
 import Aslan from '../assets/images/aslan workshop pic.png';
 import Sunrise from '../assets/images/sunrise pic.png';
 import Footer from "../components/Footer";
+import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,6 +84,10 @@ const GetInvolved = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Get Involved | Musical Memories</title>
+        <meta name="description" content="Explore all of the different ways to join Musical Memories and contribute to the mission." />
+      </Helmet>
       <main className="flex justify-between items-start py-8 md:py-16 max-w-7xl mx-auto px-4 flex-col md:flex-row">
         <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl mb-6 md:mb-12 text-mm-dark">Get Involved</h1>

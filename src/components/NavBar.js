@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Logo from "../assets/images/mm-logo.svg";
-import { Menu, X, Search } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const location = useLocation();
@@ -18,11 +17,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log("Searching for:", searchQuery);
-  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -39,7 +33,7 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-          <a href="/">
+            <a href="/">
               <img
                 src={Logo}
                 alt="Musical Memories Logo"
@@ -48,28 +42,6 @@ const Navbar = () => {
             </a>
           </div>
 
-          <form
-            onSubmit={handleSearch}
-            className={`${
-              isScrolled ? "opacity-100 w-1/3 mx-2 sm:mx-4" : "opacity-0 w-0"
-            } transition-all duration-300 ease-in-out overflow-hidden hidden md:block`}
-          >
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full py-1 sm:py-2 px-3 sm:px-4 rounded-full bg-white/50 placeholder-gray-500 outline-none text-sm"
-              />
-              <button
-                type="submit"
-                className="absolute right-2 sm:right-3 top-1/2 transform -translate-y-1/2"
-              >
-                <Search className="h-4 w-4 sm:h-5 sm:w-5 text-gray-500" />
-              </button>
-            </div>
-          </form>
           <ul className="hidden md:flex items-center space-x-2 lg:space-x-6">
             <li>
               <a
@@ -133,23 +105,6 @@ const Navbar = () => {
 
         {isMenuOpen && (
           <div className="md:hidden mt-2 bg-white rounded-lg shadow-lg p-3">
-            <form onSubmit={handleSearch} className="mb-3">
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full py-1 px-3 rounded-full bg-gray-100 placeholder-gray-500 outline-none text-sm"
-                />
-                <button
-                  type="submit"
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2"
-                >
-                  <Search className="h-4 w-4 text-gray-500" />
-                </button>
-              </div>
-            </form>
             <ul className="space-y-2">
               <li>
                 <a
