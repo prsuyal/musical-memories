@@ -13,7 +13,7 @@ const GetInvolved = () => {
             <p className="text-xl text-mm-dark mb-12">
               Explore the different ways you can contribute to our mission and sign up to make a difference!
             </p>
-            <button className="px-8 py-4 bg-mm-dark text-white font-semibold rounded-xl">
+            <button onClick={() => document.getElementById('internships').scrollIntoView({ behavior: 'smooth' })} className="px-8 py-4 bg-mm-dark text-white font-semibold rounded-xl">
               Join us
             </button>
           </div>
@@ -21,7 +21,7 @@ const GetInvolved = () => {
             <img src={Helping} alt="People holding hands" className="h-4x1" />
           </div>
         </main>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+        <section id="internships" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
           <div className="flex items-center mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Internships</h2>
             <p className="text-xl text-mm-dark ml-6">
@@ -60,18 +60,20 @@ const GetInvolved = () => {
             </button>
           </a>
         </section>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center mb-8 justify-between">
+        <section id="chapters" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+          <div className="flex items-center justify-between">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Chapters</h2>
             <p className="text-xl text-mm-dark ml-6">
               Want to do more than just pariticipate? Form a chapter at your high school or town!
             </p>
-            <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
-              Apply Here!
-            </button>
+            <a href="https://forms.gle/GK3emi6jP7DV21cm9" target="_blank">
+              <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
+                Apply Here!
+              </button>
+            </a>
           </div>
         </section>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+        <section id="tutoring" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
           <div className="flex items-center mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Tutoring</h2>
             <p className="text-xl text-mm-dark ml-6">
@@ -145,23 +147,55 @@ const GetInvolved = () => {
             </button>
           </div>
         </section>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+        <section id="performances" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
           <div className="flex items-center mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Performances</h2>
             <p className="text-xl text-mm-dark ml-6">
               We conduct performances for a variety of causes, from professional recitals to dementia care.
             </p>
           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-mm-gray p-8 rounded-xl shadow-md">
+              <h3 className="text-2xl font-semibold mb-4">Our Goals</h3>
+              <p className="text-mm-dark text-lg">
+                Our performances aim to bring joy and therapeutic benefits to diverse audiences. We collaborate with talented musicians and organizations to create events that not only entertain but also make a difference in the lives of others. From giving young musicians a platform to showcase their talents to helping ease the minds of dementia care patients, we use the healing power of music to lift those around us.
+              </p>
+              <a href="https://forms.gle/v7uhB9ScBPoPYxbZ9" target="_blank">
+                <button className="bg-black text-white font-semibold py-3 px-6 rounded-lg mt-4">
+                  Sign Up!
+                </button>
+              </a>
+            </div>
+            <div className="bg-mm-gray p-8 rounded-xl shadow-md flex justify-center items-center">
+              <img src="insertimagehere.jpg" alt="Applewood or Sunrise or Kaufman Image" className="h-auto w-full object-cover rounded-lg" />
+            </div>
+          </div>
         </section>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+        <section id="workshops" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Workshops</h2>
             <p className="text-xl text-mm-dark ml-6">
               We're dedicated to bringing music to students of all backgrounds, helping refugees, underprivileged students, and more!
             </p>
           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-mm-gray p-8 rounded-xl shadow-md flex justify-center items-center">
+              <img src="insertimagehere.jpg" alt="Aslan or Elija Image" className="h-auto w-full object-cover rounded-lg" />
+            </div>
+            <div className="bg-mm-gray p-8 rounded-xl shadow-md">
+              <h3 className="text-2xl font-semibold mb-4">A Helping Hand</h3>
+              <p className="text-mm-dark text-lg">
+                At the center of our mission is bringing music to those without it, and there really is no better way than using workshops to teach. If you are an experienced student musician with a passion for passing on your skills, join us as we attempt to make music a universal language.
+              </p>
+              <a href="https://forms.gle/v7uhB9ScBPoPYxbZ9" target="_blank">
+                <button className="bg-black text-white font-semibold py-3 px-6 rounded-lg mt-4">
+                  Sign Up!
+                </button>
+              </a>
+            </div>
+          </div>
         </section>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+        <section id="competitions" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
           <div className="flex items-center mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Competitions</h2>
             <p className="text-xl text-mm-dark ml-6">
@@ -203,7 +237,7 @@ const GetInvolved = () => {
             </button>
           </div>
         </section>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-2 px-4">
+        <section id="content" ref={sectionRef} className="max-w-7xl mx-auto py-2 px-4">
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center">
               <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">Content Creation</h2>
@@ -211,12 +245,14 @@ const GetInvolved = () => {
                 Want to reach as many people as possible? Write about music!
               </p>
             </div>
-            <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
-              Join the team!
-            </button>
+            <a href="https://forms.gle/ESDiL5QonzAzKWgN6" target="_blank">
+              <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
+                Join the team!
+              </button>
+            </a>
           </div>
         </section>
-        <section ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
+        <section id="app-dev" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4">
           <div className="flex items-center mb-8">
             <h2 className="text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg">App Dev</h2>
             <p className="text-xl text-mm-dark text-left ml-6">
@@ -243,9 +279,11 @@ const GetInvolved = () => {
               </p>
             </div>
           </div>
-          <button className="w-full mt-8 bg-mm-dark text-white font-semibold py-4 rounded-lg text-center">
-            Join our Dev Team and dive into our projects!
-          </button>
+          <a href="https://forms.gle/ESDiL5QonzAzKWgN6" target="_blank">
+            <button className="w-full mt-8 bg-mm-dark text-white font-semibold py-4 rounded-lg text-center">
+              Join our Dev Team and dive into our projects!
+            </button>
+          </a>
         </section>
     </div>
   );
