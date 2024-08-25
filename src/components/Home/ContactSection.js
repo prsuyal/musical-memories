@@ -43,12 +43,12 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto py-16 px-4">
-      <div className="flex flex-col md:flex-row items-center justify-between mb-8 text-center md:text-left">
-        <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
+    <section  id="contact-us"  className="max-w-7xl mx-auto py-16 px-4">
+      <div className="flex items-center mb-8 flex-col md:flex-row">
+        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
           Contact Us
         </h2>
-        <p className="text-xl text-mm-dark mt-4 md:mt-0">
+        <p className="text-lg md:text-xl text-mm-dark md:ml-6 text-center md:text-left">
           Connect with Us: Let's Discuss Any Questions or Concerns
         </p>
       </div>

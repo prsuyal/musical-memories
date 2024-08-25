@@ -54,11 +54,11 @@ const Team = () => {
 
   return (
     <section className="max-w-7xl mx-auto py-16 px-4">
-      <div className="flex flex-col items-center mb-8 text-center md:text-left md:flex-row md:justify-between">
-        <h2 className="text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg">
+      <div className="flex items-center mb-8 flex-col md:flex-row">
+        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
           Team
         </h2>
-        <p className="text-xl text-mm-dark mt-4 md:mt-0">
+        <p className="text-lg md:text-xl text-mm-dark md:ml-6 text-center md:text-left">
           Meet the people behind this mission to spread joy
         </p>
       </div>

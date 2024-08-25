@@ -108,11 +108,11 @@ const FAQ = () => {
 
   return (
     <section className="max-w-7xl mx-auto py-16 px-4">
-      <div className="flex flex-col items-center sm:flex-row sm:items-center justify-between mb-8 text-center sm:text-left">
-        <h2 className="text-3xl sm:text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg mb-4 sm:mb-0">
+      <div className="flex items-center mb-8 flex-col md:flex-row">
+        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
           Frequently Answered Questions
         </h2>
-        <p className="text-lg sm:text-xl text-mm-dark">
+        <p className="text-lg md:text-xl text-mm-dark md:ml-6 text-center md:text-left">
           Answers to all of your questions about Musical Memories!
         </p>
       </div>

@@ -110,11 +110,11 @@ const UpcomingEvents = () => {
 
   return (
     <section className="max-w-7xl mx-auto py-8 md:py-16 px-4">
-      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between mb-6 md:mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue px-4 py-2 rounded-lg mb-4 md:mb-0">
+      <div className="flex items-center mb-8 flex-col md:flex-row">
+        <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
           Upcoming Events
         </h2>
-        <p className="text-lg md:text-xl text-mm-dark text-center md:text-right">
+        <p className="text-lg md:text-xl text-mm-dark md:ml-6 text-center md:text-left">
           What are we up to these days?
         </p>
       </div>

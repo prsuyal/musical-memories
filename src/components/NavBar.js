@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Logo from "../assets/images/mm-logo.svg";
 import { Menu, X, Search } from "lucide-react";
 
@@ -6,6 +7,8 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,11 +39,13 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img
-              src={Logo}
-              alt="Musical Memories Logo"
-              className="h-6 w-6 sm:h-8 sm:w-8"
-            />
+          <a href="/">
+              <img
+                src={Logo}
+                alt="Musical Memories Logo"
+                className="h-6 w-6 sm:h-8 sm:w-8"
+              />
+            </a>
           </div>
 
           <form
@@ -69,7 +74,9 @@ const Navbar = () => {
             <li>
               <a
                 href="/about"
-                className="text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base"
+                className={`text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base ${
+                  location.pathname === "/about" ? "font-bold" : ""
+                }`}
               >
                 About Us
               </a>
@@ -77,7 +84,9 @@ const Navbar = () => {
             <li>
               <a
                 href="/impact"
-                className="text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base"
+                className={`text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base ${
+                  location.pathname === "/impact" ? "font-bold" : ""
+                }`}
               >
                 Impact
               </a>
@@ -85,7 +94,9 @@ const Navbar = () => {
             <li>
               <a
                 href="/chapters"
-                className="text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base"
+                className={`text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base ${
+                  location.pathname === "/chapters" ? "font-bold" : ""
+                }`}
               >
                 Chapters
               </a>
@@ -93,7 +104,9 @@ const Navbar = () => {
             <li>
               <a
                 href="https://hcb.hackclub.com/donations/start/musical-memories"
-                className="text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base"
+                className={`text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base`}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Donate
               </a>
@@ -101,7 +114,9 @@ const Navbar = () => {
             <li>
               <a
                 href="/get-involved"
-                className="px-3 py-1 lg:px-4 lg:py-2 border border-mm-dark text-mm-dark rounded-full hover:bg-mm-dark hover:text-white transition-colors text-sm lg:text-base"
+                className={`px-3 py-1 lg:px-4 lg:py-2 border border-mm-dark text-mm-dark rounded-full hover:bg-mm-dark hover:text-white transition-colors text-sm lg:text-base ${
+                  location.pathname === "/get-involved" ? "font-bold" : ""
+                }`}
               >
                 Get Involved
               </a>
@@ -139,7 +154,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/about"
-                  className="block py-1 text-mm-dark hover:text-mm-blue transition-colors text-sm"
+                  className={`block py-1 text-mm-dark hover:text-mm-blue transition-colors text-sm ${
+                    location.pathname === "/about" ? "font-bold" : ""
+                  }`}
                 >
                   About Us
                 </a>
@@ -147,7 +164,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/impact"
-                  className="block py-1 text-mm-dark hover:text-mm-blue transition-colors text-sm"
+                  className={`block py-1 text-mm-dark hover:text-mm-blue transition-colors text-sm ${
+                    location.pathname === "/impact" ? "font-bold" : ""
+                  }`}
                 >
                   Impact
                 </a>
@@ -155,7 +174,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/chapters"
-                  className="block py-1 text-mm-dark hover:text-mm-blue transition-colors text-sm"
+                  className={`block py-1 text-mm-dark hover:text-mm-blue transition-colors text-sm ${
+                    location.pathname === "/chapters" ? "font-bold" : ""
+                  }`}
                 >
                   Chapters
                 </a>
@@ -164,6 +185,8 @@ const Navbar = () => {
                 <a
                   href="https://hcb.hackclub.com/donations/start/musical-memories"
                   className="block py-1 text-mm-dark hover:text-mm-blue transition-colors text-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Donate
                 </a>
@@ -171,7 +194,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/get-involved"
-                  className="block py-1 px-3 border border-mm-dark text-mm-dark rounded-full hover:bg-mm-dark hover:text-white transition-colors text-center text-sm"
+                  className={`block py-1 px-3 border border-mm-dark text-mm-dark rounded-full hover:bg-mm-dark hover:text-white transition-colors text-center text-sm ${
+                    location.pathname === "/get-involved" ? "font-bold" : ""
+                  }`}
                 >
                   Get Involved
                 </a>

@@ -12,26 +12,30 @@ const Chapters = () => {
   return (
     <div className="bg-white min-h-screen">
       <main className="max-w-7xl mx-auto px-4 py-8 md:py-16">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="max-w-xl text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-mm-dark">Chapters</h1>
-            <p className="text-lg md:text-xl text-mm-dark mb-6">
+        {/* Hero Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start py-8 md:py-16 max-w-7xl mx-auto px-4">
+          <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl mb-6 md:mb-12 text-mm-dark">
+              Chapters
+            </h1>
+            <p className="text-lg md:text-xl text-mm-dark mb-6 md:mb-12">
               Want to spread Musical Memories' mission in your own home? Join a chapter or start your own!
             </p>
             <button className="px-6 py-3 md:px-8 md:py-4 bg-mm-dark text-white font-semibold rounded-xl">
               Explore
             </button>
           </div>
-          <div className="mt-8 md:mt-0">
+          <div className="mt-8 md:mt-0 md:pt-20 md:self-end">
             <img
               src={ChaptersImage}
               alt="Global connection"
-              className="h-64 md:h-96 w-auto"
+              className="h-64 md:h-4xl"
             />
           </div>
         </div>
       </main>
 
+      {/* Chapters Section */}
       <div className="relative flex justify-end py-8">
         <div className="w-full md:w-3/4 lg:w-2/3 flex flex-col md:flex-row items-stretch rounded-l-3xl overflow-hidden bg-mm-dark text-white">
           <div className="md:w-1/2 p-8 flex items-center">
@@ -151,6 +155,7 @@ const Chapters = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

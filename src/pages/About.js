@@ -62,21 +62,23 @@ const About = () => {
   return (
     <div className="bg-white min-h-screen">
       <main className="max-w-7xl mx-auto px-4 py-8 md:py-16">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-16">
-          <div className="max-w-xl text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-mm-dark">About Us</h1>
-            <p className="text-lg md:text-xl text-mm-dark mb-6">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start py-8 md:py-16 max-w-7xl mx-auto px-4">
+          <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl mb-6 md:mb-12 text-mm-dark">
+              About Us
+            </h1>
+            <p className="text-lg md:text-xl text-mm-dark mb-6 md:mb-12">
               Meet the people working to make this a reality.
             </p>
             <button className="px-6 py-3 md:px-8 md:py-4 bg-mm-dark text-white font-semibold rounded-xl">
               Explore
             </button>
           </div>
-          <div className="mt-8 md:mt-0">
+          <div className="mt-8 md:mt-0 md:pt-20 md:self-end">
             <img
               src={AboutUs}
               alt="People collaborating"
-              className="h-64 md:h-96 w-auto"
+              className="h-64 md:h-4xl"
             />
           </div>
         </div>
@@ -104,19 +106,17 @@ const About = () => {
           ))}
         </div>
 
-        {/* Extended Team Section */}
-<div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-  {extendedTeamMembers.map((member, index) => (
-    <div key={index} className="flex justify-center">
-      <img 
-        src={member.image} 
-        alt={member.name} 
-        className="rounded-lg"
-      />
-    </div>
-  ))}
-</div>
-
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {extendedTeamMembers.map((member, index) => (
+            <div key={index} className="flex justify-center">
+              <img 
+                src={member.image} 
+                alt={member.name} 
+                className="rounded-lg"
+              />
+            </div>
+          ))}
+        </div>
       </main>
       <Footer />
     </div>
