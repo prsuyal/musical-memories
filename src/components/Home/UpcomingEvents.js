@@ -35,7 +35,6 @@ const EventCardMobile = ({
   title,
   date,
   time,
-  description,
   ctaText,
   ctaLink,
   isDisabled = false,
@@ -44,13 +43,12 @@ const EventCardMobile = ({
     <h3 className="text-xl font-bold mb-2 text-mm-blue">{title}</h3>
     <p className="text-lg font-bold mb-1">{date}</p>
     <p className="text-md mb-2">{time}</p>
-    <p className="mb-2 text-sm flex-grow break-words">{description}</p>
     {isDisabled ? (
-      <p className="text-gray-400 text-sm">{ctaText}</p>
+      <p className="text-gray-400 text-sm mt-auto">{ctaText}</p>
     ) : (
       <a
         href={ctaLink}
-        className="text-mm-blue hover:underline text-sm"
+        className="text-mm-blue hover:underline text-sm mt-auto"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -86,12 +84,12 @@ const UpcomingEvents = () => {
         "https://docs.google.com/forms/d/e/1FAIpQLSeATaamZsgcEnsmwqS8X3_AGrxWm46culJ4mbKskECFlgkqhQ/viewform",
     },
     {
-      title: "Coming Soon...",
+      title: "FODfest",
       date: "Stay Tuned!",
       time: "",
       description:
-        "We're cooking up something exciting! More events and opportunities are on the horizon. Be the first to know about our upcoming musical adventures.",
-      ctaText: "Sign up",
+        "We're cooking up something exciting! A special event is coming your way soon. Stay tuned",
+      ctaText: "Sign up soon",
       isDisabled: true,
     },
   ];
