@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import ImpactImage from '../assets/images/impact.svg';
-import Gallery from '../assets/images/gallary.png';
+import Gallery from '../assets/images/gallery_extract.png';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
 
