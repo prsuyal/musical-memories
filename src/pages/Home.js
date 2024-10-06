@@ -106,8 +106,17 @@ const Home = () => {
         <title>Musical Memories</title>
         <meta name="description" content="Welcome to Musical Memories - Providing students with an exciting and engaging way to develop their skills in the world of music." />
       </Helmet>
+
+      <div className="max-w-7xl mx-auto px-4 pt-20 flex justify-center relative z-10">
+        <div className="bg-mm-dark text-white rounded-lg py-2 px-4 inline-block shadow-lg">
+          <a href="/submit" className="hover:text-mm-blue transition-colors duration-300">
+            <span className="text-mm-blue font-bold">Virtual Music Competition</span> - Submit your music now!
+          </a>
+        </div>
+      </div>
+
       <main className="flex flex-col md:flex-row justify-between items-center md:items-start py-8 md:py-16 max-w-7xl mx-auto px-4">
-        <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">
+        <div className="max-w-xl text-center md:text-left">
           <h1 className="text-4xl md:text-6xl mb-6 md:mb-12 text-mm-dark">
             Welcome to
             <br />

@@ -6,6 +6,7 @@ import Join from './pages/Join';
 import Impact from './pages/Impact.js';
 import About from './pages/About.js';
 import Chapters from './pages/Chapters.js';
+import SubmissionForm from './pages/SubmissionForm.js';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/impact" element={<Impact />} />
         <Route path="/about" element={<About />} />
         <Route path="/chapters" element={<Chapters />} />
-
+        <Route path="/submit" element={<SubmissionForm />} />
       </Routes>
     </Router>
   );
