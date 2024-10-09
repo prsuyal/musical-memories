@@ -29,13 +29,13 @@ const Team = () => {
     {
       image: paavni,
       name: "Paavni Suyal",
-      role: "Founder and President",
+      role: "Co-founder, President",
       email: "suyalpaavni10@gmail.com",
     },
     {
       image: pranshu,
       name: "Pranshu Suyal",
-      role: "Vice President",
+      role: "Co-founder, Vice President",
       email: "suyalpranshu@gmail.com",
     },
     {
