@@ -32,13 +32,13 @@ const About = () => {
   const teamMembers = [
     {
       name: "Paavni Suyal",
-      role: "Co-founder, President",
+      role: "Founder and President",
       image: PaavniImage,
       bio: "Hi, I'm Paavni! I'm the President of Musical Memories, and I'm in charge of managing and overseeing the organization as a whole, providing strategic, financial, and operational leadership. I'm a current senior at Biotechnology High School! I have been playing the piano and flute for eight and six years, respectively, and as such, they have become two vital components of my identity. My musical experiences are something I cherish very much, and as I look back on them, each one seems more enchanting than the last. With Musical Memories, I hope to spread my love of music to you guys and make more wonderful memories along the way!"
     },
     {
       name: "Pranshu Suyal",
-      role: "Co-founder, Vice President",
+      role: "Vice President",
       image: PranshuImage,
       bio: "Hi, I'm Pranshu, a senior at High Technology High School. I'm Vice President at Musical Memories, helping Paavni oversee the organization. I'm also in charge of web development at the organization. I have many years of experience playing the piano and trombone. I am fueled by a desire to create a vibrant community centered around the universal language of music. With Musical Memories, I hope to spread my love of music to those around me and make some wonderful memories along the way."
     },
