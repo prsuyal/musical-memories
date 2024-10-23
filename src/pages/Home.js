@@ -106,9 +106,8 @@ const Home = () => {
         <title>Musical Memories</title>
         <meta name="description" content="Welcome to Musical Memories - Providing students with an exciting and engaging way to develop their skills in the world of music." />
       </Helmet>
-
       <main className="flex flex-col md:flex-row justify-between items-center md:items-start py-8 md:py-16 max-w-7xl mx-auto px-4">
-        <div className="max-w-xl text-center md:text-left">
+        <div className="max-w-xl mt-8 md:mt-16 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl mb-6 md:mb-12 text-mm-dark">
             Welcome to
             <br />
