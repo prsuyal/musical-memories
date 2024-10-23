@@ -5,6 +5,7 @@ import Holmdel from '../assets/images/holmdel.png';
 import LA from '../assets/images/LA.png';
 import HongKong from '../assets/images/hongkong.png';
 import Fullterton from '../assets/images/fullerton.png';
+import Maryland from '../assets/images/maryland 1.png';
 import ChaptersImage from '../assets/images/chapters.svg';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
@@ -169,6 +170,28 @@ const Chapters = () => {
               </div>
             </div>
           </div>
+          </div>
+
+          <div className="relative flex justify-end py-8">
+          <div className="w-full md:w-3/4 lg:w-2/3 flex flex-col md:flex-row items-stretch rounded-l-3xl overflow-hidden bg-mm-gray text-black">
+            <div className="md:w-1/2 p-8 flex items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Maryland</h2>
+                <p>
+                  The Maryland chapter of Musical Memories is based in Anne Arundel County. They are dedicated to enhancing the relation between music and the world of science and medicine! 
+                </p>
+              </div>
+            </div>
+            <div className="md:w-1/2 h-full">
+              <img
+                src={Maryland}
+                alt="Maryland"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+
         </div>
       </div>
 
