@@ -65,7 +65,7 @@ const Impact = () => {
             <span className="font-bold mx-2">six</span> countries,
           </div>
           <div className="bg-mm-dark text-white text-2xl font-semibold p-4 rounded-r-full md:w-1/2 flex items-center justify-center">
-            and over <span className="font-bold mx-2">eight hundred and fifty</span> people,
+            and <span className="font-bold mx-2">one thousand</span> people,
           </div>
         </div>
       </div>
