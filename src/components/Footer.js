@@ -107,7 +107,7 @@ const Footer = () => {
         <hr className="border-gray-600 mb-4 md:mb-6" />
 
         <div className="text-xs md:text-sm text-gray-400 text-center">
-          <p>© 2024 Musical Memories. All Rights Reserved.</p>
+          <p>© 2025 Musical Memories. All Rights Reserved.</p>
           <p>Made by Pranshu Suyal for Musical Memories.</p>
         </div>
       </footer>
