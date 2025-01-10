@@ -88,7 +88,7 @@ const Footer = () => {
               defaultIcon={DiscordIconBlack}
               hoverIcon={DiscordIcon}
               alt="Discord"
-              link="https://discord.gg/rBQVEEfNjKs"
+              link="https://discord.gg/jRSvKpcVxK"
             />
           </div>
         </nav>
