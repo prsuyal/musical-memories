@@ -64,6 +64,14 @@ const Footer = () => {
             </li>
             <li>
               <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpZDwA1pvCyDs6h1tYB0-3vGZqZw76NrCbez3RSs4PQqy_zQ/viewform?usp=dialog"
+                className="hover:underline text-sm md:text-base"
+              >
+                Research
+              </a>
+            </li>
+            <li>
+              <a
                 href="/get-involved"
                 className="hover:underline text-sm md:text-base"
               >

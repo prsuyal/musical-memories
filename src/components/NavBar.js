@@ -85,6 +85,16 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpZDwA1pvCyDs6h1tYB0-3vGZqZw76NrCbez3RSs4PQqy_zQ/viewform?usp=dialog"
+                className={`text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Research
+              </a>
+            </li>
+            <li>
+              <a
                 href="/get-involved"
                 className={`px-3 py-1 lg:px-4 lg:py-2 border border-mm-dark text-mm-dark rounded-full hover:bg-mm-dark hover:text-white transition-colors text-sm lg:text-base ${
                   location.pathname === "/get-involved" ? "font-bold" : ""
