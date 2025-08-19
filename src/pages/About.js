@@ -1,23 +1,24 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import PaavniImage from '../assets/images/paavni.png';
-import PranshuImage from '../assets/images/pranshu-piano-portrait.png';
-import AbhinavImage from '../assets/images/abhinav-new.png';
-import ChinmayiImage from '../assets/images/chinmayi-new.png';
 import AboutUs from '../assets/images/aboutus.svg';
-import Ariana from '../assets/images/ariana.svg';
-import Pranav from '../assets/images/pranav.svg';
-import Aryan from '../assets/images/aryan.svg';
-import Rodaina from '../assets/images/rodaina.svg';
-import Brooklyn from '../assets/images/brooklyn.svg';
-import Rachel from '../assets/images/rachel.svg';
-import Paritosh from '../assets/images/paritosh.svg';
-import Maya from '../assets/images/maya.svg';
-import Rudra from '../assets/images/rudra.svg';
-import Christine from '../assets/images/christine.svg';
-import Aleena from '../assets/images/aleena.svg';
-import Annika from '../assets/images/annika.svg';
-import Treya from '../assets/images/treya.svg';
+//import Ariana from '../assets/images/ariana.svg';
+//import Pranav from '../assets/images/pranav.svg';
+//import Aryan from '../assets/images/aryan.svg';
+//import Rodaina from '../assets/images/rodaina.svg';
+//import Brooklyn from '../assets/images/brooklyn.svg';
+//import Rachel from '../assets/images/rachel.svg';
+//import Maya from '../assets/images/maya.svg';
+//import Rudra from '../assets/images/rudra.svg';
+//import Christine from '../assets/images/christine.svg';
+//import Annika from '../assets/images/annika.svg';
+//import Treya from '../assets/images/treya.svg';
+import Aleena from '../assets/images/Aleena.jpg';
+import Paritosh from '../assets/images/Paritosh.jpg'
+import Josh from '../assets/images/Josh.png'
+import Amanda from '../assets/images/AmandaZheng.jpg'
+import Olivia from '../assets/images/Olivia.jpg'
+import Gianna from '../assets/images/GiannaWildrick.jpg'
+import Manu from '../assets/images/Manu.jpg'
 import Footer from '../components/Footer';
 
 const About = () => {
@@ -31,45 +32,36 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: "Paavni Suyal",
-      role: "Founder and President",
-      image: PaavniImage,
-      bio: "Hi, I'm Paavni! I'm the President of Musical Memories, and I'm in charge of managing and overseeing the organization as a whole, providing strategic, financial, and operational leadership. I'm a current senior at Biotechnology High School! I have been playing the piano and flute for eight and six years, respectively, and as such, they have become two vital components of my identity. My musical experiences are something I cherish very much, and as I look back on them, each one seems more enchanting than the last. With Musical Memories, I hope to spread my love of music to you guys and make more wonderful memories along the way!"
+      name: "Paritosh Bhole",
+      role: "President",
+      image: Paritosh,
+      bio: "My name is Paritosh Bhole and I'm a rising senior from Bridgewater, NJ. I've been a cellist for about 7 years now, and I love being a part of my school's orchestra. Away from music, I'm involved in debate, journalism, and I love spending time with friends and family. I joined Musical Memories because their mission really resonated with me, and it's been a rewarding experience to be a part of this organization. It's an honor to be named Musical Memories's president and I'm looking forward to what we can accomplish!"
     },
     {
-      name: "Pranshu Suyal",
+      name: "Josh Li",
       role: "Vice President",
-      image: PranshuImage,
-      bio: "Hi, I'm Pranshu, a senior at High Technology High School. I'm Vice President at Musical Memories, helping Paavni oversee the organization. I'm also in charge of web development at the organization. I have many years of experience playing the piano and trombone. I am fueled by a desire to create a vibrant community centered around the universal language of music. With Musical Memories, I hope to spread my love of music to those around me and make some wonderful memories along the way."
+      image: Josh,
+      bio: "Hi, I'm Josh, a senior from Bridgewater NJ. I'm Vice President at Musical Memories, helping Paritosh oversee the organization. I'm also in charge of web development at the organization. I have many years of experience playing the violin, and I am fueled by a desire to create a vibrant community centered around the universal language of music. With Musical Memories, I hope to spread my love of music to those around me and make some wonderful memories along the way."
     },
     {
-      name: "Chinmayi Palya",
+      name: "Amanda Zheng",
       role: "Director, Musical Hospice",
-      image: ChinmayiImage,
-      bio: "Hi, I'm Chinmayi! I'm a senior at Biotechnology High School. I lead the musical hospice project at Musical Memories. I've been playing the violin for 10 years now, and I've been playing the flute for 6. Music has brought so much happiness into my life, from the diverse knowledge it has taught me to the meaningful connections it has enabled me to form. I can't wait to share the joy of music with my community!"
+      image: Amanda,
+      bio: "Hi everyone! I'm Amanda Zheng and I'm the new Director of Musical Hospice! I'm a rising junior from Middletown, NJ. I've always loved music and have been playing the flute since fourth grade. I'm part of marching band, but besides music I also enjoy reading, hanging with friends, and going out anywhere. I'm so excited to be part of Musical Memories and can't wait to not only continue the old events but start new ones!"
     },
     {
-      name: "Abhinav Kartik",
+      name: "Olivia Swarup",
       role: "Director, Tutoring",
-      image: AbhinavImage,
-      bio: "Hi, I'm Abhinav, a senior at High Technology High School. I lead the tutoring project at Musical Memories. I am also a web developer and designer for our organization. I have been playing the alto saxophone for over seven years. In that time, I have found a drive to spread the knowledge I've gained to others, as music is one of the most beautiful forms of expression in the world. At Musical Memories, I hope I can help give others a chance to experience the bliss I feel when I'm connected to music."
+      image: Olivia,
+      bio: "Hi! My name is Olivia Swarup and I'm a rising junior in West Windsor, NJ. I've been playing the double bass for around 4 years, and am part of orchestras and chamber groups. I also love to explore different musical genres through the electric bass. I was drawn to Musical Memories throughb my passion for volunteering, as well as my past experiences in teaching. As Director of Tutoring, I am looking forward to helping students find joy in music, and can’t wait to help them build new connections!"
     }
   ];
 
   const extendedTeamMembers = [
     { name: "Aleena Shinde", role: "Manager, PR", image: Aleena },
-    { name: "Christine Cho", role: "Manager, Instagram", image: Christine },
-    { name: "Rudra Patel", role: "Manager, TikTok", image: Rudra },
-    { name: "Maya Oommen", role: "Intern, Op. Mgt.", image: Maya },
-    { name: "Annika Raj", role: "Intern, HR", image: Annika},
-    { name: "Paritosh Bhole", role: "Intern, HR", image: Paritosh },
-    { name: "Rachel Su", role: "Intern, HR", image: Rachel },
-    { name: "Treya Ghosh", role: "Intern, HR", image: Treya },
-    { name: "Aryan Desai", role: "Intern, HR", image: Aryan },
-    { name: "Brooklyn Chelakadan", role: "Intern, Op. Mgt.", image: Brooklyn },
-    { name: "Rodaina Nasreldeen", role: "Intern, Op. Mgt.", image: Rodaina },
-    { name: "Pranav Arun", role: "Intern, Event Coord.", image: Pranav },
-    { name: "Ariana Li", role: "Intern, PR", image: Ariana },
+    //{ name: "Christine Cho", role: "Manager, Instagram", image: Christine },
+    { name: "Gianna Wildrick", role: "Manager, TikTok", image: Gianna },
+    { name: "Manashyu Gadia", role: "Chapters Director", image: Manu}
   ];
 
   return (
@@ -128,12 +120,14 @@ const About = () => {
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {extendedTeamMembers.map((member, index) => (
-            <div key={index} className="flex justify-center">
+            <div key={index} className="flex flex-col items-center bg-gray-100 p-4 rounded-xl shadow-md">
               <img 
                 src={member.image} 
                 alt={member.name} 
-                className="rounded-lg"
+                className="w-32 h-32 object-cover rounded-full"   
               />
+              <h3 className="mt-4 font-semibold text-lg text-mm-dark">{member.name}</h3>
+              <p className="text-sm text-gray-600">{member.role}</p>
             </div>
           ))}
         </div>

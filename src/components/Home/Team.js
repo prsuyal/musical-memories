@@ -1,8 +1,9 @@
 import React from "react";
-import paavni from "../../assets/images/paavni.png";
-import pranshu from "../../assets/images/pranshu-black 1.png";
-import abhinav from "../../assets/images/abhinav-new.png";
-import chinmayi from "../../assets/images/chinmayi-new.png";
+
+import Paritosh from '../../assets/images/Paritosh.jpg'
+import Josh from '../../assets/images/Josh.png'
+import Amanda from '../../assets/images/AmandaZheng.jpg'
+import Olivia from '../../assets/images/Olivia.jpg'
 import gmail from "../../assets/images/icons8-gmail-black.svg";
 
 const TeamMember = ({ image, name, role, email }) => (
@@ -27,28 +28,28 @@ const TeamMember = ({ image, name, role, email }) => (
 const Team = () => {
   const teamMembers = [
     {
-      image: paavni,
-      name: "Paavni Suyal",
-      role: "Founder and President",
-      email: "suyalpaavni10@gmail.com",
+      image: Paritosh,
+      name: "Paritosh Bhole",
+      role: "President",
+      email: "officialparitoshbhole@gmail.com",
     },
     {
-      image: pranshu,
-      name: "Pranshu Suyal",
+      image: Josh,
+      name: "Josh Li",
       role: "Vice President",
-      email: "suyalpranshu@gmail.com",
+      email: "boredboi034825@gmail.com",
     },
     {
-      image: chinmayi,
-      name: "Chinmayi Palya",
+      image: Amanda,
+      name: "Amanda Zheng",
       role: "Director, Musical Hospice",
-      email: "chinmayi.palya27@gmail.com",
+      email: "amazheng2@gmail.com",
     },
     {
-      image: abhinav,
-      name: "Abhinav Kartik",
+      image: Olivia,
+      name: "Olivia Swarup",
       role: "Director, Tutoring",
-      email: "abhinavkartik05@gmail.com",
+      email: "oliviaswarup@gmail.com",
     },
   ];
 

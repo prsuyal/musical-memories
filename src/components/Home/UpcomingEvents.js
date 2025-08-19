@@ -64,35 +64,17 @@ const UpcomingEvents = () => {
   const containerRef = useRef(null);
 
   const events = [
-    {
-      title: "Virtual Music Competition",
-      date: "due Oct 17",
-      time: "11:59pm",
-      description:
-        "Showcase your talent in our international competition! Perform or compose a piece and get evaluated by world-renowned mentors. Open to all skill levels and genres. Submit via the second link in our Linktree.",
-      ctaText: "Sign up",
-      ctaLink:
-        "https://docs.google.com/forms/d/e/1FAIpQLSeATaamZsgcEnsmwqS8X3_AGrxWm46culJ4mbKskECFlgkqhQ/viewform",
-    },
-    {
-      title: "FODFest Music Performance",
-      date: "October 9",
-      time: "4–5:30 PM",
-      description:
-        "Join us in a jam session as we've partnered with Music in Common to host a Friends of Danny Festival performance that honors the lives of those killed on 9/11. To perform, email us with the subject, Performing @ Fodfest, and specify your instrument, age, and location.",
-      ctaText: "After emailing, sign up with this form",
-      ctaLink:
-        "https://docs.google.com/forms/d/e/1FAIpQLSf5FHPrrmYlFrDqOer0lluhrq5vIIkHj0UJLdI_kQxiEKIzJQ/viewform",
-    },
-    {
-      title: "NYC Kaufman Music Center",
-      date: "August 30",
-      time: "6-8 PM",
-      description:
-        "Join us for an enchanting evening at the Kaufman Music Center's Ann Goodman Recital Hall. Experience captivating performances and inspiring talks from renowned artists.",
-      ctaText: "Sign-ups Closed",
-      isDisabled: true,
-    },
+    //{
+      //title: "NYC Kaufman Music Center",
+      //date: "August 30",
+      //time: "6-8 PM",
+      //description:
+        //"Join us for an enchanting evening at the Kaufman Music Center's Ann Goodman Recital Hall. Experience captivating performances and inspiring talks from renowned artists.",
+      //ctaText: "Sign-ups Closed",
+      //isDisabled: true,
+      //ctaLink:
+        //"https://docs.google.com/forms/d/e/1FAIpQLSf5FHPrrmYlFrDqOer0lluhrq5vIIkHj0UJLdI_kQxiEKIzJQ/viewform",
+    //},
   ];
 
   const handleTouchStart = (e) => {
