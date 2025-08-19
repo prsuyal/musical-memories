@@ -1,29 +1,25 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import PaavniImage from '../assets/images/paavni.png';
-import PranshuImage from '../assets/images/pranshu-piano-portrait.png';
-import AbhinavImage from '../assets/images/abhinav-new.png';
-import ChinmayiImage from '../assets/images/chinmayi-new.png';
 import AboutUs from '../assets/images/aboutus.svg';
-import Ariana from '../assets/images/ariana.svg';
-import Pranav from '../assets/images/pranav.svg';
-import Aryan from '../assets/images/aryan.svg';
-import Rodaina from '../assets/images/rodaina.svg';
-import Brooklyn from '../assets/images/brooklyn.svg';
-import Rachel from '../assets/images/rachel.svg';
-import Maya from '../assets/images/maya.svg';
-import Rudra from '../assets/images/rudra.svg';
-import Christine from '../assets/images/christine.svg';
+//import Ariana from '../assets/images/ariana.svg';
+//import Pranav from '../assets/images/pranav.svg';
+//import Aryan from '../assets/images/aryan.svg';
+//import Rodaina from '../assets/images/rodaina.svg';
+//import Brooklyn from '../assets/images/brooklyn.svg';
+//import Rachel from '../assets/images/rachel.svg';
+//import Maya from '../assets/images/maya.svg';
+//import Rudra from '../assets/images/rudra.svg';
+//import Christine from '../assets/images/christine.svg';
+//import Annika from '../assets/images/annika.svg';
+//import Treya from '../assets/images/treya.svg';
 import Aleena from '../assets/images/Aleena.jpg';
-import Annika from '../assets/images/annika.svg';
-import Treya from '../assets/images/treya.svg';
-import Footer from '../components/Footer';
 import Paritosh from '../assets/images/Paritosh.jpg'
 import Josh from '../assets/images/Josh.png'
 import Amanda from '../assets/images/AmandaZheng.jpg'
 import Olivia from '../assets/images/Olivia.jpg'
 import Gianna from '../assets/images/GiannaWildrick.jpg'
 import Manu from '../assets/images/Manu.jpg'
+import Footer from '../components/Footer';
 
 const About = () => {
   const teamRef = useRef(null);
