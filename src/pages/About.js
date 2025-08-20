@@ -19,6 +19,7 @@ import Amanda from '../assets/images/AmandaZheng.jpg'
 import Olivia from '../assets/images/Olivia.jpg'
 import Gianna from '../assets/images/GiannaWildrick.jpg'
 import Manu from '../assets/images/Manu.jpg'
+import Eryn from '../assets/images/Eryn.jpg'
 import Footer from '../components/Footer';
 
 const About = () => {
@@ -54,12 +55,13 @@ const About = () => {
       role: "Director, Tutoring",
       image: Olivia,
       bio: "Hi! My name is Olivia Swarup and I'm a rising junior in West Windsor, NJ. I've been playing the double bass for around 4 years, and am part of orchestras and chamber groups. I also love to explore different musical genres through the electric bass. I was drawn to Musical Memories throughb my passion for volunteering, as well as my past experiences in teaching. As Director of Tutoring, I am looking forward to helping students find joy in music, and can’t wait to help them build new connections!"
-    }
+    },
+    
   ];
 
   const extendedTeamMembers = [
     { name: "Aleena Shinde", role: "Manager, PR", image: Aleena },
-    //{ name: "Christine Cho", role: "Manager, Instagram", image: Christine },
+    { name: "Eryn Semler", role: "Manager, Instagram", image: Eryn },
     { name: "Gianna Wildrick", role: "Manager, TikTok", image: Gianna },
     { name: "Manashyu Gadia", role: "Chapters Director", image: Manu}
   ];
