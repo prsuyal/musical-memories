@@ -56,14 +56,24 @@ const About = () => {
       image: Olivia,
       bio: "Hi! My name is Olivia Swarup and I'm a rising junior in West Windsor, NJ. I've been playing the double bass for around 4 years, and am part of orchestras and chamber groups. I also love to explore different musical genres through the electric bass. I was drawn to Musical Memories throughb my passion for volunteering, as well as my past experiences in teaching. As Director of Tutoring, I am looking forward to helping students find joy in music, and can’t wait to help them build new connections!"
     },
+    {
+      name: "Aleena Shinde",
+      role: "Manager, PR",
+      image: Aleena,
+      bio: "Hi, I'm Aleena! I'm a rising senior from Holmdel, New Jersey and I am leading the PR/graphic design team at Musical Memories. I organize and assign the social media posts for our wonderful interns to design. I’ve always had an interest in the arts, especially music. As a kid I started with learning piano and soon after switched to the flute. I’ve gained experience through both school band and outside orchestra. I’m passionate about spreading the joy of music to others and am proud to be doing that through my role at Musical Memories."
+    },
+    {
+      name: "Manashyu Gadia",
+      role: "Chapters Director",  
+      image: Manu,
+      bio: "My name is Manu (Manashyu gadia) and I am a rising senior from Alpharetta Georgia. I've played recreational piano for almost 5 years and have been playing tennis my whole life. I love hiking and traveling while painting as well. Neuroscience is where I am most passionate and I got involved with the organization due to their research and goals towards helping others through music. I am truly excited to be the organizational chapter director for musical memories!"
+    },
     
   ];
 
   const extendedTeamMembers = [
-    { name: "Aleena Shinde", role: "Manager, PR", image: Aleena },
     { name: "Eryn Semler", role: "Manager, Instagram", image: Eryn },
     { name: "Gianna Wildrick", role: "Manager, TikTok", image: Gianna },
-    { name: "Manashyu Gadia", role: "Chapters Director", image: Manu}
   ];
 
   return (
@@ -100,7 +110,7 @@ const About = () => {
         <div ref={teamRef} className="bg-gray-100 p-8 rounded-tr-[40px] grid grid-cols-1 md:grid-cols-2 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="relative w-full max-w-xs mx-auto group">
-              <div className="aspect-w-3 aspect-h-4 rounded-tr-[40px] overflow-hidden relative">
+              <div className="aspect-[3/4] rounded-tr-[40px] overflow-hidden relative">
                 <img 
                   src={member.image} 
                   alt={member.name} 
