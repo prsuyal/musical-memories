@@ -83,16 +83,7 @@ const Navbar = () => {
                 Donate
               </a>
             </li>
-            <li>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfpZDwA1pvCyDs6h1tYB0-3vGZqZw76NrCbez3RSs4PQqy_zQ/viewform?usp=dialog"
-                className={`text-mm-dark hover:text-mm-blue transition-colors text-sm lg:text-base`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Research
-              </a>
-            </li>
+            
             <li>
               <a
                 href="/get-involved"

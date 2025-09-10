@@ -306,37 +306,17 @@ const GetInvolved = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <button className="bg-mm-dark p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold text-mm-gray mb-4">The Composition Challenge</h3>
+            <h3 className="text-2xl font-semibold text-mm-gray mb-4">Nothing yet!</h3>
             <p className="text-mm-gray text-lg">
-              Compose, or improvise, a musical piece of your own. There are no genre or instrument restrictions, so enjoy the process! Your submission will be a video of you performing the piece, to be featured in a Musical Memories livestream.
+              We're planning new competitions, check back later!
               <br />
               <br />
-              Team Size: Individual
+              Team Size: Coming Soon
               <br />
-              Deadline: October 17
+              Deadline: Coming Soon
             </p>
           </button>
-          <button className="bg-mm-gray p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4">Merch Mania</h3>
-            <p className="text-mm-dark text-lg">
-              Design a shirt. The only requirement is for it to be related to music, so get creative with it! The first place design will be featured in our merch store for a limited time.
-              <br />
-              <br />
-              Team Size: Individual
-              <br />
-              Deadline: Coming Soon!
-            </p>
-          </button>
-          <button className="bg-mm-blue p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4">Music for Scientific Good</h3>
-            <p className="text-mm-dark text-lg">
-              Research a novel way that music can be used to help patients battling dementia or other similar disorders. You will be submitting a short paper or presentation highlighting your study.
-              <br /><br />
-              Team Size: 1-4
-              <br />
-              Deadline: <span className="text-red-500">August 16</span>
-            </p>
-          </button>
+         
         </div>
       </section>
 
