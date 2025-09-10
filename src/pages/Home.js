@@ -16,7 +16,7 @@ import ContactSection from "../components/Home/ContactSection";
 import Footer from "../components/Footer";
 import UpcomingEvents from "../components/Home/UpcomingEvents";
 import Team from "../components/Home/Team";
-
+import Testimonials  from "../components/Home/Testimonials";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -131,7 +131,7 @@ const Home = () => {
           />
         </div>
       </main>
-
+      <Testimonials />
       <section
         ref={sectionRef}
         className="max-w-7xl mx-auto py-8 md:py-16 px-4"

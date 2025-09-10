@@ -64,17 +64,17 @@ const UpcomingEvents = () => {
   const containerRef = useRef(null);
 
   const events = [
-    //{
-      //title: "NYC Kaufman Music Center",
-      //date: "August 30",
-      //time: "6-8 PM",
-      //description:
-        //"Join us for an enchanting evening at the Kaufman Music Center's Ann Goodman Recital Hall. Experience captivating performances and inspiring talks from renowned artists.",
-      //ctaText: "Sign-ups Closed",
-      //isDisabled: true,
-      //ctaLink:
-        //"https://docs.google.com/forms/d/e/1FAIpQLSf5FHPrrmYlFrDqOer0lluhrq5vIIkHj0UJLdI_kQxiEKIzJQ/viewform",
-    //},
+    {
+      title: "Nothing yet!",
+      date: "Coming Soon",
+      time: "- PM",
+      description:
+        "We're planning new events, check back later!",
+      ctaText: "Sign-ups Closed",
+      isDisabled: true,
+      ctaLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSf5FHPrrmYlFrDqOer0lluhrq5vIIkHj0UJLdI_kQxiEKIzJQ/viewform",
+    },
   ];
 
   const handleTouchStart = (e) => {
