@@ -335,41 +335,7 @@ const GetInvolved = () => {
           </a>
         </div>
       </section>
-
-      <section id="app-dev" ref={sectionRef} className="max-w-7xl mx-auto py-16 px-4 text-center md:text-left">
-        <div className="flex items-center mb-8 flex-col md:flex-row">
-          <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">App Dev</h2>
-          <p className="text-lg md:text-xl text-mm-dark md:text-left md:ml-6">
-            Like to code? We're always developing apps to help bring music to as many people as possible!
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-mm-gray p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4">English or Spanish?</h3>
-            <p className="text-mm-dark text-lg">
-              Listening to songs in other languages is usually fun, but what if you could hear the song in your native language, without any changes in rhythm or flow? That's exactly what we're trying to build!
-            </p>
-          </div>
-          <div className="bg-mm-gray p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4">Therapy Tunes</h3>
-            <p className="text-mm-dark text-lg">
-              Have you ever been in need of a playlist to relax your thoughts, especially when you're stressed out? Well, we're working on something to help you when you're down!
-            </p>
-          </div>
-          <div className="bg-mm-gray p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4">Coming Soon!</h3>
-            <p className="text-mm-dark text-lg">
-              We have a lot more in the works; join us to help bring new ideas to life!
-            </p>
-          </div>
-        </div>
-        <a href="https://forms.gle/ESDiL5QonzAzKWgN6" rel="noreferrer" target="_blank">
-          <button className="w-full mt-8 bg-mm-dark text-white font-semibold py-4 rounded-lg text-center">
-            Join our Dev Team and dive into our projects!
-          </button>
-        </a>
-      </section>
-
+      
       <Footer />
     </div>
   );
