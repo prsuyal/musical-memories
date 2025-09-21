@@ -331,6 +331,7 @@ const GetInvolved = () => {
           <a href="https://forms.gle/ESDiL5QonzAzKWgN6" rel="noreferrer" target="_blank">
             <button className="bg-mm-dark text-white font-semibold py-3 px-6 rounded-lg">
               Join the team!
+              "test"
             </button>
           </a>
         </div>
