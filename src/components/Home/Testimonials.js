@@ -1,6 +1,7 @@
 import React from "react";
 
 import GeoffreyBruleson from "../../assets/images/GeoffreyBruleson.png";
+import FrankRusso from "../../assets/images/frank-russo.jpeg";
 
 const TestimonialCard = ({ image, text, name, role, reverse }) => (
   <div
@@ -34,12 +35,12 @@ const Testimonials = () => {
       name: "Geoffrey Burleson",
       role: "Professor of Music and Director of Piano Studies, Hunter College-CUNY",
     },
-    //{
-      //image: ,
-      //text: "",
-      //name: "",
-      //role: "",
-    //},
+    {
+      image: FrankRusso,
+      text: "I thoroughly enjoyed my session with the Musical Memories students—their professionalism, curiosity, and enthusiasm were outstanding. The interdisciplinary panel they organized was both thoughtful and engaging, reflecting an impressive level of scholarship and preparation.",
+      name: "Frank Russo",
+      role: "Professor, Psychology, Faculty of Arts, Toronto Metropolitan University",
+    },
   ];
 
   return (
