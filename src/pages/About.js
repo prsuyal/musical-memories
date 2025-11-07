@@ -57,10 +57,10 @@ const About = () => {
       bio: "Hi! My name is Olivia Swarup and I'm a rising junior in West Windsor, NJ. I've been playing the double bass for around 4 years, and am part of orchestras and chamber groups. I also love to explore different musical genres through the electric bass. I was drawn to Musical Memories throughb my passion for volunteering, as well as my past experiences in teaching. As Director of Tutoring, I am looking forward to helping students find joy in music, and can’t wait to help them build new connections!"
     },
     {
-      name: "Aleena Shinde",
+      name: "Eryn Semler",
       role: "Manager, PR",
-      image: Aleena,
-      bio: "Hi, I'm Aleena! I'm a rising senior from Holmdel, New Jersey and I am leading the PR/graphic design team at Musical Memories. I organize and assign the social media posts for our wonderful interns to design. I’ve always had an interest in the arts, especially music. As a kid I started with learning piano and soon after switched to the flute. I’ve gained experience through both school band and outside orchestra. I’m passionate about spreading the joy of music to others and am proud to be doing that through my role at Musical Memories."
+      image: Eryn,
+      bio: "Hi! My name is Eryn Semler, and I'm the new PR director for Musical Memories. I'm also a sophomore from Morganville, NJ. I've been playing the piano for the past 10 years and the clarinet for 6 years! Besides music, I’ve been dancing competitively for nine years, and I am part of my school's dance and graphic design teams. I'm thrilled to be part of Musical Memories because of its amazing mission to spread the love of music. I am so excited to spread Musical Memories' message through many platforms!"
     },
     {
       name: "Manashyu Gadia",
@@ -72,7 +72,6 @@ const About = () => {
   ];
 
   const extendedTeamMembers = [
-    { name: "Eryn Semler", role: "Manager, Instagram", image: Eryn },
     { name: "Gianna Wildrick", role: "Manager, TikTok", image: Gianna },
   ];
 
