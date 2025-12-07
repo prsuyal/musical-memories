@@ -1,8 +1,13 @@
 import React, { useRef } from 'react';
 import ImpactImage from '../assets/images/impact.svg';
-import Gallery from '../assets/images/gallery_extract.png';
+//import Gallery from '../assets/images/gallery_extract.png';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
+
+const importAll = (r) => r.keys().map(r);
+const galleryImages = importAll(
+  require.context('../assets/gallery', false, /\.(png|jpe?g|svg)$/)
+);
 
 const Impact = () => {
   const impactRef = useRef(null);
@@ -103,6 +108,7 @@ const Impact = () => {
         </div>
       </div>
 
+{/*
       <div className="max-w-7xl mx-auto px-4 mb-16">
         <div className="flex items-center mb-8 flex-col md:flex-row">
           <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
@@ -114,6 +120,29 @@ const Impact = () => {
         </div>
         <img src={Gallery} alt="Gallery of Musical Memories events" className="w-full" />
       </div>
+*/}
+
+      <div className="max-w-7xl mx-auto px-4 mb-16">
+        <div className="flex items-center mb-8 flex-col md:flex-row">
+          <h2 className="text-3xl md:text-4xl font-bold bg-mm-blue inline-block px-4 py-2 rounded-lg mb-4 md:mb-1">
+      Gallery Extracts
+          </h2>
+          <p className="text-lg md:text-xl text-mm-dark md:ml-6 text-center md:text-left">
+              Because a picture is worth a 1000 words.
+          </p>
+        </div>
+
+        <div className="columns-2 md:columns-3 gap-4 space-y-4">
+          {galleryImages.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`Gallery ${index}`}
+            className="rounded-lg w-full mb-4 break-inside-avoid object-cover"
+          />
+          ))}
+        </div>
+    </div>
 
       <Footer />
     </div>
