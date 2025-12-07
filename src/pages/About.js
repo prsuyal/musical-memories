@@ -12,7 +12,7 @@ import AboutUs from '../assets/images/aboutus.svg';
 //import Christine from '../assets/images/christine.svg';
 //import Annika from '../assets/images/annika.svg';
 //import Treya from '../assets/images/treya.svg';
-import Aleena from '../assets/images/Aleena.jpg';
+//import Aleena from '../assets/images/Aleena.jpg';
 import Paritosh from '../assets/images/Paritosh.jpg'
 import Josh from '../assets/images/Josh.png'
 import Amanda from '../assets/images/AmandaZheng.jpg'
