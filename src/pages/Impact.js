@@ -4,10 +4,10 @@ import Gallery from '../assets/images/gallery_extract.png';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
 
-const importAll = (r) => r.keys().map(r);
-const galleryImages = importAll(
-  require.context('../assets/gallery', false, /\.(png|jpe?g|svg)$/)
-);
+//const importAll = (r) => r.keys().map(r);
+//const galleryImages = importAll(
+  //require.context('../assets/gallery', false, /\.(png|jpe?g|svg)$/)
+//);
 
 const Impact = () => {
   const impactRef = useRef(null);
