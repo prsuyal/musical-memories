@@ -233,7 +233,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <UpcomingEvents />
       <Team />
       <FAQ />
       <ContactSection />

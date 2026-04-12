@@ -5,6 +5,9 @@ import Josh from '../../assets/images/Josh.png'
 import Amanda from '../../assets/images/AmandaZheng.jpg'
 import Olivia from '../../assets/images/Olivia.jpg'
 import gmail from "../../assets/images/icons8-gmail-black.svg";
+import Paavni from "../../assets/images/paavni.png";
+import Pranshu from "../../assets/images/pranshu-black 1.png";
+
 
 const TeamMember = ({ image, name, role, email }) => (
   <div className="bg-white rounded-[45px] border border-[#191A23] shadow-[0_5px_0_0_#191A23] p-6 flex md:flex-row flex-col md:items-center items-center md:space-x-4 space-y-4 md:space-y-0 text-center md:text-left">
@@ -51,6 +54,18 @@ const Team = () => {
       role: "Director, Tutoring",
       email: "oliviaswarup@gmail.com",
     },
+    {
+      image: Paavni,
+      name: "Paavni Suyal",
+      role: "Founder and Senior Advisor",
+      email: "suyalpaavni10@gmail.com"
+    },
+    {
+      image: Pranshu,
+      name: "Pranshu Suyal",
+      role: "Senior Advisor",
+      email: "suyalpranshu@gmail.com"
+    }
   ];
 
   return (

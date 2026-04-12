@@ -20,7 +20,12 @@ import Olivia from '../assets/images/Olivia.jpg'
 import Gianna from '../assets/images/GiannaWildrick.jpg'
 import Manu from '../assets/images/Manu.jpg'
 import Eryn from '../assets/images/Eryn.jpg'
+
+import Paavni from "../assets/images/paavni.png";
+import Pranshu from "../assets/images/pranshu-black 1.png";
+
 import Footer from '../components/Footer';
+
 
 const About = () => {
   const teamRef = useRef(null);
@@ -73,6 +78,8 @@ const About = () => {
 
   const extendedTeamMembers = [
     { name: "Gianna Wildrick", role: "Manager, TikTok", image: Gianna },
+    { name: "Paavni Suyal", role: "Founder, Senior Advisor", image: Paavni},
+    { name: "Pranshu Suyal", role: "Senior Advisor", image: Pranshu},
   ];
 
   return (
