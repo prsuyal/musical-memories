@@ -22,7 +22,7 @@ const TeamMember = ({ image, name, role, email }) => (
       <h3 className="font-bold text-lg">{name}</h3>
       <p className="text-sm text-gray-600">{role}</p>
     </div>
-    <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+    <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}target="_blank" rel="noopener noreferrer">
       <img src={gmail} alt="Email" className="w-6 h-6 cursor-pointer" />
     </a>
   </div>
