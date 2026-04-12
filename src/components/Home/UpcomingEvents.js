@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
+//unused for now keeping in case for future
+
 const EventCardDesktop = ({
   title,
   date,
